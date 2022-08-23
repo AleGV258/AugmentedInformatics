@@ -31,7 +31,7 @@ public class MostrarOcultarNombres : MonoBehaviour
         canvasCubiculo.SetActive(false);
         canvasInnovacion.SetActive(false);
         canvasLaboratorio.SetActive(false);
-        activado = false;
+        activado = true;
     }
 
     public void mostrar_ocultarNombres()
@@ -41,7 +41,7 @@ public class MostrarOcultarNombres : MonoBehaviour
 
     IEnumerator nombresSegundos()
     {
-        if (activado == false)
+        if (activado)
         {
             canvasAula.SetActive(true);
             canvasBiblioteca.SetActive(true);
@@ -51,7 +51,7 @@ public class MostrarOcultarNombres : MonoBehaviour
             canvasCubiculo.SetActive(true);
             canvasInnovacion.SetActive(true);
             canvasLaboratorio.SetActive(true);
-            activado = true;
+            activado = false;
         }
         else
         {
@@ -72,10 +72,7 @@ public class MostrarOcultarNombres : MonoBehaviour
             canvasCubiculo.SetActive(false);
             canvasInnovacion.SetActive(false);
             canvasLaboratorio.SetActive(false);
-            activado = false;
+            activado = true;
         }
-        
-        
-
     }
 }
