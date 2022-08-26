@@ -1,8 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class MostrarOcultarNombres : MonoBehaviour
 {
+    public PlayableDirector timeline;
     public GameObject canvasAula;
     public GameObject canvasBiblioteca;
     public GameObject canvasCafeteria;
@@ -32,6 +34,11 @@ public class MostrarOcultarNombres : MonoBehaviour
         canvasInnovacion.SetActive(false);
         canvasLaboratorio.SetActive(false);
         activado = true;
+    }
+
+    public void ReproducirCroquis()
+    {
+        timeline.Play();
     }
 
     public void mostrar_ocultarNombres()
