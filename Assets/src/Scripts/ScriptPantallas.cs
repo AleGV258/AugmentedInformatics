@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ScriptPantallas : MonoBehaviour
 {
+    public Transform arCamera;
+    public Transform transformCanvasPantallas;
     public PlayableDirector timeline;
     public GameObject pantallaUno;
     public GameObject pantallaDos;
@@ -41,6 +43,7 @@ public class ScriptPantallas : MonoBehaviour
 
     void Update()
     {
-        
+        transformCanvasPantallas.transform.LookAt(arCamera);
+        transformCanvasPantallas.transform.rotation *= Quaternion.Euler(0, 180, 0);
     }
 }

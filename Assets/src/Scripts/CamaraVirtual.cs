@@ -27,14 +27,6 @@ public class CamaraVirtual : MonoBehaviour
         canvasZ = canvasPantallas.transform.position.z;
     }
 
-    public void targetEncontradoPerdido()
-    {
-        if (encontrado)
-        {
-            
-        }
-    }
-
     void Update()
     {
         camaraX = arCamera.transform.position.x;
@@ -43,8 +35,8 @@ public class CamaraVirtual : MonoBehaviour
         canvasX = canvasPantallas.transform.position.x;
         canvasY = canvasPantallas.transform.position.y;
         canvasZ = canvasPantallas.transform.position.z;
-        Debug.Log(arCamera.transform.position.ToString());
-        Debug.Log(canvasPantallas.transform.position.ToString());
+        //Debug.Log(arCamera.transform.position.ToString());
+        //Debug.Log(canvasPantallas.transform.position.ToString());
         //Debug.Log(nuevoScript.GetComponent<ScriptPantallas>().prueba.ToString());
         //Debug.Log("Camara X " + camaraX.ToString());
         //Debug.Log("Camara Y " + camaraY.ToString());
@@ -54,7 +46,7 @@ public class CamaraVirtual : MonoBehaviour
         //Debug.Log("Canvas Z " + canvasZ.ToString());
         if (encontrado)
         {
-            canvasPantallas.transform.position = new Vector3(camaraX+1.0f, camaraY, camaraZ+1.0f);
+            //canvasPantallas.transform.position = new Vector3(camaraX+5.0f, camaraY, camaraZ);
         }
     }
 }

@@ -10,11 +10,9 @@ using System.Text.Json.Serialization;
 
 public class Peticion : MonoBehaviour
 {
-    
     [System.Serializable]
     public struct ListaProfesores 
     {
-
         [System.Serializable]
         public struct resultado{
             public string name;
@@ -24,11 +22,9 @@ public class Peticion : MonoBehaviour
          public string next;
          public string previous;
          public resultado[] results;
-
     }
 
     public ListaProfesores listaRecibidaProfesores;
-
     public Button BtonClick;
     public TMP_InputField EntradaBuscador;
     public GameObject ObjProfesor;
@@ -54,7 +50,7 @@ public class Peticion : MonoBehaviour
         //Debug.Log(url);
         UnityWebRequest Peticion = UnityWebRequest.Get(url); //Realizar petición
         yield return Peticion.SendWebRequest();
-        if(!Peticion.isNetworkError && !Peticion.isHttpError){            
+        if(!Peticion.isNetworkError && !Peticion.isHttpError){           
             listaRecibidaProfesores = JsonUtility.FromJson<ListaProfesores>(Peticion.downloadHandler.text);
             Debug.Log(JsonUtility.ToJson(listaRecibidaProfesores));
             for(int i= 0; i< listaRecibidaProfesores.results.Length; i++){
@@ -63,8 +59,7 @@ public class Peticion : MonoBehaviour
                 GameObject child2 = profe.transform.GetChild(0).gameObject;
                 TMP_Text  prueba = child2.GetComponent<TMP_Text>();
                 prueba.text = listaRecibidaProfesores.results[i].name;
-                profe.transform.parent = ObjListaProfesores.transform;
-                
+                profe.transform.parent = ObjListaProfesores.transform; 
             }                        
         }else{
             Debug.LogWarning("Error en la peticion");

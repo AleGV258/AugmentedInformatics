@@ -614,6 +614,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2451d48779715478185d6440593bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arCamera: {fileID: 942172826}
+  transformCanvasPantallas: {fileID: 1569095835}
   timeline: {fileID: 1569095841}
   pantallaUno: {fileID: 624133727}
   pantallaDos: {fileID: 686090035}
@@ -1599,8 +1601,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 2
-      outSlope: 2
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -1608,8 +1610,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -1634,7 +1636,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 174637996}
         m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: targetEncontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1646,19 +1648,7 @@ MonoBehaviour:
         m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &509809727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3809,14 +3799,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942172821}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.93, z: -7.11}
+  m_LocalRotation: {x: 0.6356912, y: -0.3096719, z: -0.30967197, w: 0.63569117}
+  m_LocalPosition: {x: 20.64, y: 5.51, z: -0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.055, y: -90, z: -90}
 --- !u!1 &984702128
 GameObject:
   m_ObjectHideFlags: 0
@@ -6558,11 +6548,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5178315129412807485, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5178315129412807485, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5178315129412807485, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_AnchorMin.y
@@ -6634,15 +6624,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5178315130666575779, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5178315130666575779, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5178315130666575779, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5178315130666575779, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -6668,6 +6658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5178315130666575807, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5178315130897266405, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 19.07034
@@ -6678,15 +6672,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5178315130985277400, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5178315130985277400, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5178315130985277400, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
@@ -8872,6 +8866,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fef5ee22071db42a698efa6ed5cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arCamera: {fileID: 942172826}
+  transformAula: {fileID: 1043290834}
+  transformBiblioteca: {fileID: 1778173898}
+  transformCafeteria: {fileID: 395155622}
+  transformCancha: {fileID: 1206195276}
+  transformColiseo: {fileID: 1325674305}
+  transformCubiculo: {fileID: 467788374}
+  transformInnovacion: {fileID: 74944905}
+  transformLaboratorio: {fileID: 1845505206}
   timeline: {fileID: 595502084}
   canvasAula: {fileID: 1043290833}
   canvasBiblioteca: {fileID: 1778173897}
