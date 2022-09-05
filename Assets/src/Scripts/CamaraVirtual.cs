@@ -19,22 +19,24 @@ public class CamaraVirtual : MonoBehaviour
     public void targetEncontrado()
     {
         encontrado = true;
-        camaraX = arCamera.transform.position.x;
-        camaraY = arCamera.transform.position.y;
-        camaraZ = arCamera.transform.position.z;
-        canvasX = canvasPantallas.transform.position.x;
-        canvasY = canvasPantallas.transform.position.y;
-        canvasZ = canvasPantallas.transform.position.z;
+        //camaraX = arCamera.transform.position.x;
+        //camaraY = arCamera.transform.position.y;
+        //camaraZ = arCamera.transform.position.z;
+        //canvasX = canvasPantallas.transform.position.x;
+        //canvasY = canvasPantallas.transform.position.y;
+        //canvasZ = canvasPantallas.transform.position.z;
     }
 
     void Update()
     {
-        camaraX = arCamera.transform.position.x;
-        camaraY = arCamera.transform.position.y;
-        camaraZ = arCamera.transform.position.z;
-        canvasX = canvasPantallas.transform.position.x;
-        canvasY = canvasPantallas.transform.position.y;
-        canvasZ = canvasPantallas.transform.position.z;
+        //camaraX = arCamera.transform.position.x;
+        //camaraY = arCamera.transform.position.y;
+        //camaraZ = arCamera.transform.position.z;
+        //canvasX = canvasPantallas.transform.position.x;
+        //canvasY = canvasPantallas.transform.position.y;
+        //canvasZ = canvasPantallas.transform.position.z;
+
+
         //Debug.Log(arCamera.transform.position.ToString());
         //Debug.Log(canvasPantallas.transform.position.ToString());
         //Debug.Log(nuevoScript.GetComponent<ScriptPantallas>().prueba.ToString());

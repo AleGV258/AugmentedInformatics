@@ -10,14 +10,12 @@ public class ScriptPantallas : MonoBehaviour
     public PlayableDirector timeline;
     public GameObject pantallaUno;
     public GameObject pantallaDos;
-    bool activado;
     //public int prueba = 10;
 
     void Start()
     {
         pantallaUno.SetActive(true);
         pantallaDos.SetActive(false);
-        activado = true;
     }
 
     public void reproducirPantalla()
@@ -25,25 +23,21 @@ public class ScriptPantallas : MonoBehaviour
         timeline.Play();
     }
 
-    public void cambiarPantalla()
+    public void pantallaSalon()
     {
-        if(activado)
-        {
-            pantallaUno.SetActive(false);
-            pantallaDos.SetActive(true);
-            activado = false;
-        }
-        else
-        {
-            pantallaUno.SetActive(true);
-            pantallaDos.SetActive(false);
-            activado = true;
-        }
+        pantallaUno.SetActive(true);
+        pantallaDos.SetActive(false);
+    }
+
+    public void pantallaProfesor()
+    {
+        pantallaUno.SetActive(false);
+        pantallaDos.SetActive(true);
     }
 
     void Update()
     {
-        transformCanvasPantallas.transform.LookAt(arCamera);
-        transformCanvasPantallas.transform.rotation *= Quaternion.Euler(0, 180, 0);
+        //transformCanvasPantallas.transform.LookAt(arCamera);
+        //transformCanvasPantallas.transform.rotation *= Quaternion.Euler(0, 180, 0);
     }
 }
