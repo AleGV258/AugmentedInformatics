@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4473322, g: 0.49670774, b: 0.57291526, a: 1}
+  m_IndirectSpecularColor: {r: 0.4473312, g: 0.496706, b: 0.57291245, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2762,6 +2762,7 @@ GameObject:
   - component: {fileID: 624133728}
   - component: {fileID: 624133730}
   - component: {fileID: 624133729}
+  - component: {fileID: 624133731}
   m_Layer: 0
   m_Name: PanelPrimeraPantalla
   m_TagString: Untagged
@@ -2776,8 +2777,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624133727}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2792,7 +2793,7 @@ RectTransform:
   - {fileID: 1234526670}
   - {fileID: 1061094350}
   m_Father: {fileID: 1569095835}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2837,6 +2838,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624133727}
   m_CullTransparentMesh: 1
+--- !u!114 &624133731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624133727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a553e9444c24d614b947ded3c2db98ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelPrimeraPantalla: {fileID: 624133727}
+  panelSegundaPantalla: {fileID: 686090035}
+  panelBusqueda: {fileID: 1238361770}
+  idProfesor: 0
 --- !u!1 &634679617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3501,8 +3518,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686090035}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3511,11 +3528,11 @@ RectTransform:
   - {fileID: 1754728429}
   - {fileID: 413877832}
   m_Father: {fileID: 1569095835}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.00015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &732987581 stripped
@@ -7639,6 +7656,10 @@ PrefabInstance:
       propertyPath: m_ReferencePixelsPerUnit
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5178315130666575778, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
+      propertyPath: panelPrimerPantalla
+      value: 
+      objectReference: {fileID: 624133727}
     - target: {fileID: 5178315130666575779, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -8271,8 +8292,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 686090038}
   - {fileID: 624133728}
+  - {fileID: 686090038}
   m_Father: {fileID: 509809728}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}

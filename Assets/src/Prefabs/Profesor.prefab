@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: -3880828525172790039}
   - component: {fileID: 2596285323946789190}
   - component: {fileID: 2505274525445540861}
-  - component: {fileID: 3936624388002698390}
+  - component: {fileID: 1660368258416277725}
   m_Layer: 5
   m_Name: Profesor
   m_TagString: Untagged
@@ -495,8 +495,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3936624388002698390}
-        m_TargetAssemblyTypeName: profesor, Assembly-CSharp
+      - m_Target: {fileID: 1660368258416277725}
+        m_TargetAssemblyTypeName: profeObjeto, Assembly-CSharp
         m_MethodName: cambiarDePanel
         m_Mode: 1
         m_Arguments:
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3936624388002698390
+--- !u!114 &1660368258416277725
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -554,10 +554,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8327680877258839427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b033aae995f230b4eb770d6526db9658, type: 3}
+  m_Script: {fileID: 11500000, guid: 96b1cadb194d7204fbc4bfb747910185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idProfesor: 0
+  panelProfesores: {fileID: 0}
 --- !u!1 &8327680877628196117
 GameObject:
   m_ObjectHideFlags: 0

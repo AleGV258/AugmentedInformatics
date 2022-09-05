@@ -51,7 +51,7 @@ public class Peticion : MonoBehaviour
     public GameObject ObjTitulo;
     public GameObject Recargar;
 
-    public GameObject Mapa;
+    public GameObject panelPrimerPantalla;
 
     void Start () {
 		// Button btn = BtonClick.GetComponent<Button>();
@@ -122,10 +122,9 @@ public class Peticion : MonoBehaviour
                     cp.text = "C09";
 
                     //Id del profesor dentro del objeto profe
-                    profesor profesorID = profe.GetComponent <profesor> ();
-                    profesorID.idProfesor = i;
-
-                    profesorID.mapa = Mapa;
+                    profeObjeto profesorID = profe.GetComponent <profeObjeto> ();
+                    profesorID.idProfesor = i;//cambiar por el valor real de ID
+                    profesorID.panelProfesores = panelPrimerPantalla;
                 }                        
             }else{
                 Debug.LogWarning("Error en la peticion");
