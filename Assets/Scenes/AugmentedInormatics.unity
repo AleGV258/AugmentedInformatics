@@ -1978,13 +1978,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Prueba
+  mTrackableName: Croquis
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 1
+  mAspectRatio: 0.7071616
   mImageTargetType: 0
   mWidth: 10
-  mHeight: 10
+  mHeight: 7.071616
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2021,7 +2021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 509809727}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Prueba
+  mTargetName: Croquis
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 509809727}
   mMeshFilter: {fileID: 0}
@@ -2701,9 +2701,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: pantallaProfesor
+      - m_Target: {fileID: 686090039}
+        m_TargetAssemblyTypeName: panel2Profesor, Assembly-CSharp
+        m_MethodName: cambiarSegundaPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3478,13 +3478,14 @@ GameObject:
   - component: {fileID: 686090038}
   - component: {fileID: 686090037}
   - component: {fileID: 686090036}
+  - component: {fileID: 686090039}
   m_Layer: 0
   m_Name: PanelSegundaPantalla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &686090036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3547,6 +3548,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.00015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &686090039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686090035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a602c96b7e3764b488b54a0b3de6ceeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelPrimeraPantalla: {fileID: 624133727}
+  panelSegundaPantalla: {fileID: 686090035}
+  panelBusqueda: {fileID: 1238361770}
+  especializacionProfesor: {fileID: 1732618418}
+  areaConocimiento: {fileID: 1791341827}
+  curruculum: {fileID: 634679617}
+  cubiculo: {fileID: 1422371243}
+  idProfesor: 0
+  infoExtraProfesor:
+    name: 
+    id: 
+    status: 
+    species: 
+    gender: 
 --- !u!4 &732987581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2174631278980094333, guid: 73aba89a385cf5a489dedf38f231226c, type: 3}
@@ -10578,13 +10605,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Croquis
+  mTrackableName: Prueba
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 0.7071616
+  mAspectRatio: 1
   mImageTargetType: 0
   mWidth: 10
-  mHeight: 7.071616
+  mHeight: 10
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -10621,7 +10648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1853346221}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Croquis
+  mTargetName: Prueba
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 1853346221}
   mMeshFilter: {fileID: 0}
@@ -11948,9 +11975,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: pantallaProfesor
+      - m_Target: {fileID: 686090039}
+        m_TargetAssemblyTypeName: panel2Profesor, Assembly-CSharp
+        m_MethodName: cambiarSegundaPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12393,9 +12420,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: pantallaSalon
+      - m_Target: {fileID: 624133731}
+        m_TargetAssemblyTypeName: panelProfesor, Assembly-CSharp
+        m_MethodName: cambiarPrimerPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12527,9 +12554,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: pantallaSalon
+      - m_Target: {fileID: 624133731}
+        m_TargetAssemblyTypeName: panelProfesor, Assembly-CSharp
+        m_MethodName: cambiarPrimerPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
