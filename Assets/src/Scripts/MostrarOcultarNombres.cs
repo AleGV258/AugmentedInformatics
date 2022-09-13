@@ -86,7 +86,7 @@ public class MostrarOcultarNombres : MonoBehaviour
             animadorCubiculo.SetTrigger("TriggerCubiculo");
             animadorLaboratorio.SetTrigger("TriggerLaboratorio");
             animadorInnovacion.SetTrigger("TriggerInnovacion");
-            yield return new WaitForSeconds(2); //Esperar 1 Segundo
+            yield return new WaitForSeconds(2); //Esperar 2 Segundo
             canvasAula.SetActive(false);
             canvasBiblioteca.SetActive(false);
             canvasCafeteria.SetActive(false);
