@@ -781,6 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e8774260ed7030419b2ef54ee280563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arCamera: {fileID: 942172821}
   pantallaPrincipal: {fileID: 743920679}
   pantallaProfesores: {fileID: 1238361770}
   pantallaCreditos: {fileID: 1564431254}
@@ -908,7 +909,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6081123839957546043, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
 --- !u!1 &395155621
 GameObject:
@@ -2084,24 +2086,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 337561150}
-        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: cambiarPantallaRealidadAumentada
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: cambiarPantallaRealidadAumentada
+        m_MethodName: inicioApp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2113,7 +2103,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: noEncontrado
+        m_MethodName: cambiarPantallaVirtualUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4178,7 +4168,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4788309517506154720, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4788309517506154720, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -4198,7 +4188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4788309517506154720, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: noEncontrado
+      value: cambiarPantallaRealidadAumentada
       objectReference: {fileID: 0}
     - target: {fileID: 4788309517506154720, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -12027,6 +12017,26 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 315
       objectReference: {fileID: 0}
+    - target: {fileID: 7275053801442634745, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: virtualUI
+      value: 
+      objectReference: {fileID: 1615122588}
+    - target: {fileID: 7275053801442634745, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: pantallaCreditos
+      value: 
+      objectReference: {fileID: 1564431254}
+    - target: {fileID: 7275053801442634745, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: pantallaPrincipal
+      value: 
+      objectReference: {fileID: 743920679}
+    - target: {fileID: 7275053801442634745, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: realidadAumentada
+      value: 
+      objectReference: {fileID: 1747382216}
+    - target: {fileID: 7275053801442634745, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: pantallaProfesores
+      value: 
+      objectReference: {fileID: 1238361770}
     - target: {fileID: 7275053801570082785, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_Name
       value: Profesores
@@ -12211,7 +12221,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7275053801442634745, guid: b520633378e743542b28aafab396b325, type: 3}
+    - {fileID: 7275053802531109576, guid: b520633378e743542b28aafab396b325, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b520633378e743542b28aafab396b325, type: 3}
 --- !u!1 &2095310235
 GameObject:

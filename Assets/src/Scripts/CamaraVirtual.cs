@@ -36,7 +36,6 @@ public class CamaraVirtual : MonoBehaviour
         //canvasY = canvasPantallas.transform.position.y;
         //canvasZ = canvasPantallas.transform.position.z;
 
-
         //Debug.Log(arCamera.transform.position.ToString());
         //Debug.Log(canvasPantallas.transform.position.ToString());
         //Debug.Log(nuevoScript.GetComponent<ScriptPantallas>().prueba.ToString());

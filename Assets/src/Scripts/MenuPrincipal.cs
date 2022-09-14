@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
+    public GameObject arCamera;
     public GameObject pantallaPrincipal;
     public GameObject pantallaProfesores;
     //public GameObject pantallaCroquis;
@@ -13,32 +14,24 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject realidadAumentada;
     public GameObject virtualUI;
     bool activado = false;
+    bool inicio = true;
+
+    void Start()
+    {
+        arCamera = GameObject.Find("ARCamera");
+    }
 
     public void encontrado()
     {
         activado = true;
-    }
-
-    public void noEncontrado()
-    {
-        activado = false;
+        virtualUI.SetActive(false);
     }
 
     IEnumerator quitarPanel()
     {
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(30);
         virtualUI.SetActive(false);
-    }
-
-    void Start()
-    {
-        pantallaProfesores.SetActive(false);
-        //pantallaCroquis.SetActive(false);
-        pantallaCreditos.SetActive(false);
-        //pantallaVerMas.SetActive(false);
-        realidadAumentada.SetActive(false);
-        virtualUI.SetActive(false);
-        pantallaPrincipal.SetActive(true);
+        activado = false;
     }
 
     public void regresarMenuPrincipal()
@@ -92,7 +85,12 @@ public class MenuPrincipal : MonoBehaviour
         pantallaCreditos.SetActive(false);
         //pantallaVerMas.SetActive(false);
         realidadAumentada.SetActive(true);
-        if (activado)
+        virtualUI.SetActive(false);
+    }
+
+    public void cambiarPantallaVirtualUI()
+    {
+        if ((activado) && (realidadAumentada.activeSelf == true))
         {
             virtualUI.SetActive(true);
             StartCoroutine(quitarPanel());
@@ -100,6 +98,16 @@ public class MenuPrincipal : MonoBehaviour
         else
         {
             virtualUI.SetActive(false);
+        }
+    }
+
+    public void inicioApp()
+    {
+        if (inicio)
+        {
+            pantallaPrincipal.SetActive(true);
+            realidadAumentada.SetActive(false);
+            inicio = false;
         }
     }
 }
