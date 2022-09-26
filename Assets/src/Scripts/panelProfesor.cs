@@ -26,8 +26,9 @@ public class panelProfesor : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Ejecucion cambiar pantalla 1");
-        //StartCoroutine(CorrutinaObtenerDatos());
+        //Debug.Log("Ejecucion cambiar pantalla 1");
+        Debug.Log("Inicia corrutina en panelProvesor - start");
+        StartCoroutine(CorrutinaObtenerDatos());
     }
     
     public void cambiarPrimerPantalla()
@@ -36,6 +37,7 @@ public class panelProfesor : MonoBehaviour
         panelSegundaPantalla.SetActive(false);
         panelBusqueda.SetActive(false);
         StartCoroutine(CorrutinaObtenerDatos());
+        Debug.Log("Inicia corrutina en panelProvesor - cambiarPrimerPantalla");
     }
     // public void cambiarSegundaPantalla()
     // {

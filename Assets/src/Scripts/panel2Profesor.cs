@@ -25,17 +25,10 @@ public class panel2Profesor : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Ejecucion cambiar pantalla 1");
+        Debug.Log("Ejecucion cambiar pantalla 2 - start");
         StartCoroutine(CorrutinaObtenerDatos());
     }
     
-    // public void cambiarPrimerPantalla()
-    // {
-    //     panelPrimeraPantalla.SetActive(true);
-    //     panelSegundaPantalla.SetActive(false);
-    //     panelBusqueda.SetActive(false);
-    //     StartCoroutine(CorrutinaObtenerDatos());
-    // }
     public void cambiarSegundaPantalla()
     {
         panelPrimeraPantalla.SetActive(false);
@@ -43,17 +36,12 @@ public class panel2Profesor : MonoBehaviour
         panelBusqueda.SetActive(false);
         
         
-        panelProfesor scriptPanelProfesor = panelPrimeraPantalla.GetComponent <panelProfesor> ();
-        idProfesor = scriptPanelProfesor.idProfesor;
-        
-        //StartCoroutine(CorrutinaObtenerDatos());
+        panel2Profesor scriptPanel2Profesor = panelSegundaPantalla.GetComponent <panel2Profesor> ();
+        idProfesor = scriptPanel2Profesor.idProfesor;
+
+        Debug.Log("Ejecucion obtenerdatos en pantalla 2- void cambiar segundapantalla");
+        StartCoroutine(CorrutinaObtenerDatos());
     }
-    // public void cambiarPanelBusqueda()
-    // {
-    //     panelPrimeraPantalla.SetActive(false);
-    //     panelSegundaPantalla.SetActive(false);
-    //     panelBusqueda.SetActive(true);
-    // }
 
     [System.Serializable]
     public struct InformacionProfesor 

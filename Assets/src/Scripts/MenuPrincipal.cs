@@ -72,10 +72,7 @@ public class MenuPrincipal : MonoBehaviour
         virtualUI.SetActive(false);
     }
 
-    /*public void cambiarPantallaVerMas()
-    {
-
-    }*/
+    
 
     public void cambiarPantallaRealidadAumentada()
     {

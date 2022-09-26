@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4473322, g: 0.49670774, b: 0.57291526, a: 1}
+  m_IndirectSpecularColor: {r: 0.4473312, g: 0.496706, b: 0.57291245, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 942172821}
-  canvasPantallas: {fileID: 1569095834}
+  canvasPantallas: {fileID: 0}
 --- !u!4 &174637997
 Transform:
   m_ObjectHideFlags: 0
@@ -748,10 +748,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 942172826}
-  transformCanvasPantallas: {fileID: 1569095835}
-  timeline: {fileID: 1569095841}
-  pantallaUno: {fileID: 624133727}
-  pantallaDos: {fileID: 686090035}
+  transformCanvasPantallas: {fileID: 0}
+  timeline: {fileID: 0}
+  pantallaUno: {fileID: 0}
+  pantallaDos: {fileID: 0}
 --- !u!1 &337561149
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,6 +908,26 @@ PrefabInstance:
     - target: {fileID: 6081123839957546042, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840817338600, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840817338600, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 516719722}
+    - target: {fileID: 6081123840817338600, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnirseCD
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840817338600, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RedireccionarLinks, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840817338600, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6081123839957546043, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
@@ -1401,6 +1421,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413877831}
   m_CullTransparentMesh: 1
+--- !u!1 &444598788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7275053801344852134, guid: b520633378e743542b28aafab396b325, type: 3}
+  m_PrefabInstance: {fileID: 2065062252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &444598793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444598788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa021ca81307b3848ad50b9d97a4e94b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447348386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,7 +2038,8 @@ GameObject:
   - component: {fileID: 509809728}
   - component: {fileID: 509809727}
   - component: {fileID: 509809726}
-  - component: {fileID: 509809729}
+  - component: {fileID: 509809730}
+  - component: {fileID: 509809731}
   m_Layer: 0
   m_Name: TargetAulas
   m_TagString: Untagged
@@ -2050,33 +2088,33 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 509809730}
+        m_TargetAssemblyTypeName: pasaIdTarget, Assembly-CSharp
+        m_MethodName: enviaIdProfesor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 686090039}
+        m_TargetAssemblyTypeName: panel2Profesor, Assembly-CSharp
+        m_MethodName: cambiarSegundaPantalla
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 270994777}
         m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
         m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 337561150}
-        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2127,18 +2165,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Prueba
+  mTrackableName: Croquis
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 1
+  mAspectRatio: 0.7071616
   mImageTargetType: 0
   mWidth: 10
-  mHeight: 10
+  mHeight: 7.071616
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 509809729}
+  mPreview: {fileID: 509809731}
 --- !u!4 &509809728
 Transform:
   m_ObjectHideFlags: 0
@@ -2156,7 +2194,21 @@ Transform:
   m_Father: {fileID: 635176539}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &509809729
+--- !u!114 &509809730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509809724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0dc855d610f4e46ae6c6218b1d9846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idProfesor: 5
+  panelProfesores: {fileID: 686090035}
+--- !u!114 &509809731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2170,11 +2222,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 509809727}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Prueba
+  mTargetName: Croquis
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 509809727}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &516719717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6081123840817338598, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+  m_PrefabInstance: {fileID: 368348950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &516719722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516719717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa021ca81307b3848ad50b9d97a4e94b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &516719723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516719717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa021ca81307b3848ad50b9d97a4e94b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &543810570
 GameObject:
   m_ObjectHideFlags: 0
@@ -7987,7 +8068,7 @@ PrefabInstance:
     - target: {fileID: 5178315130666575778, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: panelPrimerPantalla
       value: 
-      objectReference: {fileID: 624133727}
+      objectReference: {fileID: 0}
     - target: {fileID: 5178315130666575779, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -10909,13 +10990,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Croquis
+  mTrackableName: Prueba
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 0.7071616
+  mAspectRatio: 1
   mImageTargetType: 0
   mWidth: 10
-  mHeight: 7.071616
+  mHeight: 10
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -10952,7 +11033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1853346221}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Croquis
+  mTargetName: Prueba
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 1853346221}
   mMeshFilter: {fileID: 0}
@@ -11955,15 +12036,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 337561150}
+      objectReference: {fileID: 444598793}
     - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: cambiarPantallaVerMas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RedireccionarLinks, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7275053801344852134, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_Name
