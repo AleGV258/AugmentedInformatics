@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4473322, g: 0.49670774, b: 0.57291526, a: 1}
+  m_IndirectSpecularColor: {r: 0.4473312, g: 0.496706, b: 0.57291245, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -677,6 +677,14 @@ PrefabInstance:
     - target: {fileID: 6081123839957546042, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840817338600, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 337561150}
+    - target: {fileID: 6081123840817338600, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnirseCD
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6081123839957546043, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
@@ -1408,13 +1416,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Prueba
+  mTrackableName: AR_ImageTarget_Croquis
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 1
+  mAspectRatio: 0.7071616
   mImageTargetType: 0
   mWidth: 10
-  mHeight: 10
+  mHeight: 7.071616
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -1451,7 +1459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 509809727}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Prueba
+  mTargetName: AR_ImageTarget_Croquis
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 509809727}
   mMeshFilter: {fileID: 0}
@@ -1698,7 +1706,7 @@ MonoBehaviour:
   grupoProfesor: {fileID: 1775695200}
   edificioProfesor: {fileID: 1608821304}
   salonProfesor: {fileID: 402846622}
-  idProfesor: 0
+  idProfesor: 4
   infoProfesor:
     name: 
     id: 
@@ -2246,7 +2254,7 @@ MonoBehaviour:
   areaConocimiento: {fileID: 1791341827}
   curruculum: {fileID: 634679617}
   cubiculo: {fileID: 1422371243}
-  idProfesor: 0
+  idProfesor: 4
   infoExtraProfesor:
     name: 
     id: 
@@ -7233,13 +7241,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: AR_ImageTarget_Croquis
+  mTrackableName: AR_ImageTarget_LaCER
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 0.7071616
+  mAspectRatio: 0.536329
   mImageTargetType: 0
-  mWidth: 10
-  mHeight: 7.071616
+  mWidth: 1
+  mHeight: 0.536329
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -7276,7 +7284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1853346221}
   mHiddenRoot: {fileID: 0}
-  mTargetName: AR_ImageTarget_Croquis
+  mTargetName: AR_ImageTarget_LaCER
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 1853346221}
   mMeshFilter: {fileID: 0}
@@ -7847,7 +7855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -7856,6 +7864,14 @@ PrefabInstance:
     - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: cambiarPantallaVerMas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPrincipal, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7275053801344852134, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_Name

@@ -110,4 +110,12 @@ public class MenuPrincipal : MonoBehaviour
             inicio = false;
         }
     }
+    public void cambiarPantallaVerMas()
+    {
+        Application.OpenURL("http://unity3d.com/");
+    }
+    public void UnirseCD()
+    {
+        Application.OpenURL("http://unity3d.com/");
+    }
 }

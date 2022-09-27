@@ -39,5 +39,5 @@ public class ScriptPantallas : MonoBehaviour
     {
         //transformCanvasPantallas.transform.LookAt(arCamera);
         //transformCanvasPantallas.transform.rotation *= Quaternion.Euler(0, 180, 0);
-    }
+    }    
 }
