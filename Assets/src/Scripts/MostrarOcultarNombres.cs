@@ -7,6 +7,7 @@ public class MostrarOcultarNombres : MonoBehaviour
     /* Objectos del Lienzo 3D */
     public Transform arCamera;
     public Transform transformAula;
+    public Transform transformAuditorio;
     public Transform transformBiblioteca;
     public Transform transformCafeteria;
     public Transform transformCancha;
@@ -16,6 +17,7 @@ public class MostrarOcultarNombres : MonoBehaviour
     public Transform transformLaboratorio;
     public PlayableDirector timeline;
     public GameObject canvasAula;
+    public GameObject canvasAuditorio;
     public GameObject canvasBiblioteca;
     public GameObject canvasCafeteria;
     public GameObject canvasCancha;
@@ -24,6 +26,7 @@ public class MostrarOcultarNombres : MonoBehaviour
     public GameObject canvasInnovacion;
     public GameObject canvasLaboratorio;
     public Animator animadorAula;
+    public Animator animadorAuditorio;
     public Animator animadorBiblioteca;
     public Animator animadorCafeteria;
     public Animator animadorCancha;
@@ -37,6 +40,7 @@ public class MostrarOcultarNombres : MonoBehaviour
     {
         /* Al iniciar la ejecución se ocultan todas los paneles de nombres */
         canvasAula.SetActive(false);
+        canvasAuditorio.SetActive(false);
         canvasBiblioteca.SetActive(false);
         canvasCafeteria.SetActive(false);
         canvasCancha.SetActive(false);
@@ -66,6 +70,7 @@ public class MostrarOcultarNombres : MonoBehaviour
         if (activado)
         {
             canvasAula.SetActive(true);
+            canvasAuditorio.SetActive(true);
             canvasBiblioteca.SetActive(true);
             canvasCafeteria.SetActive(true);
             canvasCancha.SetActive(true);
@@ -79,6 +84,7 @@ public class MostrarOcultarNombres : MonoBehaviour
         else
         {
             animadorAula.SetTrigger("TriggerAula");
+            animadorAuditorio.SetTrigger("TriggerAuditorio");
             animadorBiblioteca.SetTrigger("TriggerBiblioteca");
             animadorCafeteria.SetTrigger("TriggerCafeteria");
             animadorCancha.SetTrigger("TriggerCancha");
@@ -88,6 +94,7 @@ public class MostrarOcultarNombres : MonoBehaviour
             animadorInnovacion.SetTrigger("TriggerInnovacion");
             yield return new WaitForSeconds(2); //Esperar 1 Segundo
             canvasAula.SetActive(false);
+            canvasAuditorio.SetActive(false);
             canvasBiblioteca.SetActive(false);
             canvasCafeteria.SetActive(false);
             canvasCancha.SetActive(false);
@@ -102,6 +109,7 @@ public class MostrarOcultarNombres : MonoBehaviour
     void Update()
     {
         transformAula.transform.LookAt(arCamera);
+        transformAuditorio.transform.LookAt(arCamera);
         transformBiblioteca.transform.LookAt(arCamera);
         transformCafeteria.transform.LookAt(arCamera);
         transformCancha.transform.LookAt(arCamera);
@@ -111,6 +119,7 @@ public class MostrarOcultarNombres : MonoBehaviour
         transformLaboratorio.transform.LookAt(arCamera);
 
         transformAula.transform.rotation *= Quaternion.Euler(0, 180, 0);
+        transformAuditorio.transform.rotation *= Quaternion.Euler(0, 180, 0);
         transformBiblioteca.transform.rotation *= Quaternion.Euler(0, 180, 0);
         transformCafeteria.transform.rotation *= Quaternion.Euler(0, 180, 0);
         transformCancha.transform.rotation *= Quaternion.Euler(0, 180, 0);
