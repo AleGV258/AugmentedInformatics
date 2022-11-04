@@ -1,10 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using TMPro;
-
 using System.Text.Json; 
 using System.Text.Json.Serialization;
 
@@ -199,5 +199,4 @@ public class Peticion : MonoBehaviour
             prueba.texture = myTexture;
         }            
     }
-
 }

@@ -5,11 +5,13 @@ using TMPro;
 public class profeObjeto : MonoBehaviour
 {
     public int idProfesor;
+    public GameObject panelProfesores;
+
     // Start is called before the first frame update
     void Start()
     {
+
     } 
-    public GameObject panelProfesores;
     
     public void cambiarDePanel()
     {

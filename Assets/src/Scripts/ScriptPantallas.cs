@@ -10,7 +10,8 @@ public class ScriptPantallas : MonoBehaviour
     public PlayableDirector timeline;
     public GameObject pantallaUno;
     public GameObject pantallaDos;
-    //public int prueba = 10;
+    public GameObject pantallaUnoUI;
+    public GameObject pantallaDosUI;
 
     void Start()
     {
@@ -33,6 +34,18 @@ public class ScriptPantallas : MonoBehaviour
     {
         pantallaUno.SetActive(false);
         pantallaDos.SetActive(true);
+    }
+
+    public void pantallaSalonUI()
+    {
+        pantallaUnoUI.SetActive(true);
+        pantallaDosUI.SetActive(false);
+    }
+
+    public void pantallaProfesorUI()
+    {
+        pantallaUnoUI.SetActive(false);
+        pantallaDosUI.SetActive(true);
     }
 
     void Update()

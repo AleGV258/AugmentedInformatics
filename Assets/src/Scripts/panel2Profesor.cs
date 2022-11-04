@@ -1,9 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
-
 using System.Text.Json; 
 using System.Text.Json.Serialization;
 
@@ -20,7 +20,6 @@ public class panel2Profesor : MonoBehaviour
     public GameObject curruculum;
     public GameObject cubiculo;    
 
-
     public int idProfesor;
 
     void Start()
@@ -36,6 +35,7 @@ public class panel2Profesor : MonoBehaviour
     //     panelBusqueda.SetActive(false);
     //     StartCoroutine(CorrutinaObtenerDatos());
     // }
+
     public void cambiarSegundaPantalla()
     {
         panelPrimeraPantalla.SetActive(false);
@@ -48,6 +48,7 @@ public class panel2Profesor : MonoBehaviour
         
         //StartCoroutine(CorrutinaObtenerDatos());
     }
+
     // public void cambiarPanelBusqueda()
     // {
     //     panelPrimeraPantalla.SetActive(false);
@@ -75,7 +76,7 @@ public class panel2Profesor : MonoBehaviour
         UnityWebRequest Peticion = UnityWebRequest.Get(url); //Realizar petición
         yield return Peticion.SendWebRequest();
         
-        if(!Peticion.isNetworkError && !Peticion.isHttpError){   //probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
+        if(!Peticion.isNetworkError && !Peticion.isHttpError){ //probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
             infoExtraProfesor = JsonUtility.FromJson<InformacionProfesor>(Peticion.downloadHandler.text);
             Debug.Log(Peticion.downloadHandler.text);          
             
