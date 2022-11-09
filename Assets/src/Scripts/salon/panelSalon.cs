@@ -4,13 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
-using System.Text.Json; 
-using System.Text.Json.Serialization;
 
-public class panelProfesor : MonoBehaviour
+public class panelSalon : MonoBehaviour
 {
-    public GameObject panelPrimeraPantalla;
-    public GameObject panelSegundaPantalla;
+    public GameObject panel1Salon;
+    public GameObject panel2Profesor;
     public GameObject panelBusqueda;
 
     //Datos del Profesor
@@ -22,7 +20,7 @@ public class panelProfesor : MonoBehaviour
     public GameObject salonProfesor;
 
 
-    public int idProfesor;
+    public int idSalon;
 
     void Start()
     {
@@ -32,28 +30,33 @@ public class panelProfesor : MonoBehaviour
     
     public void cambiarPrimerPantalla()
     {
-        panelPrimeraPantalla.SetActive(true);
-        panelSegundaPantalla.SetActive(false);
+        panel1Salon.SetActive(true);
+        panel2Profesor.SetActive(false);
         panelBusqueda.SetActive(false);
+        
+        
+        panelSalon scriptPanelSalon = panel1Salon.GetComponent <panelSalon> ();
+        idSalon = scriptPanelSalon.idSalon;     //Se envia del en el que se encuentra 
+        
         StartCoroutine(CorrutinaObtenerDatos());
     }
     // public void cambiarSegundaPantalla()
     // {
-    //     panelPrimeraPantalla.SetActive(false);
-    //     panelSegundaPantalla.SetActive(true);
+    //     panel1Salon.SetActive(false);
+    //     panel2Profesor.SetActive(true);
     //     panelBusqueda.SetActive(false);
         
-    //     panelProfesor scriptPanelProfesor = panelSegundaPantalla.GetComponent <panelProfesor> ();
-    //     scriptPanelProfesor.idProfesor = idProfesor;
+    //     panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent <panelProfesor> ();
+    //     scriptPanelProfesor.idSalon = idSalon;
     //     scriptPanelProfesor.cambiarSegundaPantalla();
     // }
     // public void cambiarPanelBusqueda()
     // {
-    //     panelPrimeraPantalla.SetActive(false);
-    //     panelSegundaPantalla.SetActive(false);
+    //     panel1Salon.SetActive(false);
+    //     panel2Profesor.SetActive(false);
     //     panelBusqueda.SetActive(true);
-    //     panel2Profesor panel1ProfesorScript = panelSegundaPantalla.GetComponent <panel2Profesor> ();
-    //     panel1ProfesorScript.idProfesor = idProfesor;
+    //     panel2Profesor panel1ProfesorScript = panel2Profesor.GetComponent <panel2Profesor> ();
+    //     panel1ProfesorScript.idSalon = idSalon;
     // }
 
     [System.Serializable]
@@ -71,7 +74,7 @@ public class panelProfesor : MonoBehaviour
     public IEnumerator CorrutinaObtenerDatos()
     {   
        string url;
-       url = "rickandmortyapi.com/api/character/" + idProfesor.ToString();;
+       url = "rickandmortyapi.com/api/character/" + idSalon.ToString();;
         
         UnityWebRequest Peticion = UnityWebRequest.Get(url); //Realizar petición
         yield return Peticion.SendWebRequest();

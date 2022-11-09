@@ -13,13 +13,13 @@ public class profeObjeto : MonoBehaviour
 
     } 
     
-    public void cambiarDePanel()
+    public void cambiarAPanelProfesor()
     {
         panelProfesores.SetActive(true);
         panelProfesor scriptPanelProfesor = panelProfesores.GetComponent <panelProfesor> ();
         scriptPanelProfesor.idProfesor = idProfesor;
         
-        scriptPanelProfesor.cambiarPrimerPantalla();
+        scriptPanelProfesor.cambiarSegundaPantalla();
         // scriptPanelProfesor.CorrutinaObtenerDatos("1");
     }
 }

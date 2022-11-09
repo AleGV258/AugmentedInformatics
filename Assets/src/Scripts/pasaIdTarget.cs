@@ -18,7 +18,7 @@ public class pasaIdTarget : MonoBehaviour
     }
     public void enviaIdProfesor()
     {
-        panel2Profesor scriptPanelProfesor = panelProfesores.GetComponent <panel2Profesor> ();
+        panelProfesor scriptPanelProfesor = panelProfesores.GetComponent <panelProfesor> ();
         scriptPanelProfesor.idProfesor = idProfesor;
         Debug.Log("Se pasa id en enviarIdProfesor");
     }

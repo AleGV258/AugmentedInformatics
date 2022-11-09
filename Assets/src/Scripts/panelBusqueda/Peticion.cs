@@ -5,8 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using TMPro;
-using System.Text.Json; 
-using System.Text.Json.Serialization;
+
 
 public class Peticion : MonoBehaviour
 {
@@ -51,7 +50,8 @@ public class Peticion : MonoBehaviour
     public GameObject ObjTitulo;
     public GameObject Recargar;
 
-    public GameObject panelPrimerPantalla;
+    public GameObject panelProfesor;
+    public GameObject panelSalon;
 
     void Start () {
 		// Button btn = BtonClick.GetComponent<Button>();
@@ -124,7 +124,7 @@ public class Peticion : MonoBehaviour
                     //Id del profesor dentro del objeto profe
                     profeObjeto profesorID = profe.GetComponent <profeObjeto> ();
                     profesorID.idProfesor = i;//cambiar por el valor real de ID
-                    profesorID.panelProfesores = panelPrimerPantalla;
+                    profesorID.panelProfesores = panelProfesor;
                 }                        
             }else{
                 Debug.LogWarning("Error en la peticion");
@@ -155,8 +155,8 @@ public class Peticion : MonoBehaviour
                     //Debug.Log(listaRecibidaSalones.results[i].name);
                     GameObject salon = Instantiate(ObjSalon, new Vector3(150, 350,0), Quaternion.identity, ObjLista.transform);
                     
-                    GameObject panelSalon = salon.transform.GetChild(0).gameObject;
-                    GameObject nombreSalonPanel = panelSalon.transform.GetChild(0).gameObject;
+                    GameObject ImagenSalon = salon.transform.GetChild(0).gameObject;
+                    GameObject nombreSalonPanel = ImagenSalon.transform.GetChild(0).gameObject;
 
                     GameObject nombreSalon = salon.transform.GetChild(1).gameObject; 
                     GameObject estadoSalon = salon.transform.GetChild(2).gameObject; 
@@ -176,6 +176,12 @@ public class Peticion : MonoBehaviour
                     us.text = "Ubicacion Cambiada";
                     
                     salon.transform.parent = ObjLista.transform;
+
+                    
+                    //Id del Salon dentro del objeto salon
+                    salonObjeto scriptSalonObjeto = salon.GetComponent <salonObjeto> ();
+                    scriptSalonObjeto.idSalon = i;//cambiar por el valor real de ID
+                    scriptSalonObjeto.panelSegundaPantalla = panelSalon;
 
                 }                        
             }else{

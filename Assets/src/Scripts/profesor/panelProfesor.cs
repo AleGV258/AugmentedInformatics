@@ -4,13 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
-using System.Text.Json; 
-using System.Text.Json.Serialization;
 
-public class panel2Profesor : MonoBehaviour
+
+public class panelProfesor : MonoBehaviour
 {
-    public GameObject panelPrimeraPantalla;
-    public GameObject panelSegundaPantalla;
+    public GameObject panel1Salon;
+    public GameObject panel2Profesor;
     public GameObject panelBusqueda;
 
     //Datos del Profesor
@@ -24,35 +23,35 @@ public class panel2Profesor : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Ejecucion cambiar pantalla 1");
-        StartCoroutine(CorrutinaObtenerDatos());
+        // Debug.Log("Ejecucion cambiar pantalla 1");
+        // StartCoroutine(CorrutinaObtenerDatos());
     }
     
     // public void cambiarPrimerPantalla()
     // {
-    //     panelPrimeraPantalla.SetActive(true);
-    //     panelSegundaPantalla.SetActive(false);
+    //     panel1Salon.SetActive(true);
+    //     panel2Profesor.SetActive(false);
     //     panelBusqueda.SetActive(false);
     //     StartCoroutine(CorrutinaObtenerDatos());
     // }
 
     public void cambiarSegundaPantalla()
     {
-        panelPrimeraPantalla.SetActive(false);
-        panelSegundaPantalla.SetActive(true);
+        panel1Salon.SetActive(false);
+        panel2Profesor.SetActive(true);
         panelBusqueda.SetActive(false);
         
+        //---------------------------------------
+        panelProfesor scriptPanelProfesor = panel1Salon.GetComponent <panelProfesor> ();
+        idProfesor = scriptPanelProfesor.idProfesor; 
         
-        panelProfesor scriptPanelProfesor = panelPrimeraPantalla.GetComponent <panelProfesor> ();
-        idProfesor = scriptPanelProfesor.idProfesor;
-        
-        //StartCoroutine(CorrutinaObtenerDatos());
+        StartCoroutine(CorrutinaObtenerDatos());
     }
 
     // public void cambiarPanelBusqueda()
     // {
-    //     panelPrimeraPantalla.SetActive(false);
-    //     panelSegundaPantalla.SetActive(false);
+    //     panel1Salon.SetActive(false);
+    //     panel2Profesor.SetActive(false);
     //     panelBusqueda.SetActive(true);
     // }
 
