@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Vuforia;
 
 public class MenuPrincipal : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class MenuPrincipal : MonoBehaviour
 
     void Start()
     {
-        arCamera = GameObject.Find("ARCamera");
+        StartCoroutine(desactivarCamara());
     }
 
     public void encontrado()
@@ -34,8 +35,15 @@ public class MenuPrincipal : MonoBehaviour
         activado = false;
     }
 
+    IEnumerator desactivarCamara()
+    {
+        yield return new WaitForEndOfFrame();
+        arCamera.SetActive(false);
+    }
+
     public void regresarMenuPrincipal()
     {
+        arCamera.SetActive(false);
         pantallaPrincipal.SetActive(true);
         pantallaProfesores.SetActive(false);
         //pantallaCroquis.SetActive(false);
@@ -79,6 +87,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void cambiarPantallaRealidadAumentada()
     {
+        arCamera.SetActive(true);
         pantallaPrincipal.SetActive(false);
         pantallaProfesores.SetActive(false);
         //pantallaCroquis.SetActive(false);
@@ -110,10 +119,12 @@ public class MenuPrincipal : MonoBehaviour
             inicio = false;
         }
     }
+
     public void cambiarPantallaVerMas()
     {
         Application.OpenURL("http://unity3d.com/");
     }
+
     public void UnirseCD()
     {
         Application.OpenURL("http://unity3d.com/");

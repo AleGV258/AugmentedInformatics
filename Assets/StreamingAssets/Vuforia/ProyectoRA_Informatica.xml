@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="AR_ImageTarget_Croquis" size="1.000000 0.707162" />
     <ImageTarget name="AR_ImageTarget_LaCER" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_LE" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_NUTRI" size="1.000000 0.536329" />
@@ -107,7 +108,6 @@
     <ImageTarget name="AR_ImageTarget_A10" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_A09" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_A08" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_Croquis" size="10.000000 7.071616" />
     <ImageTarget name="AR_ImageTarget_A07" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_A06" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_A05" size="1.000000 0.536329" />

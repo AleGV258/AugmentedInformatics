@@ -11,6 +11,8 @@ public class panelProfesor : MonoBehaviour
     public GameObject panel1Salon;
     public GameObject panel2Profesor;
     public GameObject panelBusqueda;
+    public GameObject arCamera;
+    public GameObject realidadAumentada;
 
     //Datos del Profesor
     //public GameObject nombreProfesor;
@@ -40,7 +42,9 @@ public class panelProfesor : MonoBehaviour
         panel1Salon.SetActive(false);
         panel2Profesor.SetActive(true);
         panelBusqueda.SetActive(false);
-        
+        arCamera.SetActive(true);
+        realidadAumentada.SetActive(true);
+
         //---------------------------------------
         panelProfesor scriptPanelProfesor = panel1Salon.GetComponent <panelProfesor> ();
         idProfesor = scriptPanelProfesor.idProfesor; 
