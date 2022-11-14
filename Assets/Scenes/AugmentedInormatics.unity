@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4473322, g: 0.49670774, b: 0.57291526, a: 1}
+  m_IndirectSpecularColor: {r: 0.4473312, g: 0.496706, b: 0.57291245, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6968,19 +6968,27 @@ MonoBehaviour:
   grupoProfesor: {fileID: 1775695200}
   edificioProfesor: {fileID: 1608821304}
   salonProfesor: {fileID: 402846622}
+  imagenProfesor: {fileID: 1829875728}
   nombreProfesorUI: {fileID: 604992764}
   materiaProfesorUI: {fileID: 449696983}
   horarioProfesorUI: {fileID: 1593343440}
   grupoProfesorUI: {fileID: 1814509369}
   edificioProfesorUI: {fileID: 2008361720}
   salonProfesorUI: {fileID: 964257215}
+  imagenProfesorUI: {fileID: 1451002267}
   idSalon: 0
+  idProfesorEnSalon: 0
   infoProfesor:
     name: 
     id: 
     status: 
     species: 
     gender: 
+    image: 
+  infoSalon:
+    name: 
+    id: 
+    status: 
 --- !u!95 &624133732
 Animator:
   serializedVersion: 4
@@ -10824,7 +10832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157833019918585850, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9157833019918585851, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_RootOrder
@@ -10881,6 +10889,22 @@ PrefabInstance:
     - target: {fileID: 9157833019918585851, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020016014694, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 624133731}
+    - target: {fileID: 9157833020016014694, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SiguienteProfesor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020016014694, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: panelSalon, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020016014694, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9157833020043107842, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_IsActive
@@ -10953,6 +10977,34 @@ PrefabInstance:
     - target: {fileID: 9157833021257574343, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: pantallaProfesorUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833021753290972, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833021753290972, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833021753290972, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 624133731}
+    - target: {fileID: 9157833021753290972, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833021753290972, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AnteriorProfesor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833021753290972, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: panelSalon, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833021753290972, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
@@ -12614,7 +12666,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1061094352}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 624133731}
+        m_TargetAssemblyTypeName: panelSalon, Assembly-CSharp
+        m_MethodName: SiguienteProfesor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1061094352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14697,7 +14761,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1234526672}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 624133731}
+        m_TargetAssemblyTypeName: panelSalon, Assembly-CSharp
+        m_MethodName: AnteriorProfesor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1234526672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18192,6 +18268,11 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1437568764}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &1451002267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833020948932160, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1470564435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8199522161025671545, guid: b520633378e743542b28aafab396b325, type: 3}
@@ -24347,7 +24428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1829875729}
   - component: {fileID: 1829875731}
-  - component: {fileID: 1829875730}
+  - component: {fileID: 1829875732}
   m_Layer: 0
   m_Name: ImagenProfesor
   m_TagString: Untagged
@@ -24375,7 +24456,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 1.05}
   m_SizeDelta: {x: -3, y: 0.099999845}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1829875730
+--- !u!222 &1829875731
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829875728}
+  m_CullTransparentMesh: 1
+--- !u!114 &1829875732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24384,7 +24473,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1829875728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -24395,24 +24484,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d499d3618d6178e40867eace007cb3eb, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1829875731
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829875728}
-  m_CullTransparentMesh: 1
+  m_Texture: {fileID: 2800000, guid: d499d3618d6178e40867eace007cb3eb, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &1833842712
 GameObject:
   m_ObjectHideFlags: 0
