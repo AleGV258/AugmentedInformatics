@@ -5,27 +5,33 @@ using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
 
-
 public class panelProfesor : MonoBehaviour
 {
     public GameObject panel1Salon;
     public GameObject panel2Profesor;
+    public GameObject panel1SalonUI;
+    public GameObject panel2ProfesorUI;
     public GameObject panelBusqueda;
     public GameObject arCamera;
+    public GameObject interfazAR;
     public GameObject realidadAumentada;
 
-    //Datos del Profesor
-    //public GameObject nombreProfesor;
-    public GameObject especializacionProfesor;
+    // Datos del Profesor
+    public GameObject especializacionNombreProfesor;
     public GameObject areaConocimiento;
-    public GameObject curruculum;
-    public GameObject cubiculo;    
+    public GameObject curriculum;
+    public GameObject cubiculo;
+    // Datos del Profesor en el UI
+    public GameObject especializacionNombreProfesorUI;
+    public GameObject areaConocimientoUI;
+    public GameObject curriculumUI;
+    public GameObject cubiculoUI;    
 
     public int idProfesor;
 
     void Start()
     {
-        // Debug.Log("Ejecucion cambiar pantalla 1");
+        // Debug.Log("Ejecucion cambiar pantalla 2");
         // StartCoroutine(CorrutinaObtenerDatos());
     }
     
@@ -41,12 +47,15 @@ public class panelProfesor : MonoBehaviour
     {
         panel1Salon.SetActive(false);
         panel2Profesor.SetActive(true);
+        panel1SalonUI.SetActive(false);
+        panel2ProfesorUI.SetActive(true);
         panelBusqueda.SetActive(false);
         arCamera.SetActive(true);
+        interfazAR.SetActive(true);
         realidadAumentada.SetActive(true);
 
         //---------------------------------------
-        panelProfesor scriptPanelProfesor = panel1Salon.GetComponent <panelProfesor> ();
+        panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent<panelProfesor>();
         idProfesor = scriptPanelProfesor.idProfesor; 
         
         StartCoroutine(CorrutinaObtenerDatos());
@@ -74,29 +83,34 @@ public class panelProfesor : MonoBehaviour
     public IEnumerator CorrutinaObtenerDatos()
     {   
        string url;
-       url = "rickandmortyapi.com/api/character/" + idProfesor.ToString();;
+       url = "rickandmortyapi.com/api/character/" + idProfesor.ToString();
         
         UnityWebRequest Peticion = UnityWebRequest.Get(url); //Realizar petición
         yield return Peticion.SendWebRequest();
         
         if(!Peticion.isNetworkError && !Peticion.isHttpError){ //probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
             infoExtraProfesor = JsonUtility.FromJson<InformacionProfesor>(Peticion.downloadHandler.text);
-            Debug.Log(Peticion.downloadHandler.text);          
+            //Debug.Log(Peticion.downloadHandler.text);          
             
-            // TMP_Text  nombre = nombreProfesor.GetComponent<TMP_Text>();
-            // nombre.text = infoExtraProfesor.name;            
-
-            TMP_Text especializacion = especializacionProfesor.GetComponent<TMP_Text>();
+            // Profesor        
+            TMP_Text especializacion = especializacionNombreProfesor.GetComponent<TMP_Text>();
             especializacion.text = infoExtraProfesor.name + " / " + infoExtraProfesor.status; 
-
             TMP_Text area = areaConocimiento.GetComponent<TMP_Text>();
             area.text = infoExtraProfesor.species; 
+            TMP_Text curriculumTexto = curriculum.GetComponent<TMP_Text>();
+            curriculumTexto.text = infoExtraProfesor.gender; 
+            TMP_Text edificio = cubiculo.GetComponent<TMP_Text>();
+            edificio.text = infoExtraProfesor.species;        
 
-            TMP_Text curruculumTexto = curruculum.GetComponent<TMP_Text>();
-            curruculumTexto.text = infoExtraProfesor.gender; 
-
-            TMP_Text edificio  = cubiculo.GetComponent<TMP_Text>();
-            edificio.text = infoExtraProfesor.species;                         
+            // Profesor UI
+            TMP_Text especializacionUI = especializacionNombreProfesorUI.GetComponent<TMP_Text>();
+            especializacionUI.text = infoExtraProfesor.name + " / " + infoExtraProfesor.status; 
+            TMP_Text areaUI = areaConocimientoUI.GetComponent<TMP_Text>();
+            areaUI.text = infoExtraProfesor.species; 
+            TMP_Text curriculumTextoUI = curriculumUI.GetComponent<TMP_Text>();
+            curriculumTextoUI.text = infoExtraProfesor.gender; 
+            TMP_Text edificioUI = cubiculoUI.GetComponent<TMP_Text>();
+            edificioUI.text = infoExtraProfesor.species;                    
         }else{
             Debug.LogWarning("Error en la peticion");
             //Recargar.SetActive(true);

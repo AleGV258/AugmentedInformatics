@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 using Vuforia;
 
 public class MenuPrincipal : MonoBehaviour
@@ -14,12 +15,19 @@ public class MenuPrincipal : MonoBehaviour
     //public GameObject pantallaVerMas;
     public GameObject realidadAumentada;
     public GameObject virtualUI;
+    public PlayableDirector timeline;
+
     bool activado = false;
     bool inicio = true;
 
     void Start()
     {
         StartCoroutine(desactivarCamara());
+    }
+
+    public void reproducirPantalla()
+    {
+        timeline.Play();
     }
 
     public void encontrado()
@@ -127,6 +135,6 @@ public class MenuPrincipal : MonoBehaviour
 
     public void UnirseCD()
     {
-        Application.OpenURL("http://unity3d.com/");
+        Application.OpenURL("https://www.uaq.mx/informatica/cede.html");
     }
 }

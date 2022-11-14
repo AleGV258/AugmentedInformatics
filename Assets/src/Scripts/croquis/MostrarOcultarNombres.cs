@@ -38,7 +38,7 @@ public class MostrarOcultarNombres : MonoBehaviour
 
     void Start()
     {
-        /* Al iniciar la ejecuci髇 se ocultan todas los paneles de nombres */
+        /* Al iniciar la ejecuci贸n se ocultan todas los paneles de nombres */
         canvasAula.SetActive(false);
         canvasAuditorio.SetActive(false);
         canvasBiblioteca.SetActive(false);
@@ -53,20 +53,20 @@ public class MostrarOcultarNombres : MonoBehaviour
 
     public void ReproducirCroquis()
     {
-        /* Se reproduce la animaci髇 de apertura en los paneles de nombres */
+        /* Se reproduce la animaci贸n de apertura en los paneles de nombres */
         timeline.Play();
     }
 
     public void mostrar_ocultarNombres()
     {
-        /* Corutina para esperar unos segundos y no desaparezca el panel antes de poder volver a activar el bot髇 */
+        /* Corutina para esperar unos segundos y no desaparezca el panel antes de poder volver a activar el bot贸n */
         StartCoroutine(nombresSegundos());
     }
 
-    /* Funci髇 que permite esperar unos segundos */
+    /* Funci贸n que permite esperar unos segundos */
     IEnumerator nombresSegundos()
     {
-        /* Se comprueba que se haya activado el bot髇, se muestran los paneles */
+        /* Se comprueba que se haya activado el bot贸n, se muestran los paneles */
         if (activado)
         {
             canvasAula.SetActive(true);
@@ -80,7 +80,7 @@ public class MostrarOcultarNombres : MonoBehaviour
             canvasLaboratorio.SetActive(true);
             activado = false;
         }
-        /* De otra forma se desactivo el bot髇, se dejan de mostrar los paneles */
+        /* De otra forma se desactivo el bot贸n, se dejan de mostrar los paneles */
         else
         {
             animadorAula.SetTrigger("TriggerAula");

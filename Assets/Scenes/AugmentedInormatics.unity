@@ -155,7 +155,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 103
+  m_RootOrder: 102
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4374243
 MonoBehaviour:
@@ -198,21 +198,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -224,7 +212,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -338,7 +326,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &62811613
 MonoBehaviour:
@@ -381,21 +369,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -407,7 +383,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -521,7 +497,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 115
+  m_RootOrder: 114
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &63223967
 MonoBehaviour:
@@ -564,21 +540,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -590,7 +554,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -704,7 +668,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 100
+  m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &71758268
 MonoBehaviour:
@@ -747,21 +711,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -773,7 +725,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -902,7 +854,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &82539287
 MonoBehaviour:
@@ -945,21 +897,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -971,7 +911,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1085,7 +1025,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 82
+  m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &90737778
 MonoBehaviour:
@@ -1128,21 +1068,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1154,7 +1082,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1268,7 +1196,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 56
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &119003440
 MonoBehaviour:
@@ -1311,21 +1239,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1337,7 +1253,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1451,7 +1367,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &128619173
 MonoBehaviour:
@@ -1494,21 +1410,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1520,7 +1424,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1711,7 +1615,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 62
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &164084584
 MonoBehaviour:
@@ -1754,21 +1658,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1780,7 +1672,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1894,7 +1786,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 113
+  m_RootOrder: 112
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &167465323
 MonoBehaviour:
@@ -1937,21 +1829,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1963,7 +1843,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2174,7 +2054,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
         m_MethodName: pantallaProfesor
         m_Mode: 1
@@ -2330,7 +2210,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 270994776}
   - {fileID: 1853346222}
   - {fileID: 1787972952}
   - {fileID: 974870757}
@@ -2482,7 +2361,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 43
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &204058073
 MonoBehaviour:
@@ -2525,21 +2404,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2551,7 +2418,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2665,7 +2532,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 51
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &205458843
 MonoBehaviour:
@@ -2708,21 +2575,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2734,7 +2589,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2848,7 +2703,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &206485631
 MonoBehaviour:
@@ -2891,21 +2746,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2917,7 +2760,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3031,7 +2874,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 81
+  m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &210402723
 MonoBehaviour:
@@ -3074,21 +2917,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3100,7 +2931,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3219,7 +3050,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 69
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &239335198
 MonoBehaviour:
@@ -3262,21 +3093,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3288,7 +3107,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3370,6 +3189,11 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 239335199}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &261420550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833020892140811, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &263695119
 GameObject:
   m_ObjectHideFlags: 0
@@ -3402,7 +3226,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &263695122
 MonoBehaviour:
@@ -3445,21 +3269,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3471,7 +3283,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3585,7 +3397,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 101
+  m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &268425639
 MonoBehaviour:
@@ -3628,21 +3440,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3654,7 +3454,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3736,57 +3536,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 268425640}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!1 &270994775
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 270994776}
-  - component: {fileID: 270994777}
-  m_Layer: 0
-  m_Name: ScriptPantallas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &270994776
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270994775}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7082971, y: -0.003287697, z: -1.0494045}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 199308392}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &270994777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270994775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2451d48779715478185d6440593bda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arCamera: {fileID: 942172826}
-  transformCanvasPantallas: {fileID: 1569095835}
-  timeline: {fileID: 1569095841}
-  pantallaUno: {fileID: 624133727}
-  pantallaDos: {fileID: 686090035}
-  pantallaUnoUI: {fileID: 1053115648}
-  pantallaDosUI: {fileID: 1707193700}
 --- !u!1 &278174166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3819,7 +3568,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 58
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &278174169
 MonoBehaviour:
@@ -3862,21 +3611,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3888,7 +3625,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4002,7 +3739,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 91
+  m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &285474162
 MonoBehaviour:
@@ -4045,21 +3782,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4071,7 +3796,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4185,7 +3910,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 67
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &287094081
 MonoBehaviour:
@@ -4228,21 +3953,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4254,7 +3967,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4371,6 +4084,7 @@ MonoBehaviour:
   pantallaCreditos: {fileID: 814041999}
   realidadAumentada: {fileID: 214040054}
   virtualUI: {fileID: 1615122588}
+  timeline: {fileID: 1569095841}
 --- !u!4 &337561151
 Transform:
   m_ObjectHideFlags: 0
@@ -4418,7 +4132,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &358867774
 MonoBehaviour:
@@ -4461,21 +4175,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4487,7 +4189,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4963,7 +4665,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 108
+  m_RootOrder: 107
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &417980503
 MonoBehaviour:
@@ -5006,21 +4708,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5032,7 +4722,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5146,7 +4836,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 86
+  m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &426394178
 MonoBehaviour:
@@ -5189,21 +4879,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5215,7 +4893,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5329,7 +5007,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 54
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &433536216
 MonoBehaviour:
@@ -5372,21 +5050,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5398,7 +5064,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5480,6 +5146,11 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 433536217}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &449696983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833020303050157, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &453554889
 GameObject:
   m_ObjectHideFlags: 0
@@ -5512,7 +5183,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 68
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &453554892
 MonoBehaviour:
@@ -5555,21 +5226,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5581,7 +5240,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5663,6 +5322,11 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 453554893}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &453986745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833021938826886, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &454933020
 GameObject:
   m_ObjectHideFlags: 0
@@ -5922,7 +5586,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 98
+  m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &499329969
 MonoBehaviour:
@@ -5965,21 +5629,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5991,7 +5643,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6240,7 +5892,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &528343658
 MonoBehaviour:
@@ -6283,21 +5935,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6309,7 +5949,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6423,7 +6063,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 111
+  m_RootOrder: 110
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &533715102
 MonoBehaviour:
@@ -6466,21 +6106,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6492,7 +6120,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6606,7 +6234,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 74
+  m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &580660585
 MonoBehaviour:
@@ -6649,21 +6277,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6675,7 +6291,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6789,7 +6405,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &586603238
 MonoBehaviour:
@@ -6832,21 +6448,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6858,7 +6462,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6940,6 +6544,11 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 586603239}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &604992764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833020204964915, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &621045560
 GameObject:
   m_ObjectHideFlags: 0
@@ -7106,7 +6715,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 47
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &623500368
 MonoBehaviour:
@@ -7149,21 +6758,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7175,7 +6772,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7269,6 +6866,7 @@ GameObject:
   - component: {fileID: 624133730}
   - component: {fileID: 624133729}
   - component: {fileID: 624133731}
+  - component: {fileID: 624133732}
   m_Layer: 0
   m_Name: PanelPrimeraPantalla
   m_TagString: Untagged
@@ -7358,8 +6956,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel1Salon: {fileID: 624133727}
   panel2Profesor: {fileID: 686090035}
+  panel1SalonUI: {fileID: 1053115648}
+  panel2ProfesorUI: {fileID: 1707193700}
   panelBusqueda: {fileID: 967708590}
   arCamera: {fileID: 942172821}
+  interfazAR: {fileID: 1615122588}
   realidadAumentada: {fileID: 214040054}
   nombreProfesor: {fileID: 1383924643}
   materiaProfesor: {fileID: 1567393171}
@@ -7367,6 +6968,12 @@ MonoBehaviour:
   grupoProfesor: {fileID: 1775695200}
   edificioProfesor: {fileID: 1608821304}
   salonProfesor: {fileID: 402846622}
+  nombreProfesorUI: {fileID: 604992764}
+  materiaProfesorUI: {fileID: 449696983}
+  horarioProfesorUI: {fileID: 1593343440}
+  grupoProfesorUI: {fileID: 1814509369}
+  edificioProfesorUI: {fileID: 2008361720}
+  salonProfesorUI: {fileID: 964257215}
   idSalon: 0
   infoProfesor:
     name: 
@@ -7374,6 +6981,26 @@ MonoBehaviour:
     status: 
     species: 
     gender: 
+--- !u!95 &624133732
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624133727}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 230fd4344c0718d4790c9702acf56e58, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &625932021
 GameObject:
   m_ObjectHideFlags: 0
@@ -7406,7 +7033,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 42
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &625932024
 MonoBehaviour:
@@ -7449,21 +7076,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7475,7 +7090,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7906,7 +7521,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &651913437
 MonoBehaviour:
@@ -7949,21 +7564,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7975,7 +7578,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8227,7 +7830,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 88
+  m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &664146262
 MonoBehaviour:
@@ -8270,21 +7873,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8296,7 +7887,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8545,7 +8136,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 77
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &683233081
 MonoBehaviour:
@@ -8588,21 +8179,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8614,7 +8193,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8708,6 +8287,7 @@ GameObject:
   - component: {fileID: 686090037}
   - component: {fileID: 686090036}
   - component: {fileID: 686090039}
+  - component: {fileID: 686090040}
   m_Layer: 0
   m_Name: PanelSegundaPantalla
   m_TagString: Untagged
@@ -8791,13 +8371,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel1Salon: {fileID: 624133727}
   panel2Profesor: {fileID: 686090035}
+  panel1SalonUI: {fileID: 1053115648}
+  panel2ProfesorUI: {fileID: 1707193700}
   panelBusqueda: {fileID: 967708590}
   arCamera: {fileID: 942172821}
+  interfazAR: {fileID: 1615122588}
   realidadAumentada: {fileID: 214040054}
-  especializacionProfesor: {fileID: 1732618418}
+  especializacionNombreProfesor: {fileID: 1732618418}
   areaConocimiento: {fileID: 1791341827}
-  curruculum: {fileID: 634679617}
+  curriculum: {fileID: 634679617}
   cubiculo: {fileID: 1422371243}
+  especializacionNombreProfesorUI: {fileID: 453986745}
+  areaConocimientoUI: {fileID: 1366069368}
+  curriculumUI: {fileID: 261420550}
+  cubiculoUI: {fileID: 1362238845}
   idProfesor: 0
   infoExtraProfesor:
     name: 
@@ -8805,6 +8392,26 @@ MonoBehaviour:
     status: 
     species: 
     gender: 
+--- !u!95 &686090040
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686090035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d9a77ca3699ea549a4e983299823601, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &703621195
 GameObject:
   m_ObjectHideFlags: 0
@@ -8837,7 +8444,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 87
+  m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &703621198
 MonoBehaviour:
@@ -8880,21 +8487,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8906,7 +8501,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9020,7 +8615,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 61
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &705537819
 MonoBehaviour:
@@ -9063,21 +8658,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9089,7 +8672,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9203,7 +8786,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &720583638
 MonoBehaviour:
@@ -9246,21 +8829,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9272,7 +8843,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9386,7 +8957,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 114
+  m_RootOrder: 113
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &724649563
 MonoBehaviour:
@@ -9429,21 +9000,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9455,7 +9014,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9569,7 +9128,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &756741442
 MonoBehaviour:
@@ -9612,21 +9171,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9638,7 +9185,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9752,7 +9299,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 106
+  m_RootOrder: 105
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &760201699
 MonoBehaviour:
@@ -9795,21 +9342,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9821,7 +9356,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10138,7 +9673,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &819763720
 MonoBehaviour:
@@ -10181,21 +9716,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10207,7 +9730,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10321,7 +9844,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 64
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &819785225
 MonoBehaviour:
@@ -10364,21 +9887,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10390,7 +9901,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10504,7 +10015,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 105
+  m_RootOrder: 104
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &836608684
 MonoBehaviour:
@@ -10547,21 +10058,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10573,7 +10072,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10687,7 +10186,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &849379764
 MonoBehaviour:
@@ -10730,21 +10229,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10756,7 +10243,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10870,7 +10357,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 90
+  m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &868253010
 MonoBehaviour:
@@ -10913,21 +10400,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10939,7 +10414,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11133,7 +10608,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 60
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &873608626
 MonoBehaviour:
@@ -11176,21 +10651,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11202,7 +10665,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11294,7 +10757,7 @@ PrefabInstance:
     - target: {fileID: 1643131356531223060, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 270994777}
+      objectReference: {fileID: 0}
     - target: {fileID: 1643131356531223060, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: pantallaSalonUI
@@ -11439,18 +10902,54 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9157833020407422420, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020407422420, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020407422420, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020407422420, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020407422420, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020407422420, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9157833020746580307, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9157833020746580308, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020746580308, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020746580308, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.38745117
       objectReference: {fileID: 0}
+    - target: {fileID: 9157833020770713876, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d4e4c05e04c510b449b4f28c5f4b7155, type: 2}
     - target: {fileID: 9157833021257574343, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 270994777}
+      objectReference: {fileID: 0}
     - target: {fileID: 9157833021257574343, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: pantallaProfesorUI
@@ -11574,6 +11073,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 38.055, y: -90, z: -90}
+--- !u!1 &964257215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833021639962912, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &967708590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5178315130666575807, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
@@ -11611,7 +11115,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 112
+  m_RootOrder: 111
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &971609957
 MonoBehaviour:
@@ -11654,21 +11158,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11680,7 +11172,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11794,7 +11286,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &974870759
 MonoBehaviour:
@@ -11837,21 +11329,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11863,7 +11343,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11977,7 +11457,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 94
+  m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &980153422
 MonoBehaviour:
@@ -12020,21 +11500,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12046,7 +11514,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12237,7 +11705,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 79
+  m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &998696336
 MonoBehaviour:
@@ -12280,21 +11748,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12306,7 +11762,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12570,7 +12026,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 70
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1048186849
 MonoBehaviour:
@@ -12613,21 +12069,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12639,7 +12083,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12726,6 +12170,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9157833020407422419, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
   m_PrefabInstance: {fileID: 904043666}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1053115653
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053115648}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cc36be0ab379994e9ef4bfa80c961ed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1055739580
 GameObject:
   m_ObjectHideFlags: 0
@@ -12758,7 +12222,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 110
+  m_RootOrder: 109
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1055739583
 MonoBehaviour:
@@ -12801,21 +12265,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12827,7 +12279,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12941,7 +12393,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 95
+  m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1055995491
 MonoBehaviour:
@@ -12984,21 +12436,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13010,7 +12450,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13245,7 +12685,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1063872148
 MonoBehaviour:
@@ -13288,21 +12728,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13314,7 +12742,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13561,7 +12989,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1081440263
 MonoBehaviour:
@@ -13604,21 +13032,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13630,7 +13046,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13744,7 +13160,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 73
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1086199551
 MonoBehaviour:
@@ -13787,21 +13203,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13813,7 +13217,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14062,7 +13466,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1090318208
 MonoBehaviour:
@@ -14105,21 +13509,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14131,7 +13523,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14456,7 +13848,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 63
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1142757481
 MonoBehaviour:
@@ -14499,21 +13891,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14525,7 +13905,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14639,7 +14019,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 45
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1147509230
 MonoBehaviour:
@@ -14682,21 +14062,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14708,7 +14076,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15108,7 +14476,7 @@ Transform:
   m_Children:
   - {fileID: 1569095835}
   m_Father: {fileID: 199308392}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1215259755
 MonoBehaviour:
@@ -15151,21 +14519,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15177,7 +14533,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15412,7 +14768,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1243561081
 MonoBehaviour:
@@ -15455,21 +14811,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15481,7 +14825,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15646,7 +14990,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
         m_MethodName: pantallaProfesor
         m_Mode: 1
@@ -15728,7 +15072,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1276206251
 MonoBehaviour:
@@ -15771,21 +15115,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15797,7 +15129,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16048,7 +15380,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 92
+  m_RootOrder: 91
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1310656221
 MonoBehaviour:
@@ -16091,21 +15423,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16117,7 +15437,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16308,7 +15628,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 83
+  m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1322800180
 MonoBehaviour:
@@ -16351,21 +15671,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16377,7 +15685,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16506,7 +15814,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1341638084
 MonoBehaviour:
@@ -16549,21 +15857,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16575,7 +15871,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16727,7 +16023,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1359094495
 MonoBehaviour:
@@ -16770,21 +16066,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16796,7 +16080,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16910,7 +16194,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 48
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1359894588
 MonoBehaviour:
@@ -16953,21 +16237,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16979,7 +16251,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17061,6 +16333,16 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1359894589}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &1362238845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833021020690993, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1366069368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833021613686878, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1369068278
 GameObject:
   m_ObjectHideFlags: 0
@@ -17093,7 +16375,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 93
+  m_RootOrder: 92
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1369068281
 MonoBehaviour:
@@ -17136,21 +16418,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17162,7 +16432,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17276,7 +16546,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1371910019
 MonoBehaviour:
@@ -17319,21 +16589,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17345,7 +16603,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17594,7 +16852,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 55
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1388821406
 MonoBehaviour:
@@ -17637,21 +16895,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17663,7 +16909,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17777,7 +17023,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 76
+  m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1394528621
 MonoBehaviour:
@@ -17820,21 +17066,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17846,7 +17080,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18038,7 +17272,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 102
+  m_RootOrder: 101
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1406222284
 MonoBehaviour:
@@ -18081,21 +17315,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18107,7 +17329,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18272,7 +17494,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
         m_MethodName: pantallaSalon
         m_Mode: 1
@@ -18354,7 +17576,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1418583094
 MonoBehaviour:
@@ -18397,21 +17619,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18423,7 +17633,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18537,7 +17747,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1421902638
 MonoBehaviour:
@@ -18580,21 +17790,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18606,7 +17804,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18855,7 +18053,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1437568763
 MonoBehaviour:
@@ -18898,21 +18096,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18924,7 +18110,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19029,6 +18215,7 @@ MonoBehaviour:
   pantallaCreditos: {fileID: 814041999}
   realidadAumentada: {fileID: 214040054}
   virtualUI: {fileID: 1615122588}
+  timeline: {fileID: 0}
 --- !u!1 &1473131005
 GameObject:
   m_ObjectHideFlags: 0
@@ -19195,7 +18382,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 80
+  m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1524901647
 MonoBehaviour:
@@ -19238,21 +18425,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19264,7 +18439,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19513,7 +18688,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1546253127
 MonoBehaviour:
@@ -19556,21 +18731,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19582,7 +18745,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19696,7 +18859,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 52
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1554790865
 MonoBehaviour:
@@ -19739,21 +18902,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19765,7 +18916,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19879,7 +19030,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1555721155
 MonoBehaviour:
@@ -19922,21 +19073,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19948,7 +19087,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20340,7 +19479,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 59
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1585400485
 MonoBehaviour:
@@ -20383,21 +19522,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20409,7 +19536,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20523,7 +19650,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1592370861
 MonoBehaviour:
@@ -20566,21 +19693,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20592,7 +19707,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20674,6 +19789,11 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1592370862}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &1593343440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833020447726024, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1596700466
 GameObject:
   m_ObjectHideFlags: 0
@@ -20786,7 +19906,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 96
+  m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1601702990
 MonoBehaviour:
@@ -20829,21 +19949,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20855,7 +19963,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20969,7 +20077,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 75
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1605958668
 MonoBehaviour:
@@ -21012,21 +20120,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21038,7 +20134,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21152,7 +20248,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1608500560
 MonoBehaviour:
@@ -21195,21 +20291,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21221,7 +20305,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21475,7 +20559,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 99
+  m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1616916768
 MonoBehaviour:
@@ -21518,21 +20602,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21544,7 +20616,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21658,7 +20730,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1649235977
 MonoBehaviour:
@@ -21701,21 +20773,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21727,7 +20787,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21841,7 +20901,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1654784172
 MonoBehaviour:
@@ -21884,21 +20944,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21910,7 +20958,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22216,7 +21264,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 84
+  m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1690360533
 MonoBehaviour:
@@ -22259,21 +21307,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22285,7 +21321,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22399,7 +21435,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1695147716
 MonoBehaviour:
@@ -22442,21 +21478,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22468,7 +21492,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22582,7 +21606,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 53
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1699437310
 MonoBehaviour:
@@ -22625,21 +21649,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22651,7 +21663,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22765,7 +21777,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 72
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1703811587
 MonoBehaviour:
@@ -22808,21 +21820,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22834,7 +21834,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22921,6 +21921,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9157833020746580307, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
   m_PrefabInstance: {fileID: 904043666}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1707193704
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707193700}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 448cee5eba588af429e1c973f192a254, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1716583038
 GameObject:
   m_ObjectHideFlags: 0
@@ -22953,7 +21973,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1716583041
 MonoBehaviour:
@@ -22996,21 +22016,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23022,7 +22030,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23204,7 +22212,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 104
+  m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1726029705
 MonoBehaviour:
@@ -23247,21 +22255,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23273,7 +22269,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23392,7 +22388,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 44
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1728696017
 MonoBehaviour:
@@ -23435,21 +22431,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23461,7 +22445,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23710,7 +22694,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 50
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1734803079
 MonoBehaviour:
@@ -23753,21 +22737,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23779,7 +22751,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23893,7 +22865,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1742604230
 MonoBehaviour:
@@ -23936,21 +22908,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23962,7 +22922,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24303,7 +23263,7 @@ GameObject:
   - component: {fileID: 1775695203}
   - component: {fileID: 1775695202}
   m_Layer: 0
-  m_Name: TextoHorario
+  m_Name: TextoGrupo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24473,7 +23433,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1787972954
 MonoBehaviour:
@@ -24516,21 +23476,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24542,7 +23490,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24791,7 +23739,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1806816595
 MonoBehaviour:
@@ -24834,21 +23782,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24860,7 +23796,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24974,7 +23910,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 97
+  m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1811997518
 MonoBehaviour:
@@ -25017,21 +23953,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25043,7 +23967,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25237,6 +24161,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1814509369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833021611831633, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1815461893
 GameObject:
   m_ObjectHideFlags: 0
@@ -25269,7 +24198,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 57
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1815461896
 MonoBehaviour:
@@ -25312,21 +24241,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25338,7 +24255,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25528,7 +24445,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 109
+  m_RootOrder: 108
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1833842715
 MonoBehaviour:
@@ -25571,21 +24488,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25597,7 +24502,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25726,7 +24631,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 65
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1847363577
 MonoBehaviour:
@@ -25769,21 +24674,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25795,7 +24688,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25967,7 +24860,7 @@ GameObject:
   - component: {fileID: 1853346220}
   - component: {fileID: 1853346223}
   m_Layer: 0
-  m_Name: TargetCroquis
+  m_Name: AR_ImageTarget_Croquis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26043,13 +24936,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: AR_ImageTarget_Croquis
+  mTrackableName: AR_ImageTarget_CAPACITACION
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 0.707162
+  mAspectRatio: 0.536329
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.707162
+  mHeight: 0.536329
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -26070,7 +24963,7 @@ Transform:
   - {fileID: 1668565469}
   - {fileID: 1813049721}
   m_Father: {fileID: 199308392}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 1, z: 0}
 --- !u!114 &1853346223
 MonoBehaviour:
@@ -26086,7 +24979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1853346221}
   mHiddenRoot: {fileID: 0}
-  mTargetName: AR_ImageTarget_Croquis
+  mTargetName: AR_ImageTarget_CAPACITACION
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 1853346221}
   mMeshFilter: {fileID: 0}
@@ -26123,7 +25016,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1902978267
 MonoBehaviour:
@@ -26166,21 +25059,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26192,7 +25073,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26243,13 +25124,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: AR_ImageTarget_CAPACITACION
+  mTrackableName: AR_ImageTarget_Croquis
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 0.536329
+  mAspectRatio: 0.707162
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.536329
+  mHeight: 0.707162
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -26269,7 +25150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1902978268}
   mHiddenRoot: {fileID: 0}
-  mTargetName: AR_ImageTarget_CAPACITACION
+  mTargetName: AR_ImageTarget_Croquis
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 1902978268}
   mMeshFilter: {fileID: 0}
@@ -26434,7 +25315,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
         m_MethodName: pantallaSalon
         m_Mode: 1
@@ -26633,7 +25514,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 85
+  m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1942700404
 MonoBehaviour:
@@ -26676,21 +25557,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26702,7 +25571,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26816,7 +25685,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 46
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1969980597
 MonoBehaviour:
@@ -26859,21 +25728,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26885,7 +25742,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26999,7 +25856,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 78
+  m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2004966174
 MonoBehaviour:
@@ -27042,21 +25899,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27068,7 +25913,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27182,7 +26027,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 116
+  m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2005460307
 MonoBehaviour:
@@ -27225,21 +26070,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27251,7 +26084,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27333,6 +26166,11 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 2005460308}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &2008361720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157833020762138521, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+  m_PrefabInstance: {fileID: 904043666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2008777779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27528,7 +26366,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 107
+  m_RootOrder: 106
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2030303445
 MonoBehaviour:
@@ -27571,21 +26409,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27597,7 +26423,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27812,7 +26638,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2037898441
 MonoBehaviour:
@@ -27855,21 +26681,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27881,7 +26695,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27995,7 +26809,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2051717260
 MonoBehaviour:
@@ -28038,21 +26852,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28064,7 +26866,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28242,6 +27044,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
+        m_MethodName: cambiarEntrePantalla
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2095310238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28312,7 +27126,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 71
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2102327823
 MonoBehaviour:
@@ -28355,21 +27169,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28381,7 +27183,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28636,6 +27438,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
+        m_MethodName: cambiarEntrePantalla
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2113991971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28706,7 +27520,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 49
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2119822555
 MonoBehaviour:
@@ -28749,21 +27563,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28775,7 +27577,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28889,7 +27691,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 89
+  m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2123537211
 MonoBehaviour:
@@ -28932,21 +27734,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28958,7 +27748,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29206,7 +27996,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199308392}
-  m_RootOrder: 66
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2146851903
 MonoBehaviour:
@@ -29249,21 +28039,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270994777}
-        m_TargetAssemblyTypeName: ScriptPantallas, Assembly-CSharp
-        m_MethodName: reproducirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 174637996}
-        m_TargetAssemblyTypeName: CamaraVirtual, Assembly-CSharp
-        m_MethodName: targetEncontrado
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: encontrado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29275,7 +28053,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 337561150}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: encontrado
+        m_MethodName: reproducirPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

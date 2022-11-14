@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class salonObjeto : MonoBehaviour
 {
-   // Start is called before the first frame update
+    // Start is called before the first frame update
     public int idSalon;
-    public GameObject panelSegundaPantalla;
+    public GameObject panelSalones;
+
     void Start()
     {
+
     }
 
-
-    void Update()
+    public void cambiarAPanelSalon()
     {
+        panelSalones.SetActive(true);
         
+        panelSalon scriptPanelSalon = panelSalones.GetComponent<panelSalon>();
+        scriptPanelSalon.idSalon = idSalon;
+        
+        scriptPanelSalon.cambiarPrimerPantalla();
+        // scriptPanelProfesor.CorrutinaObtenerDatos("1");
     }
+
     // public void enviaidSalon()
     // {
     //     panelSalon scriptPanelSalon = panelSalon.GetComponent <panelSalon> ();
@@ -23,14 +31,4 @@ public class salonObjeto : MonoBehaviour
     //     Debug.Log("Se pasa id en enviaridSalon");
     //     scriptPanelSalon.cambiarPrimerPantalla();
     // }
-    public void cambiarAPanelSalon()
-    {
-        panelSegundaPantalla.SetActive(true);
-        
-        panelSalon scriptPanelSalon = panelSegundaPantalla.GetComponent <panelSalon> ();
-        scriptPanelSalon.idSalon = idSalon;
-        
-        scriptPanelSalon.cambiarPrimerPantalla();
-        // scriptPanelProfesor.CorrutinaObtenerDatos("1");
-    }
 }
