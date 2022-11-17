@@ -1051,7 +1051,6 @@ MonoBehaviour:
   pantallaCreditos: {fileID: 0}
   realidadAumentada: {fileID: 0}
   virtualUI: {fileID: 0}
-  timeline: {fileID: 0}
 --- !u!222 &614794163887733927
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1469,7 +1468,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6081123839957546043}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: UnirseCD
+        m_MethodName: verMas
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
