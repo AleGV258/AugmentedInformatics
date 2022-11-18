@@ -20,7 +20,7 @@ public class profeObjeto : MonoBehaviour
         panelProfesor scriptPanelProfesor = panelProfesores.GetComponent<panelProfesor>();
         scriptPanelProfesor.idProfesor = idProfesor;
         
-        scriptPanelProfesor.cambiarSegundaPantalla();
+        scriptPanelProfesor.cambiarSegundaPantallaUI();
         // scriptPanelProfesor.CorrutinaObtenerDatos("1");
     }
 }

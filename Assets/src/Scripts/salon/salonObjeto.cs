@@ -20,7 +20,7 @@ public class salonObjeto : MonoBehaviour
         panelSalon scriptPanelSalon = panelSalones.GetComponent<panelSalon>();
         scriptPanelSalon.idSalon = idSalon;
         
-        scriptPanelSalon.cambiarPrimerPantalla();
+        scriptPanelSalon.cambiarPrimerPantallaUI();
         // scriptPanelProfesor.CorrutinaObtenerDatos("1");
     }
 

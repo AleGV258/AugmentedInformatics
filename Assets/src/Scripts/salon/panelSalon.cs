@@ -51,11 +51,28 @@ public class panelSalon : MonoBehaviour
         panel2ProfesorUI.SetActive(false);
         panelBusqueda.SetActive(false);
         arCamera.SetActive(true);
+        interfazAR.SetActive(false);
+        realidadAumentada.SetActive(true);
+
+        panelSalon scriptPanelSalon = panel1Salon.GetComponent<panelSalon>();
+        idSalon = scriptPanelSalon.idSalon; // Se envia del en el que se encuentra 
+        
+        StartCoroutine(CorrutinaObtenerDatos());
+    }
+
+    public void cambiarPrimerPantallaUI()
+    {
+        panel1Salon.SetActive(true);
+        panel2Profesor.SetActive(false);
+        panel1SalonUI.SetActive(true);
+        panel2ProfesorUI.SetActive(false);
+        panelBusqueda.SetActive(false);
+        arCamera.SetActive(true);
         interfazAR.SetActive(true);
         realidadAumentada.SetActive(true);
 
         panelSalon scriptPanelSalon = panel1Salon.GetComponent<panelSalon>();
-        idSalon = scriptPanelSalon.idSalon; //Se envia del en el que se encuentra 
+        idSalon = scriptPanelSalon.idSalon; // Se envia del en el que se encuentra 
         
         StartCoroutine(CorrutinaObtenerDatos());
     }
@@ -88,7 +105,7 @@ public class panelSalon : MonoBehaviour
         //Obtener informacion del Salon
         string url;
         url = "rickandmortyapi.com/api/character/" + idSalon.ToString();;
-        UnityWebRequest Peticion = UnityWebRequest.Get(url); //Realizar petición
+        UnityWebRequest Peticion = UnityWebRequest.Get(url); // Realizar petición
         yield return Peticion.SendWebRequest();
         
         if(!Peticion.isNetworkError && !Peticion.isHttpError){ //Probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
@@ -96,21 +113,19 @@ public class panelSalon : MonoBehaviour
             //Debug.Log(Peticion.downloadHandler.text);          
             
             // Salón
-            
             TMP_Text edificio = edificioProfesor.GetComponent<TMP_Text>();
             edificio.text = infoSalon.status; 
             TMP_Text salon = salonProfesor.GetComponent<TMP_Text>();
             salon.text = infoSalon.id;
 
             // Salón UI
-            
             TMP_Text edificioUI = edificioProfesorUI.GetComponent<TMP_Text>();
             edificioUI.text = infoSalon.status; 
             TMP_Text salonUI = salonProfesorUI.GetComponent<TMP_Text>();
             salonUI.text =  infoSalon.id;    
             
-            //Obtener informacion del profesor que se encuentra en el salon
-            idProfesorEnSalon = idSalon;//TEMPORALMENTE ES EL MISMO ID, CAMBIARA CUANDO TENGAMOS API AL ID REAL
+            // Obtener informacion del profesor que se encuentra en el salon
+            idProfesorEnSalon = idSalon; //TEMPORALMENTE ES EL MISMO ID, CAMBIARA CUANDO TENGAMOS API AL ID REAL
             StartCoroutine(ObtenerDatosProfesor());
         }else{
             Debug.LogWarning("Error en la peticion");
@@ -118,18 +133,17 @@ public class panelSalon : MonoBehaviour
         }             
     }
     public void SiguienteProfesor(){
-        idProfesorEnSalon = idProfesorEnSalon + 1;//TEMPORALMENTE SE SUMA 1, DESPUES API TENDRA EL ID DEL SIG PROFESOR
+        idProfesorEnSalon = idProfesorEnSalon + 1; //TEMPORALMENTE SE SUMA 1, DESPUES API TENDRA EL ID DEL SIG PROFESOR
         StartCoroutine(ObtenerDatosProfesor());
     }
     public void AnteriorProfesor(){
-        idProfesorEnSalon = idProfesorEnSalon - 1;//TEMPORALMENTE SE SUMA 1, DESPUES API TENDRA EL ID DEL SIG PROFESOR
+        idProfesorEnSalon = idProfesorEnSalon - 1; //TEMPORALMENTE SE SUMA 1, DESPUES API TENDRA EL ID DEL SIG PROFESOR
         StartCoroutine(ObtenerDatosProfesor());
     }
-     public IEnumerator ObtenerDatosProfesor()
+    public IEnumerator ObtenerDatosProfesor()
     {   
         string url;
         url = "rickandmortyapi.com/api/character/" + idProfesorEnSalon.ToString();
-        
         UnityWebRequest Peticion = UnityWebRequest.Get(url); //Realizar petición
         yield return Peticion.SendWebRequest();
         
@@ -146,7 +160,8 @@ public class panelSalon : MonoBehaviour
             grupo.text = infoProfesor.gender; 
             TMP_Text horario = horarioProfesor.GetComponent<TMP_Text>();
             horario.text = infoProfesor.name; 
-            StartCoroutine(cargarImagenProfesor(infoProfesor.image,imagenProfesor));
+            StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesor));
+            
             // Salón UI
             TMP_Text nombreUI = nombreProfesorUI.GetComponent<TMP_Text>();
             nombreUI.text = infoProfesor.name;            
@@ -156,7 +171,7 @@ public class panelSalon : MonoBehaviour
             grupoUI.text = infoProfesor.gender;   
             TMP_Text horarioUI = horarioProfesorUI.GetComponent<TMP_Text>();
             horarioUI.text = infoProfesor.name; 
-            StartCoroutine(cargarImagenProfesor(infoProfesor.image,imagenProfesorUI));
+            StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesorUI));
         }else{
             Debug.LogWarning("Error en la peticion");
             //Recargar.SetActive(true);
@@ -171,8 +186,8 @@ public class panelSalon : MonoBehaviour
             Debug.Log(request.error);
         }else{
             Texture myTexture = ((DownloadHandlerTexture)request.downloadHandler).texture;
-            RawImage prueba = imagenProfesor.GetComponent<RawImage>();
-            prueba.texture = myTexture;
+            RawImage imagenRequestProfesor = imagenProfesor.GetComponent<RawImage>();
+            imagenRequestProfesor.texture = myTexture;
         }            
     }
 }

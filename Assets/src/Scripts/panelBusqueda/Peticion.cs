@@ -16,10 +16,10 @@ public class Peticion : MonoBehaviour
             public string name;
             public string url;  
         }
-         public string count;
-         public string next;
-         public string previous;
-         public resultado[] results;
+        public string count;
+        public string next;
+        public string previous;
+        public resultado[] results;
     }
     [System.Serializable]
     public struct ListaSalones 
@@ -60,7 +60,7 @@ public class Peticion : MonoBehaviour
 
     public void ObtenerDatos()
     {
-        StartCoroutine(CorrutinaObtenerDatos(EntradaBuscador.text)); //Obtener profesor busqueda
+        StartCoroutine(CorrutinaObtenerDatos(EntradaBuscador.text)); // Obtener profesor busqueda
     }
     
     private IEnumerator CorrutinaObtenerDatos(string busqueda)
@@ -74,7 +74,7 @@ public class Peticion : MonoBehaviour
         
         string url; 
         
-        if(opcionSelector == 0){ //Profesores
+        if(opcionSelector == 0){ // Profesores
             TMP_Text OIP = ObjInputPlaceholder.GetComponent<TMP_Text>();
             OIP.text = "Buscar un profesor ... ";
             
@@ -92,8 +92,8 @@ public class Peticion : MonoBehaviour
             
             if(!Peticion.isNetworkError && !Peticion.isHttpError){ //probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
                 listaRecibidaProfesores = JsonUtility.FromJson<ListaProfesores>(Peticion.downloadHandler.text);
-                Debug.Log(JsonUtility.ToJson(listaRecibidaProfesores));
-                Debug.Log(listaRecibidaProfesores.results.Length);
+                // Debug.Log(JsonUtility.ToJson(listaRecibidaProfesores));
+                // Debug.Log(listaRecibidaProfesores.results.Length);
                 
                 for(int i=0; i<listaRecibidaProfesores.results.Length; i++){
                     //Debug.Log(listaRecibidaProfesores.results[i].name);
@@ -105,7 +105,7 @@ public class Peticion : MonoBehaviour
                     GameObject cubiculoProfesor = profe.transform.GetChild(3).gameObject; //Especializacion profesor
                     //Faltan componentes para cada profesor
 
-                    StartCoroutine(cargarImagenProfesor("https://thumbs.dreamstime.com/b/icono-del-usuario-106603539.jpg",imagenProfesor));
+                    StartCoroutine(cargarImagenProfesor("https://thumbs.dreamstime.com/b/icono-del-usuario-106603539.jpg", imagenProfesor));
 
                     TMP_Text np = nombreProfesor.GetComponent<TMP_Text>();
                     np.text = listaRecibidaProfesores.results[i].name;
@@ -126,7 +126,7 @@ public class Peticion : MonoBehaviour
                 Debug.LogWarning("Error en la peticion");
                 Recargar.SetActive(true);
             }   
-        }else{ //Salones
+        }else{ // Salones
             TMP_Text OIP = ObjInputPlaceholder.GetComponent<TMP_Text>();
             OIP.text = "Buscar un salón ... ";
 
@@ -195,8 +195,8 @@ public class Peticion : MonoBehaviour
             Debug.Log(request.error);
         }else{
             Texture myTexture = ((DownloadHandlerTexture)request.downloadHandler).texture;
-            RawImage prueba = imagenProfesor.GetComponent<RawImage>();
-            prueba.texture = myTexture;
+            RawImage imagenRequestProfesor = imagenProfesor.GetComponent<RawImage>();
+            imagenRequestProfesor.texture = myTexture;
         }            
     }
 }
