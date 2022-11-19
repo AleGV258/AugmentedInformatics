@@ -30,7 +30,7 @@ public class panelProfesor : MonoBehaviour
     public GameObject cubiculoUI;   
     public GameObject imagenProfesorUI; 
 
-    public int idProfesor;
+    public int idProfesor = 1;
 
     void Start()
     {
@@ -59,6 +59,9 @@ public class panelProfesor : MonoBehaviour
 
         panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent<panelProfesor>();
         idProfesor = scriptPanelProfesor.idProfesor; 
+
+        panelSalon scriptpanelSalon = panel1Salon.GetComponent<panelSalon>();
+        scriptpanelSalon.idProfesorEnSalon =idProfesor; 
         
         StartCoroutine(CorrutinaObtenerDatos());
     }

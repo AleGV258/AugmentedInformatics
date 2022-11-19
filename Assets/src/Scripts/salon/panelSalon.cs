@@ -17,6 +17,8 @@ public class panelSalon : MonoBehaviour
     public GameObject interfazAR;
     public GameObject realidadAumentada;
 
+    public GameObject panelCargando;
+
     // Datos del Salón
     public GameObject nombreProfesor;
     public GameObject materiaProfesor;
@@ -34,8 +36,8 @@ public class panelSalon : MonoBehaviour
     public GameObject salonProfesorUI;
     public GameObject imagenProfesorUI;
 
-    public int idSalon;
-    public int idProfesorEnSalon;
+    public int idSalon = 1;
+    public int idProfesorEnSalon = 1;
 
     void Start()
     {
@@ -100,6 +102,7 @@ public class panelSalon : MonoBehaviour
 
     public IEnumerator CorrutinaObtenerDatos()
     {   
+        panelCargando.SetActive(true);
         //Obtener informacion del profesor y del salon
 
         //Obtener informacion del Salon
@@ -126,9 +129,14 @@ public class panelSalon : MonoBehaviour
             
             // Obtener informacion del profesor que se encuentra en el salon
             idProfesorEnSalon = idSalon; //TEMPORALMENTE ES EL MISMO ID, CAMBIARA CUANDO TENGAMOS API AL ID REAL
+            
+            
             StartCoroutine(ObtenerDatosProfesor());
+            panelCargando.SetActive(false);
+
         }else{
             Debug.LogWarning("Error en la peticion");
+            panelCargando.SetActive(false);
             //Recargar.SetActive(true);
         }             
     }
@@ -142,6 +150,7 @@ public class panelSalon : MonoBehaviour
     }
     public IEnumerator ObtenerDatosProfesor()
     {   
+        panelCargando.SetActive(true);
         string url;
         url = "rickandmortyapi.com/api/character/" + idProfesorEnSalon.ToString();
         UnityWebRequest Peticion = UnityWebRequest.Get(url); //Realizar petición
@@ -171,9 +180,12 @@ public class panelSalon : MonoBehaviour
             grupoUI.text = infoProfesor.gender;   
             TMP_Text horarioUI = horarioProfesorUI.GetComponent<TMP_Text>();
             horarioUI.text = infoProfesor.name; 
+            
             StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesorUI));
+            panelCargando.SetActive(false);
         }else{
             Debug.LogWarning("Error en la peticion");
+            panelCargando.SetActive(false);
             //Recargar.SetActive(true);
         }             
     }
