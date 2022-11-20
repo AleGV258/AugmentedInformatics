@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4473312, g: 0.496706, b: 0.57291245, a: 1}
+  m_IndirectSpecularColor: {r: 0.4473322, g: 0.49670774, b: 0.57291526, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4190,7 +4190,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1358567162}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &358867771
 GameObject:
@@ -5250,7 +5250,7 @@ GameObject:
   - component: {fileID: 443274788}
   - component: {fileID: 443274787}
   m_Layer: 5
-  m_Name: panel de carga
+  m_Name: PanelCarga
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5598,7 +5598,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6593292917039697186, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6593292917039697186, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7042,7 +7042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &624133728
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7582,7 +7582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5178315130666575779, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5178315130666575779, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_AnchorMax.x
@@ -11133,7 +11133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157833019918585851, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9157833019918585851, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16078,12 +16078,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 638812235}
   - {fileID: 470239025}
+  - {fileID: 638812235}
   - {fileID: 760942521}
   - {fileID: 2008777780}
-  - {fileID: 1938480766}
   - {fileID: 904043667}
+  - {fileID: 1938480766}
+  - {fileID: 1866371093}
   - {fileID: 337561151}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -24859,13 +24860,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: AR_ImageTarget_CAPACITACION
+  mTrackableName: AR_ImageTarget_Croquis
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 0.536329
+  mAspectRatio: 0.707162
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.536329
+  mHeight: 0.707162
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -24902,7 +24903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1853346221}
   mHiddenRoot: {fileID: 0}
-  mTargetName: AR_ImageTarget_CAPACITACION
+  mTargetName: AR_ImageTarget_Croquis
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 1853346221}
   mMeshFilter: {fileID: 0}
@@ -24920,7 +24921,7 @@ GameObject:
   - component: {fileID: 1866371091}
   - component: {fileID: 1866371090}
   m_Layer: 5
-  m_Name: Pantalla de carga
+  m_Name: PantallaCarga
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24955,10 +24956,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2560, y: 1440}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -25000,8 +25001,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 443274786}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1358567162}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -25148,13 +25149,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: AR_ImageTarget_Croquis
+  mTrackableName: AR_ImageTarget_CAPACITACION
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
-  mAspectRatio: 0.707162
+  mAspectRatio: 0.536329
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.707162
+  mHeight: 0.536329
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -25174,7 +25175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1902978268}
   mHiddenRoot: {fileID: 0}
-  mTargetName: AR_ImageTarget_Croquis
+  mTargetName: AR_ImageTarget_CAPACITACION
   mDatasetName: Vuforia/ProyectoRA_Informatica.xml
   mCastedBehaviour: {fileID: 1902978268}
   mMeshFilter: {fileID: 0}
@@ -25484,7 +25485,7 @@ RectTransform:
   m_Children:
   - {fileID: 660451234}
   m_Father: {fileID: 1358567162}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

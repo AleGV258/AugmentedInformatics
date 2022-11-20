@@ -19,10 +19,23 @@ public class MenuPrincipal : MonoBehaviour
 
     bool activado = false;
     bool inicio = true;
+    float contadorQuitarPanel = 0;
 
     void Start()
     {
         StartCoroutine(desactivarCamara());
+    }
+
+    void Update()
+    {
+        if(virtualUI.activeSelf == true){
+            contadorQuitarPanel += Time.deltaTime;
+        }
+        if(contadorQuitarPanel >= 35.0f){
+            virtualUI.SetActive(false);
+            activado = false;
+            contadorQuitarPanel = 0;
+        }
     }
 
     public void reproducirPantalla()
@@ -34,13 +47,6 @@ public class MenuPrincipal : MonoBehaviour
     {
         activado = true;
         virtualUI.SetActive(false);
-    }
-
-    IEnumerator quitarPanel()
-    {
-        yield return new WaitForSeconds(30);
-        virtualUI.SetActive(false);
-        activado = false;
     }
 
     IEnumerator desactivarCamara()
@@ -110,7 +116,7 @@ public class MenuPrincipal : MonoBehaviour
         if ((activado) && (realidadAumentada.activeSelf == true))
         {
             virtualUI.SetActive(true);
-            StartCoroutine(quitarPanel());
+            contadorQuitarPanel = 0;
         }
         else
         {
