@@ -4177,6 +4177,14 @@ MonoBehaviour:
   realidadAumentada: {fileID: 214040054}
   virtualUI: {fileID: 1615122588}
   timeline: {fileID: 1569095841}
+  panel1Salon: {fileID: 0}
+  panel1SalonUI: {fileID: 0}
+  panel2Profesor: {fileID: 0}
+  panel2ProfesorUI: {fileID: 0}
+  interfazAR: {fileID: 0}
+  targetRecibido: {fileID: 0}
+  paneles: {fileID: 1569095834}
+  idSalon: 0
 --- !u!4 &337561151
 Transform:
   m_ObjectHideFlags: 0
@@ -7042,7 +7050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &624133728
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11183,6 +11191,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9157833020407422419, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020746580307, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
 --- !u!4 &904043667 stripped
@@ -11494,7 +11510,8 @@ GameObject:
   - component: {fileID: 974870757}
   - component: {fileID: 974870760}
   - component: {fileID: 974870759}
-  - component: {fileID: 974870761}
+  - component: {fileID: 974870762}
+  - component: {fileID: 974870763}
   m_Layer: 0
   m_Name: AR_ImageTarget_LE
   m_TagString: Untagged
@@ -11582,6 +11599,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 974870762}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -11634,8 +11663,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 974870761}
---- !u!114 &974870761
+  mPreview: {fileID: 974870763}
+--- !u!114 &974870762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974870756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 12
+  Target: {fileID: 974870756}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &974870763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14680,7 +14724,8 @@ GameObject:
   - component: {fileID: 1215259753}
   - component: {fileID: 1215259756}
   - component: {fileID: 1215259755}
-  - component: {fileID: 1215259757}
+  - component: {fileID: 1215259758}
+  - component: {fileID: 1215259759}
   m_Layer: 0
   m_Name: AR_ImageTarget_CD
   m_TagString: Untagged
@@ -14769,6 +14814,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1215259758}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -14821,8 +14878,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1215259757}
---- !u!114 &1215259757
+  mPreview: {fileID: 1215259759}
+--- !u!114 &1215259758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215259752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 10
+  Target: {fileID: 1215259752}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &1215259759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16631,7 +16703,8 @@ GameObject:
   - component: {fileID: 1371910017}
   - component: {fileID: 1371910020}
   - component: {fileID: 1371910019}
-  - component: {fileID: 1371910021}
+  - component: {fileID: 1371910022}
+  - component: {fileID: 1371910023}
   m_Layer: 0
   m_Name: AR_ImageTarget_NUTRI
   m_TagString: Untagged
@@ -16719,6 +16792,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1371910022}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -16771,8 +16856,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1371910021}
---- !u!114 &1371910021
+  mPreview: {fileID: 1371910023}
+--- !u!114 &1371910022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371910016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 13
+  Target: {fileID: 1371910016}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &1371910023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23347,7 +23447,8 @@ GameObject:
   - component: {fileID: 1787972952}
   - component: {fileID: 1787972955}
   - component: {fileID: 1787972954}
-  - component: {fileID: 1787972956}
+  - component: {fileID: 1787972957}
+  - component: {fileID: 1787972958}
   m_Layer: 0
   m_Name: AR_ImageTarget_LaCER
   m_TagString: Untagged
@@ -23435,6 +23536,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1787972957}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -23487,8 +23600,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1787972956}
---- !u!114 &1787972956
+  mPreview: {fileID: 1787972958}
+--- !u!114 &1787972957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787972951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 11
+  Target: {fileID: 1787972951}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &1787972958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

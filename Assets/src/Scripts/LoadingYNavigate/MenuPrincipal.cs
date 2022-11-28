@@ -143,4 +143,95 @@ public class MenuPrincipal : MonoBehaviour
     {
         Application.OpenURL("https://www.uaq.mx/informatica/cede.html");
     }
+
+
+    //Probar cambiar los metodos de panelSalon y panelProfesor a menu principal
+    public GameObject panel1Salon;
+    public GameObject panel1SalonUI;
+    public GameObject panel2Profesor;
+    public GameObject panel2ProfesorUI;
+    public GameObject interfazAR;
+    
+    public void cambiarPrimerPantalla()
+    {
+        panel1Salon.SetActive(true);
+        panel2Profesor.SetActive(false);
+        panel1SalonUI.SetActive(true);
+        panel2ProfesorUI.SetActive(false);
+        //panelBusqueda.SetActive(false);
+        arCamera.SetActive(true);
+        interfazAR.SetActive(false);
+        realidadAumentada.SetActive(true);
+
+        // panelSalon scriptPanelSalon = panel1Salon.GetComponent<panelSalon>();
+        // idSalon = scriptPanelSalon.idSalon; // Se envia del en el que se encuentra 
+        
+        // StartCoroutine(CorrutinaObtenerDatos());
+    }
+
+    public void cambiarPrimerPantallaUI()
+    {
+        panel1Salon.SetActive(true);
+        panel2Profesor.SetActive(false);
+        panel1SalonUI.SetActive(true);
+        panel2ProfesorUI.SetActive(false);
+        //panelBusqueda.SetActive(false);
+        arCamera.SetActive(true);
+        interfazAR.SetActive(true);
+        realidadAumentada.SetActive(true);
+
+        // panelSalon scriptPanelSalon = panel1Salon.GetComponent<panelSalon>();
+        // idSalon = scriptPanelSalon.idSalon; // Se envia del en el que se encuentra 
+        
+        // StartCoroutine(CorrutinaObtenerDatos());
+    }
+    public void cambiarSegundaPantalla()//Profesor
+    {
+        panel1Salon.SetActive(false);
+        panel2Profesor.SetActive(true);
+        panel1SalonUI.SetActive(false);
+        panel2ProfesorUI.SetActive(true);
+        // panelBusqueda.SetActive(false);
+        arCamera.SetActive(true);
+        interfazAR.SetActive(false);
+        realidadAumentada.SetActive(true);
+
+        // panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent<panelProfesor>();
+        // idProfesor = scriptPanelProfesor.idProfesor; 
+
+        // panelSalon scriptpanelSalon = panel1Salon.GetComponent<panelSalon>();
+        // scriptpanelSalon.idProfesorEnSalon =idProfesor; 
+        
+        // StartCoroutine(scriptPanelProfesor.CorrutinaObtenerDatos());
+    }
+    public void cambiarSegundaPantallaUI()//Profesor
+    {
+        panel1Salon.SetActive(false);
+        panel2Profesor.SetActive(true);
+        panel1SalonUI.SetActive(false);
+        panel2ProfesorUI.SetActive(true);
+        // panelBusqueda.SetActive(false);
+        arCamera.SetActive(true);
+        interfazAR.SetActive(true);
+        realidadAumentada.SetActive(true);
+
+        // panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent<panelProfesor>();
+        // idProfesor = scriptPanelProfesor.idProfesor; 
+        
+        // StartCoroutine(scriptPanelProfesor.CorrutinaObtenerDatos());
+    }
+
+    public GameObject targetRecibido;
+    public GameObject paneles;
+    public int idSalon =0;
+    
+    public void cambiarPadrePanelesTarget()
+    {
+        //Pasar ID
+        Debug.Log("El nuevo idSalon es " + idSalon);
+        //Iniciar obtener Datos
+        //Cambiar Padre        
+        paneles.transform.parent = targetRecibido.transform;
+    }
+    
 }

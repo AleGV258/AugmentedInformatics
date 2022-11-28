@@ -130,7 +130,7 @@ public class panelSalon : MonoBehaviour
             // Obtener informacion del profesor que se encuentra en el salon
             idProfesorEnSalon = idSalon; //TEMPORALMENTE ES EL MISMO ID, CAMBIARA CUANDO TENGAMOS API AL ID REAL
             
-            
+            Debug.Log("Profesor id " + idProfesorEnSalon);
             StartCoroutine(ObtenerDatosProfesor());
             panelCargando.SetActive(false);
 
