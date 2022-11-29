@@ -4,23 +4,17 @@ using UnityEngine;
 
 public class profeObjeto : MonoBehaviour
 {
-    // Start is called before the first frame update
     public int idProfesor;
-    public GameObject panelProfesores;
+    public GameObject cambioPantallas;
 
     void Start()
     {
-
     } 
     
     public void cambiarAPanelProfesor()
     {
-        panelProfesores.SetActive(true);
-
-        panelProfesor scriptPanelProfesor = panelProfesores.GetComponent<panelProfesor>();
-        scriptPanelProfesor.idProfesor = idProfesor;
-        
-        scriptPanelProfesor.cambiarSegundaPantallaUI();
-        // scriptPanelProfesor.CorrutinaObtenerDatos("1");
+        MenuPrincipal scriptcambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>();         
+        scriptcambioPantallas.idProfesor = idProfesor;
+        scriptcambioPantallas.cambiarSegundaPantallaUI();
     }
 }

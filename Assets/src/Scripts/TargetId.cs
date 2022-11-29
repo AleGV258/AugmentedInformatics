@@ -24,6 +24,7 @@ public class TargetId : MonoBehaviour
         menu.idSalon = idTargetSalon;
         menu.targetRecibido = Target;
         menu.cambiarPadrePanelesTarget();
+        menu.cambiarPrimerPantalla();
         // panelSalon salon = instanciaPanelSalon.GetComponent<panelSalon>();
         // salon.idSalon = idTargetSalon;
         // StartCoroutine(salon.CorrutinaObtenerDatos());

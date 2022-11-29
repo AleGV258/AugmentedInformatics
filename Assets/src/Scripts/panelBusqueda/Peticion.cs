@@ -36,25 +36,18 @@ public class Peticion : MonoBehaviour
     }
 
     public ListaProfesores listaRecibidaProfesores; //Lista donde se almacenan los profesores que se reciben
-    // public Button BtonClick;
     public TMP_InputField EntradaBuscador;
     public GameObject ObjProfesor;
     public GameObject ObjLista;
     public GameObject Selector;
-
     public GameObject ObjSalon;
     public ListaSalones listaRecibidaSalones; //Lista donde se almacenan los profesores que se reciben
-
     public GameObject ObjInputPlaceholder;
     public GameObject ObjTitulo;
     public GameObject Recargar;
-
-    public GameObject panelProfesor;
-    public GameObject panelSalon;
+    public GameObject cambioPantallas;
 
     void Start () {
-		// Button btn = BtonClick.GetComponent<Button>();
-		// BtonClick.onClick.AddListener(ObtenerDatos);
         StartCoroutine(CorrutinaObtenerDatos("")); //Obtener todos los profesores
 	}    
 
@@ -120,7 +113,7 @@ public class Peticion : MonoBehaviour
                     //Id del profesor dentro del objeto profe
                     profeObjeto profesorID = profe.GetComponent<profeObjeto>();
                     profesorID.idProfesor = i; //cambiar por el valor real de ID
-                    profesorID.panelProfesores = panelProfesor;
+                    profesorID.cambioPantallas = cambioPantallas;
                 }                        
             }else{
                 Debug.LogWarning("Error en la peticion");
@@ -176,7 +169,7 @@ public class Peticion : MonoBehaviour
                     //Id del Salon dentro del objeto salon
                     salonObjeto scriptSalonObjeto = salon.GetComponent<salonObjeto>();
                     scriptSalonObjeto.idSalon = i; //cambiar por el valor real de ID
-                    scriptSalonObjeto.panelSalones = panelSalon;
+                    scriptSalonObjeto.cambioPantallas = cambioPantallas;
                 }                        
             }else{
                 Debug.LogWarning("Error en la peticion");

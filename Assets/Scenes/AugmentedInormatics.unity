@@ -2146,8 +2146,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 686090039}
-        m_TargetAssemblyTypeName: panelProfesor, Assembly-CSharp
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
         m_MethodName: cambiarSegundaPantalla
         m_Mode: 1
         m_Arguments:
@@ -4177,14 +4177,16 @@ MonoBehaviour:
   realidadAumentada: {fileID: 214040054}
   virtualUI: {fileID: 1615122588}
   timeline: {fileID: 1569095841}
-  panel1Salon: {fileID: 0}
-  panel1SalonUI: {fileID: 0}
-  panel2Profesor: {fileID: 0}
-  panel2ProfesorUI: {fileID: 0}
-  interfazAR: {fileID: 0}
+  panel1Salon: {fileID: 624133727}
+  panel1SalonUI: {fileID: 1053115648}
+  panel2Profesor: {fileID: 686090035}
+  panel2ProfesorUI: {fileID: 1707193700}
+  interfazAR: {fileID: 1615122588}
+  panelBusqueda: {fileID: 967708590}
   targetRecibido: {fileID: 0}
   paneles: {fileID: 1569095834}
   idSalon: 0
+  idProfesor: 0
 --- !u!4 &337561151
 Transform:
   m_ObjectHideFlags: 0
@@ -7154,8 +7156,7 @@ MonoBehaviour:
   edificioProfesorUI: {fileID: 2008361720}
   salonProfesorUI: {fileID: 964257215}
   imagenProfesorUI: {fileID: 1451002267}
-  idSalon: 0
-  idProfesorEnSalon: 0
+  cambioPantallas: {fileID: 337561149}
   infoProfesor:
     name: 
     id: 
@@ -7576,6 +7577,10 @@ PrefabInstance:
       propertyPath: panelProfesor
       value: 
       objectReference: {fileID: 686090035}
+    - target: {fileID: 5178315130666575778, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
+      propertyPath: cambioPantallas
+      value: 
+      objectReference: {fileID: 337561149}
     - target: {fileID: 5178315130666575778, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: panelPrimerPantalla
       value: 
@@ -8593,7 +8598,7 @@ MonoBehaviour:
   curriculumUI: {fileID: 261420550}
   cubiculoUI: {fileID: 1362238845}
   imagenProfesorUI: {fileID: 1037671184}
-  idProfesor: 0
+  cambioPantallas: {fileID: 337561149}
   infoExtraProfesor:
     name: 
     id: 
@@ -11043,10 +11048,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1358567162}
     m_Modifications:
+    - target: {fileID: 1643131356531223060, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 337561150}
+    - target: {fileID: 1643131356531223060, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: cambiarPrimerPantallaUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643131356531223060, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPrincipal, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4788309517506154720, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 337561150}
+    - target: {fileID: 5834691716737151301, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 337561150}
+    - target: {fileID: 5834691716737151301, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: cambiarPrimerPantallaUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834691716737151301, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPrincipal, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6740161149341663475, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: arCamera
       value: 
@@ -11076,6 +11105,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 686090035}
     - target: {fileID: 6740161149341663475, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: cambioPantallas
+      value: 
+      objectReference: {fileID: 337561149}
+    - target: {fileID: 6740161149341663475, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: areaConocimiento
       value: 
       objectReference: {fileID: 1791341827}
@@ -11100,6 +11133,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1775695200}
     - target: {fileID: 8622061982851530735, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: menuPrincipal
+      value: 
+      objectReference: {fileID: 337561149}
+    - target: {fileID: 8622061982851530735, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: panelBusqueda
       value: 
       objectReference: {fileID: 967708590}
@@ -11123,6 +11160,10 @@ PrefabInstance:
       propertyPath: panel2Profesor
       value: 
       objectReference: {fileID: 686090035}
+    - target: {fileID: 8622061982851530735, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: cambioPantallas
+      value: 
+      objectReference: {fileID: 337561149}
     - target: {fileID: 8622061982851530735, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: horarioProfesor
       value: 
@@ -11195,9 +11236,33 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9157833020613112649, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 337561150}
+    - target: {fileID: 9157833020613112649, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: cambiarSegundaPantallaUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020613112649, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPrincipal, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 9157833020746580307, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833021257574343, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 337561150}
+    - target: {fileID: 9157833021257574343, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: cambiarSegundaPantallaUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833021257574343, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPrincipal, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
@@ -14814,9 +14879,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1215259758}
-        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
-        m_MethodName: pasarId
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: cambiarPrimerPantalla
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25476,8 +25541,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 624133731}
-        m_TargetAssemblyTypeName: panelSalon, Assembly-CSharp
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
         m_MethodName: cambiarPrimerPantalla
         m_Mode: 1
         m_Arguments:
@@ -27193,8 +27258,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 686090039}
-        m_TargetAssemblyTypeName: panelProfesor, Assembly-CSharp
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
         m_MethodName: cambiarSegundaPantalla
         m_Mode: 1
         m_Arguments:
@@ -27575,8 +27640,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 624133731}
-        m_TargetAssemblyTypeName: panelSalon, Assembly-CSharp
+      - m_Target: {fileID: 337561150}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
         m_MethodName: cambiarPrimerPantalla
         m_Mode: 1
         m_Arguments:

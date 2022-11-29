@@ -151,39 +151,50 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject panel2Profesor;
     public GameObject panel2ProfesorUI;
     public GameObject interfazAR;
+    public GameObject panelBusqueda;
     
-    public void cambiarPrimerPantalla()
+    public void cambiarPrimerPantalla()//Salon
     {
         panel1Salon.SetActive(true);
-        panel2Profesor.SetActive(false);
         panel1SalonUI.SetActive(true);
+        
+        panel2Profesor.SetActive(false);
         panel2ProfesorUI.SetActive(false);
-        //panelBusqueda.SetActive(false);
+        
+        panelBusqueda.SetActive(false);
+        
         arCamera.SetActive(true);
+        
         interfazAR.SetActive(false);
+
         realidadAumentada.SetActive(true);
 
-        // panelSalon scriptPanelSalon = panel1Salon.GetComponent<panelSalon>();
-        // idSalon = scriptPanelSalon.idSalon; // Se envia del en el que se encuentra 
+        panelSalon scriptPanelSalon = panel1Salon.GetComponent<panelSalon>();
+        // scriptPanelSalon.idSalon = idSalon;
         
-        // StartCoroutine(CorrutinaObtenerDatos());
+        StartCoroutine(scriptPanelSalon.CorrutinaObtenerDatos());
     }
 
-    public void cambiarPrimerPantallaUI()
+    public void cambiarPrimerPantallaUI()//Salon
     {
         panel1Salon.SetActive(true);
-        panel2Profesor.SetActive(false);
+        
         panel1SalonUI.SetActive(true);
+
+        panel2Profesor.SetActive(false);
         panel2ProfesorUI.SetActive(false);
-        //panelBusqueda.SetActive(false);
+
+        panelBusqueda.SetActive(false);
+        
         arCamera.SetActive(true);
+        
         interfazAR.SetActive(true);
         realidadAumentada.SetActive(true);
 
-        // panelSalon scriptPanelSalon = panel1Salon.GetComponent<panelSalon>();
-        // idSalon = scriptPanelSalon.idSalon; // Se envia del en el que se encuentra 
+        panelSalon scriptPanelSalonUI = panel1SalonUI.GetComponent<panelSalon>();
+        // idSalon = scriptPanelSalonUI.idSalon; // Se envia del en el que se encuentra 
         
-        // StartCoroutine(CorrutinaObtenerDatos());
+        StartCoroutine(scriptPanelSalonUI.CorrutinaObtenerDatos());
     }
     public void cambiarSegundaPantalla()//Profesor
     {
@@ -191,18 +202,13 @@ public class MenuPrincipal : MonoBehaviour
         panel2Profesor.SetActive(true);
         panel1SalonUI.SetActive(false);
         panel2ProfesorUI.SetActive(true);
-        // panelBusqueda.SetActive(false);
+        panelBusqueda.SetActive(false);
         arCamera.SetActive(true);
         interfazAR.SetActive(false);
         realidadAumentada.SetActive(true);
 
-        // panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent<panelProfesor>();
-        // idProfesor = scriptPanelProfesor.idProfesor; 
-
-        // panelSalon scriptpanelSalon = panel1Salon.GetComponent<panelSalon>();
-        // scriptpanelSalon.idProfesorEnSalon =idProfesor; 
-        
-        // StartCoroutine(scriptPanelProfesor.CorrutinaObtenerDatos());
+        panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent<panelProfesor>(); 
+        StartCoroutine(scriptPanelProfesor.CorrutinaObtenerDatos());
     }
     public void cambiarSegundaPantallaUI()//Profesor
     {
@@ -210,21 +216,19 @@ public class MenuPrincipal : MonoBehaviour
         panel2Profesor.SetActive(true);
         panel1SalonUI.SetActive(false);
         panel2ProfesorUI.SetActive(true);
-        // panelBusqueda.SetActive(false);
+        panelBusqueda.SetActive(false);
         arCamera.SetActive(true);
         interfazAR.SetActive(true);
         realidadAumentada.SetActive(true);
 
-        // panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent<panelProfesor>();
-        // idProfesor = scriptPanelProfesor.idProfesor; 
-        
-        // StartCoroutine(scriptPanelProfesor.CorrutinaObtenerDatos());
+        panelProfesor scriptPanelProfesorUI = panel2ProfesorUI.GetComponent<panelProfesor>();
+        StartCoroutine(scriptPanelProfesorUI.CorrutinaObtenerDatos());
     }
 
     public GameObject targetRecibido;
     public GameObject paneles;
     public int idSalon =0;
-    
+    public int idProfesor = 0;
     public void cambiarPadrePanelesTarget()
     {
         //Pasar ID

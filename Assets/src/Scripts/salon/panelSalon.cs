@@ -36,49 +36,15 @@ public class panelSalon : MonoBehaviour
     public GameObject salonProfesorUI;
     public GameObject imagenProfesorUI;
 
-    public int idSalon = 1;
-    public int idProfesorEnSalon = 1;
+    private int idSalon = 0;
+    private int idProfesorEnSalon = 0;
+
+    public GameObject cambioPantallas;
 
     void Start()
     {
-        //Debug.Log("Ejecucion cambiar pantalla 1");
-        //StartCoroutine(CorrutinaObtenerDatos());
     }
     
-    public void cambiarPrimerPantalla()
-    {
-        panel1Salon.SetActive(true);
-        panel2Profesor.SetActive(false);
-        panel1SalonUI.SetActive(true);
-        panel2ProfesorUI.SetActive(false);
-        panelBusqueda.SetActive(false);
-        arCamera.SetActive(true);
-        interfazAR.SetActive(false);
-        realidadAumentada.SetActive(true);
-
-        panelSalon scriptPanelSalon = panel1Salon.GetComponent<panelSalon>();
-        idSalon = scriptPanelSalon.idSalon; // Se envia del en el que se encuentra 
-        
-        StartCoroutine(CorrutinaObtenerDatos());
-    }
-
-    public void cambiarPrimerPantallaUI()
-    {
-        panel1Salon.SetActive(true);
-        panel2Profesor.SetActive(false);
-        panel1SalonUI.SetActive(true);
-        panel2ProfesorUI.SetActive(false);
-        panelBusqueda.SetActive(false);
-        arCamera.SetActive(true);
-        interfazAR.SetActive(true);
-        realidadAumentada.SetActive(true);
-
-        panelSalon scriptPanelSalon = panel1Salon.GetComponent<panelSalon>();
-        idSalon = scriptPanelSalon.idSalon; // Se envia del en el que se encuentra 
-        
-        StartCoroutine(CorrutinaObtenerDatos());
-    }
-
     [System.Serializable]
     public struct Profesor 
     {
@@ -102,9 +68,13 @@ public class panelSalon : MonoBehaviour
 
     public IEnumerator CorrutinaObtenerDatos()
     {   
-        panelCargando.SetActive(true);
-        //Obtener informacion del profesor y del salon
+        //OBTENER EL IDSALON DESDE EL MENU PRINCIPAL
+        MenuPrincipal scriptcambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>();         
+        idSalon = scriptcambioPantallas.idSalon;
 
+        panelCargando.SetActive(true);
+
+        //Obtener informacion del profesor y del salon
         //Obtener informacion del Salon
         string url;
         url = "rickandmortyapi.com/api/character/" + idSalon.ToString();;
@@ -112,8 +82,7 @@ public class panelSalon : MonoBehaviour
         yield return Peticion.SendWebRequest();
         
         if(!Peticion.isNetworkError && !Peticion.isHttpError){ //Probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
-            infoSalon = JsonUtility.FromJson<Salon>(Peticion.downloadHandler.text);
-            //Debug.Log(Peticion.downloadHandler.text);          
+            infoSalon = JsonUtility.FromJson<Salon>(Peticion.downloadHandler.text);   
             
             // Salón
             TMP_Text edificio = edificioProfesor.GetComponent<TMP_Text>();
@@ -157,8 +126,7 @@ public class panelSalon : MonoBehaviour
         yield return Peticion.SendWebRequest();
         
         if(!Peticion.isNetworkError && !Peticion.isHttpError){ //Probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
-            infoProfesor = JsonUtility.FromJson<Profesor>(Peticion.downloadHandler.text);
-            //Debug.Log(Peticion.downloadHandler.text);          
+            infoProfesor = JsonUtility.FromJson<Profesor>(Peticion.downloadHandler.text);       
             
             // Salón
             TMP_Text nombre = nombreProfesor.GetComponent<TMP_Text>();

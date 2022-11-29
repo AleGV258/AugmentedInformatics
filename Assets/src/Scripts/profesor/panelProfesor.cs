@@ -30,66 +30,13 @@ public class panelProfesor : MonoBehaviour
     public GameObject cubiculoUI;   
     public GameObject imagenProfesorUI; 
 
-    public int idProfesor = 1;
+    private int idProfesor = 1;
+    
+    public GameObject cambioPantallas;
 
     void Start()
     {
-        // Debug.Log("Ejecucion cambiar pantalla 2");
-        // StartCoroutine(CorrutinaObtenerDatos());
     }
-    
-    // public void cambiarPrimerPantalla()
-    // {
-    //     panel1Salon.SetActive(true);
-    //     panel2Profesor.SetActive(false);
-    //     panelBusqueda.SetActive(false);
-    //     StartCoroutine(CorrutinaObtenerDatos());
-    // }
-
-    public void cambiarSegundaPantalla()
-    {
-        panel1Salon.SetActive(false);
-        panel2Profesor.SetActive(true);
-        panel1SalonUI.SetActive(false);
-        panel2ProfesorUI.SetActive(true);
-        panelBusqueda.SetActive(false);
-        arCamera.SetActive(true);
-        interfazAR.SetActive(false);
-        realidadAumentada.SetActive(true);
-
-        panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent<panelProfesor>();
-        idProfesor = scriptPanelProfesor.idProfesor; 
-
-        panelSalon scriptpanelSalon = panel1Salon.GetComponent<panelSalon>();
-        scriptpanelSalon.idProfesorEnSalon =idProfesor; 
-        
-        StartCoroutine(CorrutinaObtenerDatos());
-    }
-
-    public void cambiarSegundaPantallaUI()
-    {
-        panel1Salon.SetActive(false);
-        panel2Profesor.SetActive(true);
-        panel1SalonUI.SetActive(false);
-        panel2ProfesorUI.SetActive(true);
-        panelBusqueda.SetActive(false);
-        arCamera.SetActive(true);
-        interfazAR.SetActive(true);
-        realidadAumentada.SetActive(true);
-
-        panelProfesor scriptPanelProfesor = panel2Profesor.GetComponent<panelProfesor>();
-        idProfesor = scriptPanelProfesor.idProfesor; 
-        
-        StartCoroutine(CorrutinaObtenerDatos());
-    }
-
-    // public void cambiarPanelBusqueda()
-    // {
-    //     panel1Salon.SetActive(false);
-    //     panel2Profesor.SetActive(false);
-    //     panelBusqueda.SetActive(true);
-    // }
-
     [System.Serializable]
     public struct InformacionProfesor 
     {
@@ -105,6 +52,9 @@ public class panelProfesor : MonoBehaviour
 
     public IEnumerator CorrutinaObtenerDatos()
     {   
+        MenuPrincipal scriptcambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>();         
+        idProfesor = scriptcambioPantallas.idProfesor; 
+        
         string url;
         url = "rickandmortyapi.com/api/character/" + idProfesor.ToString();
         UnityWebRequest Peticion = UnityWebRequest.Get(url); // Realizar petición
@@ -112,8 +62,7 @@ public class panelProfesor : MonoBehaviour
         
         if(!Peticion.isNetworkError && !Peticion.isHttpError){ //probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
             infoExtraProfesor = JsonUtility.FromJson<InformacionProfesor>(Peticion.downloadHandler.text);
-            //Debug.Log(Peticion.downloadHandler.text);          
-            
+                        
             // Profesor        
             TMP_Text especializacion = especializacionNombreProfesor.GetComponent<TMP_Text>();
             especializacion.text = infoExtraProfesor.name + " / " + infoExtraProfesor.status; 
