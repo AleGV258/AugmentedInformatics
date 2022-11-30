@@ -36,6 +36,10 @@ public class MenuPrincipal : MonoBehaviour
             activado = false;
             contadorQuitarPanel = 0;
         }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+           regresarMenuPrincipal();
+        }
     }
 
     public void reproducirPantalla()
@@ -236,6 +240,9 @@ public class MenuPrincipal : MonoBehaviour
         //Iniciar obtener Datos
         //Cambiar Padre        
         paneles.transform.parent = targetRecibido.transform;
+        // paneles.transform.position = new Vector3(0,0,0);
+        paneles.GetComponent<RectTransform>().localPosition = Vector3.zero;
+        paneles.GetComponent<RectTransform>().localRotation = Quaternion.Euler(90f, 0f, 0f);
     }
     
 }

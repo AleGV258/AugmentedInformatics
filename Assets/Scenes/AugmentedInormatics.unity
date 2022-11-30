@@ -6563,6 +6563,7 @@ GameObject:
   - component: {fileID: 586603236}
   - component: {fileID: 586603239}
   - component: {fileID: 586603238}
+  - component: {fileID: 586603241}
   - component: {fileID: 586603240}
   m_Layer: 0
   m_Name: AR_ImageTarget_POSGRADO
@@ -6651,6 +6652,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 586603240}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -6703,8 +6716,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 586603240}
+  mPreview: {fileID: 586603241}
 --- !u!114 &586603240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586603235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 10
+  Target: {fileID: 586603235}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &586603241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9056,6 +9084,7 @@ GameObject:
   - component: {fileID: 720583636}
   - component: {fileID: 720583639}
   - component: {fileID: 720583638}
+  - component: {fileID: 720583641}
   - component: {fileID: 720583640}
   m_Layer: 0
   m_Name: AR_ImageTarget_SPACERTZ
@@ -9144,6 +9173,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 720583640}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -9196,8 +9237,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 720583640}
+  mPreview: {fileID: 720583641}
 --- !u!114 &720583640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720583635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 9
+  Target: {fileID: 720583635}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &720583641
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10460,6 +10516,7 @@ GameObject:
   - component: {fileID: 849379762}
   - component: {fileID: 849379765}
   - component: {fileID: 849379764}
+  - component: {fileID: 849379767}
   - component: {fileID: 849379766}
   m_Layer: 0
   m_Name: AR_ImageTarget_OLIMPO
@@ -10548,6 +10605,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 849379766}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -10600,8 +10669,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 849379766}
+  mPreview: {fileID: 849379767}
 --- !u!114 &849379766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849379761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 8
+  Target: {fileID: 849379761}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &849379767
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11741,7 +11825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idTargetSalon: 12
+  idTargetSalon: 3
   Target: {fileID: 974870756}
   cambioPantallas: {fileID: 337561149}
 --- !u!114 &974870763
@@ -13303,6 +13387,7 @@ GameObject:
   - component: {fileID: 1081440261}
   - component: {fileID: 1081440264}
   - component: {fileID: 1081440263}
+  - component: {fileID: 1081440266}
   - component: {fileID: 1081440265}
   m_Layer: 0
   m_Name: AR_ImageTarget_FISIO
@@ -13391,6 +13476,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1081440265}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -13443,8 +13540,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1081440265}
+  mPreview: {fileID: 1081440266}
 --- !u!114 &1081440265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081440260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 7
+  Target: {fileID: 1081440260}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &1081440266
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14879,9 +14991,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 337561150}
-        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: cambiarPrimerPantalla
+      - m_Target: {fileID: 1215259758}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14956,7 +15068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idTargetSalon: 10
+  idTargetSalon: 1
   Target: {fileID: 1215259752}
   cambioPantallas: {fileID: 337561149}
 --- !u!114 &1215259759
@@ -16934,7 +17046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idTargetSalon: 13
+  idTargetSalon: 4
   Target: {fileID: 1371910016}
   cambioPantallas: {fileID: 337561149}
 --- !u!114 &1371910023
@@ -17864,6 +17976,7 @@ GameObject:
   - component: {fileID: 1421902636}
   - component: {fileID: 1421902639}
   - component: {fileID: 1421902638}
+  - component: {fileID: 1421902641}
   - component: {fileID: 1421902640}
   m_Layer: 0
   m_Name: AR_ImageTarget_PSIC
@@ -17952,6 +18065,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1421902640}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -18004,8 +18129,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1421902640}
+  mPreview: {fileID: 1421902641}
 --- !u!114 &1421902640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421902635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 6
+  Target: {fileID: 1421902635}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &1421902641
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19458,7 +19598,7 @@ RectTransform:
   m_GameObject: {fileID: 1569095834}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.10000001, z: 0.10000001}
+  m_LocalScale: {x: 0.1, y: 0.100000024, z: 0.100000024}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 624133728}
@@ -21003,6 +21143,7 @@ GameObject:
   - component: {fileID: 1654784170}
   - component: {fileID: 1654784173}
   - component: {fileID: 1654784172}
+  - component: {fileID: 1654784175}
   - component: {fileID: 1654784174}
   m_Layer: 0
   m_Name: AR_ImageTarget_EMPRENDIMIENTO
@@ -21091,6 +21232,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1654784174}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -21143,8 +21296,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1654784174}
+  mPreview: {fileID: 1654784175}
 --- !u!114 &1654784174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654784169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 11
+  Target: {fileID: 1654784169}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &1654784175
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22947,6 +23115,7 @@ GameObject:
   - component: {fileID: 1742604228}
   - component: {fileID: 1742604231}
   - component: {fileID: 1742604230}
+  - component: {fileID: 1742604233}
   - component: {fileID: 1742604232}
   m_Layer: 0
   m_Name: AR_ImageTarget_MED
@@ -23035,6 +23204,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1742604232}
+        m_TargetAssemblyTypeName: TargetId, Assembly-CSharp
+        m_MethodName: pasarId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
@@ -23087,8 +23268,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1742604232}
+  mPreview: {fileID: 1742604233}
 --- !u!114 &1742604232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742604227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTargetSalon: 5
+  Target: {fileID: 1742604227}
+  cambioPantallas: {fileID: 337561149}
+--- !u!114 &1742604233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23678,7 +23874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e341621730c94344abea7d3de439f468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idTargetSalon: 11
+  idTargetSalon: 2
   Target: {fileID: 1787972951}
   cambioPantallas: {fileID: 337561149}
 --- !u!114 &1787972958
