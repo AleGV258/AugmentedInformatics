@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4473312, g: 0.496706, b: 0.57291245, a: 1}
+  m_IndirectSpecularColor: {r: 0.4473322, g: 0.49670774, b: 0.57291526, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2298,7 +2298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199308391}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.39, z: -0}
+  m_LocalPosition: {x: 0, y: 8, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6563,8 +6563,8 @@ GameObject:
   - component: {fileID: 586603236}
   - component: {fileID: 586603239}
   - component: {fileID: 586603238}
-  - component: {fileID: 586603241}
   - component: {fileID: 586603240}
+  - component: {fileID: 586603241}
   m_Layer: 0
   m_Name: AR_ImageTarget_POSGRADO
   m_TagString: Untagged
@@ -9084,8 +9084,8 @@ GameObject:
   - component: {fileID: 720583636}
   - component: {fileID: 720583639}
   - component: {fileID: 720583638}
-  - component: {fileID: 720583641}
   - component: {fileID: 720583640}
+  - component: {fileID: 720583641}
   m_Layer: 0
   m_Name: AR_ImageTarget_SPACERTZ
   m_TagString: Untagged
@@ -10516,8 +10516,8 @@ GameObject:
   - component: {fileID: 849379762}
   - component: {fileID: 849379765}
   - component: {fileID: 849379764}
-  - component: {fileID: 849379767}
   - component: {fileID: 849379766}
+  - component: {fileID: 849379767}
   m_Layer: 0
   m_Name: AR_ImageTarget_OLIMPO
   m_TagString: Untagged
@@ -11335,6 +11335,10 @@ PrefabInstance:
     - target: {fileID: 9157833020746580307, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157833020770713864, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9157833021257574343, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13387,8 +13391,8 @@ GameObject:
   - component: {fileID: 1081440261}
   - component: {fileID: 1081440264}
   - component: {fileID: 1081440263}
-  - component: {fileID: 1081440266}
   - component: {fileID: 1081440265}
+  - component: {fileID: 1081440266}
   m_Layer: 0
   m_Name: AR_ImageTarget_FISIO
   m_TagString: Untagged
@@ -17976,8 +17980,8 @@ GameObject:
   - component: {fileID: 1421902636}
   - component: {fileID: 1421902639}
   - component: {fileID: 1421902638}
-  - component: {fileID: 1421902641}
   - component: {fileID: 1421902640}
+  - component: {fileID: 1421902641}
   m_Layer: 0
   m_Name: AR_ImageTarget_PSIC
   m_TagString: Untagged
@@ -21143,8 +21147,8 @@ GameObject:
   - component: {fileID: 1654784170}
   - component: {fileID: 1654784173}
   - component: {fileID: 1654784172}
-  - component: {fileID: 1654784175}
   - component: {fileID: 1654784174}
+  - component: {fileID: 1654784175}
   m_Layer: 0
   m_Name: AR_ImageTarget_EMPRENDIMIENTO
   m_TagString: Untagged
@@ -23115,8 +23119,8 @@ GameObject:
   - component: {fileID: 1742604228}
   - component: {fileID: 1742604231}
   - component: {fileID: 1742604230}
-  - component: {fileID: 1742604233}
   - component: {fileID: 1742604232}
+  - component: {fileID: 1742604233}
   m_Layer: 0
   m_Name: AR_ImageTarget_MED
   m_TagString: Untagged
@@ -26611,6 +26615,14 @@ PrefabInstance:
     - target: {fileID: 456630617416396085, guid: b4db76ebe6b006e44a022d3ed036430f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4434727224842248091, guid: b4db76ebe6b006e44a022d3ed036430f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740163010456451969, guid: b4db76ebe6b006e44a022d3ed036430f, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6570602963131954337, guid: b4db76ebe6b006e44a022d3ed036430f, type: 3}
       propertyPath: m_RootOrder

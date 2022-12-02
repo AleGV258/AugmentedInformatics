@@ -654,7 +654,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6446929036249460618}
   m_HandleRect: {fileID: 5278973961253650287}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2093,7 +2093,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &5178315130666575777
 MonoBehaviour:
@@ -2165,8 +2165,7 @@ MonoBehaviour:
   ObjInputPlaceholder: {fileID: 518119106282692652}
   ObjTitulo: {fileID: 2395562933700584182}
   Recargar: {fileID: 3230570330851390878}
-  panelProfesor: {fileID: 0}
-  panelSalon: {fileID: 0}
+  cambioPantallas: {fileID: 0}
 --- !u!1 &5445894745683901941
 GameObject:
   m_ObjectHideFlags: 0

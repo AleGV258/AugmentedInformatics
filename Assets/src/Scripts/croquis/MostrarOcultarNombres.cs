@@ -55,6 +55,7 @@ public class MostrarOcultarNombres : MonoBehaviour
     {
         /* Se reproduce la animación de apertura en los paneles de nombres */
         timeline.Play();
+        Debug.Log("Entreeeeee");
     }
 
     public void mostrar_ocultarNombres()
