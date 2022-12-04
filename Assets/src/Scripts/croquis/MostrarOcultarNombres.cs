@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
+using TMPro;
+using UnityEngine.UI;
 
 public class MostrarOcultarNombres : MonoBehaviour
 {
@@ -34,6 +36,7 @@ public class MostrarOcultarNombres : MonoBehaviour
     public Animator animadorCubiculo;
     public Animator animadorInnovacion;
     public Animator animadorLaboratorio;
+    public GameObject nombreBoton;
     bool activado;
 
     void Start()
@@ -79,6 +82,8 @@ public class MostrarOcultarNombres : MonoBehaviour
             canvasCubiculo.SetActive(true);
             canvasInnovacion.SetActive(true);
             canvasLaboratorio.SetActive(true);
+            TMP_Text textoBoton = nombreBoton.GetComponent<TMP_Text>();
+            textoBoton.text = "Desactivar";     
             activado = false;
         }
         /* De otra forma se desactivo el botón, se dejan de mostrar los paneles */
@@ -103,6 +108,8 @@ public class MostrarOcultarNombres : MonoBehaviour
             canvasCubiculo.SetActive(false);
             canvasInnovacion.SetActive(false);
             canvasLaboratorio.SetActive(false);
+            TMP_Text textoBoton = nombreBoton.GetComponent<TMP_Text>();
+            textoBoton.text = "Activar";    
             activado = true;
         }
     }

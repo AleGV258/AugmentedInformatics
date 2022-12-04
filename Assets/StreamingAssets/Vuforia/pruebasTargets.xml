@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="AR2-24" size="10.000000 5.363289" />
+    <ImageTarget name="AR2-23" size="10.000000 5.363289" />
+    <ImageTarget name="AR2-22" size="10.000000 5.363289" />
+    <ImageTarget name="AR2-21" size="10.000000 5.363289" />
+    <ImageTarget name="AR2-20" size="10.000000 5.363289" />
+    <ImageTarget name="AR2-17" size="10.000000 5.363289" />
+    <ImageTarget name="AR2-16" size="10.000000 5.363289" />
+    <ImageTarget name="AR2_ImageTarget-IENTO" size="10.000000 5.363289" />
+    <ImageTarget name="AR2_ImageTargetEMPRE" size="10.000000 5.363289" />
+    <ImageTarget name="AR2_ImageTarget_EMP" size="10.000000 5.363289" />
+  </Tracking>
+</QCARConfig>

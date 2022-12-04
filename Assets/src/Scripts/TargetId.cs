@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class TargetId : MonoBehaviour
 {
-    public int idTargetSalon=0;
+    public int idTargetSalon = 15;
     public GameObject Target;
     public GameObject cambioPantallas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,13 +19,14 @@ public class TargetId : MonoBehaviour
     {
         
     }
+
     public void pasarId()
     {
         MenuPrincipal menu = cambioPantallas.GetComponent<MenuPrincipal>();
         menu.idSalon = idTargetSalon;
         menu.targetRecibido = Target;
         menu.cambiarPadrePanelesTarget();
-        menu.cambiarPrimerPantalla();
+        menu.cambiarPantallaRealidadAumentadaSalon();
         // panelSalon salon = instanciaPanelSalon.GetComponent<panelSalon>();
         // salon.idSalon = idTargetSalon;
         // StartCoroutine(salon.CorrutinaObtenerDatos());

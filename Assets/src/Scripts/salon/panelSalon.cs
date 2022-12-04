@@ -69,10 +69,10 @@ public class panelSalon : MonoBehaviour
     public IEnumerator CorrutinaObtenerDatos()
     {   
         //OBTENER EL IDSALON DESDE EL MENU PRINCIPAL
-        MenuPrincipal scriptcambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>();         
-        idSalon = scriptcambioPantallas.idSalon;
+        MenuPrincipal scriptCambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>();         
+        idSalon = scriptCambioPantallas.idSalon;
 
-        panelCargando.SetActive(true);
+        //panelCargando.SetActive(true);
 
         //Obtener informacion del profesor y del salon
         //Obtener informacion del Salon
@@ -101,11 +101,11 @@ public class panelSalon : MonoBehaviour
             
             Debug.Log("Profesor id " + idProfesorEnSalon);
             StartCoroutine(ObtenerDatosProfesor());
-            panelCargando.SetActive(false);
+            //panelCargando.SetActive(false);
 
         }else{
             Debug.LogWarning("Error en la peticion");
-            panelCargando.SetActive(false);
+            //panelCargando.SetActive(false);
             //Recargar.SetActive(true);
         }             
     }
@@ -119,7 +119,7 @@ public class panelSalon : MonoBehaviour
     }
     public IEnumerator ObtenerDatosProfesor()
     {   
-        panelCargando.SetActive(true);
+        //panelCargando.SetActive(true);
         string url;
         url = "rickandmortyapi.com/api/character/" + idProfesorEnSalon.ToString();
         UnityWebRequest Peticion = UnityWebRequest.Get(url); //Realizar petición
@@ -150,10 +150,10 @@ public class panelSalon : MonoBehaviour
             horarioUI.text = infoProfesor.name; 
             
             StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesorUI));
-            panelCargando.SetActive(false);
+            //panelCargando.SetActive(false);
         }else{
             Debug.LogWarning("Error en la peticion");
-            panelCargando.SetActive(false);
+            //panelCargando.SetActive(false);
             //Recargar.SetActive(true);
         }             
     }

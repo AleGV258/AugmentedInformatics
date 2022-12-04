@@ -15,6 +15,6 @@ public class profeObjeto : MonoBehaviour
     {
         MenuPrincipal scriptcambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>();         
         scriptcambioPantallas.idProfesor = idProfesor;
-        scriptcambioPantallas.cambiarSegundaPantallaUI();
+        scriptcambioPantallas.cambiarPantallaVirtualUIProfesor();
     }
 }

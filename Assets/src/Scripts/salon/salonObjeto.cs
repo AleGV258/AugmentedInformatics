@@ -15,7 +15,6 @@ public class salonObjeto : MonoBehaviour
     {
         MenuPrincipal scriptcambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>();         
         scriptcambioPantallas.idSalon = idSalon;
-
-        scriptcambioPantallas.cambiarPrimerPantallaUI();
+        scriptcambioPantallas.cambiarPantallaVirtualUISalon();
     }
 }
