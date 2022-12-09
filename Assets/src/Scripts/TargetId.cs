@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TargetId : MonoBehaviour
 {
-    public int idTargetSalon = 15;
+    public int idTargetSalon;
     public GameObject Target;
     public GameObject cambioPantallas;
 

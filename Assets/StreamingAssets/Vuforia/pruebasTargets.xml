@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="AR2-24" size="10.000000 5.363289" />
-    <ImageTarget name="AR2-23" size="10.000000 5.363289" />
-    <ImageTarget name="AR2-22" size="10.000000 5.363289" />
-    <ImageTarget name="AR2-21" size="10.000000 5.363289" />
-    <ImageTarget name="AR2-20" size="10.000000 5.363289" />
-    <ImageTarget name="AR2-17" size="10.000000 5.363289" />
-    <ImageTarget name="AR2-16" size="10.000000 5.363289" />
-    <ImageTarget name="AR2_ImageTarget-IENTO" size="10.000000 5.363289" />
-    <ImageTarget name="AR2_ImageTargetEMPRE" size="10.000000 5.363289" />
-    <ImageTarget name="AR2_ImageTarget_EMP" size="10.000000 5.363289" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A10" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A09" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A08" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A07" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A06" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A05" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A04-B" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A04-A" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A03-B" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A03-A" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A02" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A01" size="1.000000 0.536329" />
   </Tracking>
 </QCARConfig>
