@@ -18,16 +18,15 @@ public class MenuPrincipal : MonoBehaviour
     public PlayableDirector timeline; // Animación de los paneles de realidad aumentada al encontrarse el ImageTarget
     float contadorQuitarPanel = 0; // Contador que aumenta para detectar el tiempo que la interfaz virtual de los paneles está activa
 
-    //Probar cambiar los metodos de panelSalon y panelProfesor a menú principal
-    public GameObject panel1SalonAR;
-    public GameObject panel2ProfesorAR;
-    public GameObject panel1SalonUI;
-    public GameObject panel2ProfesorUI;
+    public GameObject panel1SalonAR; // GameObject del panel1 Salón
+    public GameObject panel2ProfesorAR; // GameObject del panel2 Profesor
+    public GameObject panel1SalonUI; // GameObject del panel Salón UI
+    public GameObject panel2ProfesorUI; // GameObject del panel2 Profesor UI
 
     public GameObject targetRecibido;
     public GameObject paneles;
-    public int idSalon = 0;
-    public int idProfesor = 0;
+    public int idSalon = 0; // ID del salón que se muestra en el panel
+    public int idProfesor = 0; // ID del profesor que se muestra en el panel
 
     // Función que se ejecuta al inicio y antes de todo, inclusive si el script está desactivado
     void Awake(){
@@ -132,14 +131,14 @@ public class MenuPrincipal : MonoBehaviour
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
 
-        panel1SalonAR.SetActive(true);
-        panel2ProfesorAR.SetActive(false);
-        panel1SalonUI.SetActive(true);
-        panel2ProfesorUI.SetActive(false);
+        panel1SalonAR.SetActive(true); // Se activa la pantalla de realidad aumentada del salón
+        panel2ProfesorAR.SetActive(false); // Se desactiva la pantalla de realidad aumentada del profesor
+        panel1SalonUI.SetActive(true); // Se activa la pantalla de interfaz virtual del salón
+        panel2ProfesorUI.SetActive(false); // Se desactiva la pantalla de interfaz virtual del profesor
 
-        panelSalon scriptPanelSalon = panel1SalonAR.GetComponent<panelSalon>();
+        panelSalon scriptPanelSalon = panel1SalonAR.GetComponent<panelSalon>(); // Se obtiene el GameObject del script del panel salón AR
         // scriptPanelSalon.idSalon = idSalon;
-        StartCoroutine(scriptPanelSalon.CorrutinaObtenerDatos());
+        StartCoroutine(scriptPanelSalon.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
     }
 
     // Función que activa la cámara, la interfaz de la realidad aumentada para el panel de profesores y la flecha de regreso, y desactiva todas las demás
@@ -153,61 +152,64 @@ public class MenuPrincipal : MonoBehaviour
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
 
-        panel1SalonAR.SetActive(false);
-        panel2ProfesorAR.SetActive(true);
-        panel1SalonUI.SetActive(false);
-        panel2ProfesorUI.SetActive(true);
+        panel1SalonAR.SetActive(false); // Se desactiva la pantalla de realidad aumentada del salón
+        panel2ProfesorAR.SetActive(true); // Se activa la pantalla de realidad aumentada del profesor
+        panel1SalonUI.SetActive(false); // Se desactiva la pantalla de interfaz virtual del salón
+        panel2ProfesorUI.SetActive(true); // Se activa la pantalla de interfaz virtual del profesor
 
-        panelProfesor scriptPanelProfesor = panel2ProfesorAR.GetComponent<panelProfesor>(); 
-        StartCoroutine(scriptPanelProfesor.CorrutinaObtenerDatos());
+        panelProfesor scriptPanelProfesor = panel2ProfesorAR.GetComponent<panelProfesor>(); // Se obtiene el GameObject del script del panel profesor AR
+        StartCoroutine(scriptPanelProfesor.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
     }
 
-    // Función que activa la cámara, la interfaz UI de profesores y salones, y desactiva todas las demás
+    // Función que activa la cámara, la interfaz UI de salones, y desactiva todas las demás
     public void cambiarPantallaVirtualUISalon()//Salon
     {
-        panelBusqueda.SetActive(false);
-        arCamera.SetActive(true);
-        realidadAumentada.SetActive(true);
+        panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
+        arCamera.SetActive(true); // Se activa la cámara
+        realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
-        panel1SalonAR.SetActive(true);
-        panel2ProfesorAR.SetActive(false);
-        panel1SalonUI.SetActive(true);
-        panel2ProfesorUI.SetActive(false);
+        panel1SalonAR.SetActive(true); // Se activa la pantalla de realidad aumentada del salón
+        panel2ProfesorAR.SetActive(false); // Se desactiva la pantalla de realidad aumentada del profesor
+        panel1SalonUI.SetActive(true); // Se activa la pantalla de interfaz virtual del salón
+        panel2ProfesorUI.SetActive(false); // Se desactiva la pantalla de interfaz virtual del profesor
 
         contadorQuitarPanel = 0; // El contador del tiempo de la interfaz UI se restablece para empezar nuevamente
 
-        panelSalon scriptPanelSalonUI = panel1SalonUI.GetComponent<panelSalon>();
+        panelSalon scriptPanelSalonUI = panel1SalonUI.GetComponent<panelSalon>(); // Se obtiene el GameObject del script del panel salón UI
         // idSalon = scriptPanelSalonUI.idSalon; // Se envia del en el que se encuentra 
-        StartCoroutine(scriptPanelSalonUI.CorrutinaObtenerDatos());
+        StartCoroutine(scriptPanelSalonUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
     }
 
+    // Función que activa la cámara, la interfaz UI de profesores, y desactiva todas las demás
     public void cambiarPantallaVirtualUIProfesor()//Profesor
     {
-        panelBusqueda.SetActive(false);
-        arCamera.SetActive(true);
-        realidadAumentada.SetActive(true);
+        panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
+        arCamera.SetActive(true); // Se activa la cámara
+        realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
-        panel1SalonAR.SetActive(false);
-        panel2ProfesorAR.SetActive(true);
-        panel1SalonUI.SetActive(false);
-        panel2ProfesorUI.SetActive(true);
+        panel1SalonAR.SetActive(false); // Se desactiva la pantalla de realidad aumentada del salón
+        panel2ProfesorAR.SetActive(true); // Se activa la pantalla de realidad aumentada del profesor
+        panel1SalonUI.SetActive(false); // Se desactiva la pantalla de interfaz virtual del salón
+        panel2ProfesorUI.SetActive(true); // Se activa la pantalla de interfaz virtual del profesor
 
         contadorQuitarPanel = 0; // El contador del tiempo de la interfaz UI se restablece para empezar nuevamente
 
-        panelProfesor scriptPanelProfesorUI = panel2ProfesorUI.GetComponent<panelProfesor>();
-        StartCoroutine(scriptPanelProfesorUI.CorrutinaObtenerDatos());
+        panelProfesor scriptPanelProfesorUI = panel2ProfesorUI.GetComponent<panelProfesor>(); // Se obtiene el GameObject del script del panel profesor UI
+        StartCoroutine(scriptPanelProfesorUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
     }
 
+    // Función para cambiar al panel de la interfaz virtual, cuando desaparece el panel de realidad aumentada
     public void cambiarPantallaVirtualUI(){
         // Se verifica que la cámara y la interfaz de la AR estén activadas
         if ((realidadAumentada.activeSelf == true) && (arCamera.activeSelf == true))
         {
+            // Se verifica que panel estaba activado en la realidad aumentada cuando desaparece
             if(panel2ProfesorAR.activeSelf == true){
-                cambiarPantallaVirtualUIProfesor();
+                cambiarPantallaVirtualUIProfesor(); // Cambiar al paner de UI de profesor
             }else{
-                cambiarPantallaVirtualUISalon();
+                cambiarPantallaVirtualUISalon(); // Cambiar al panel de UI de salón
             }
         }
     }
@@ -224,18 +226,15 @@ public class MenuPrincipal : MonoBehaviour
         Application.OpenURL("https://www.uaq.mx/informatica/cede.html"); // Redirige a una URL
     }
 
-
-
+    // Función que cambia el objeto del panel de realidad aumentada al nuevo target identificado
     public void cambiarPadrePanelesTarget()
     {
-        //Pasar ID
+        // Pasar ID
         Debug.Log("El nuevo idSalon es " + idSalon);
-        //Iniciar obtener Datos
-        //Cambiar Padre        
-        paneles.transform.parent = targetRecibido.transform;
+        // Iniciar obtener Datos
+        paneles.transform.parent = targetRecibido.transform; // Cambiar padre al nuevo ImageTarget enfocado 
         // paneles.transform.position = new Vector3(0,0,0);
-        paneles.GetComponent<RectTransform>().localPosition = Vector3.zero;
-        paneles.GetComponent<RectTransform>().localRotation = Quaternion.Euler(90f, 0f, 0f);
+        paneles.GetComponent<RectTransform>().localPosition = Vector3.zero; // Se mueve el panel al ImageTarget nuevo
+        paneles.GetComponent<RectTransform>().localRotation = Quaternion.Euler(90f, 0f, 0f); // Se voltea el panel a la cámara
     }
-    
 }

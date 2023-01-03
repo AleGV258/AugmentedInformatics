@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="AR_ImageTarget_Croquis" size="1.000000 0.707162" />
-    <ImageTarget name="AR_ImageTarget_LaCER" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_LE" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_PSIC" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_NUTRI" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_MED" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_PSIC" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_FISIO" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_OLIMPO" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_SPACERTZ" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_POSGRADO" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_EMPRENDIMIENTO" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_CAPACITACION" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_DEPORTES" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-INC" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-INF" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-LAT" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-TEL" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-SOF" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_LR2" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_LR1" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_LaCER" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_INN09" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_INN08" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_INN07" size="1.000000 0.536329" />
@@ -30,17 +14,14 @@
     <ImageTarget name="AR_ImageTarget_INN03" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_INN02" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_INN01" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D10" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D09" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D08" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D07" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D06" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D05" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D04" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D03" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D02" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_D01" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_CD" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_FISIO" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_EMPRENDIMIENTO" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-TEL" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-SOF" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-LAT" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-INF" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-INC" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_DEPORTES" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C45" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C44" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C43" size="1.000000 0.536329" />
@@ -49,7 +30,6 @@
     <ImageTarget name="AR_ImageTarget_C40" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C39" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C38" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_C11" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C37" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C36" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C35" size="1.000000 0.536329" />
@@ -76,6 +56,7 @@
     <ImageTarget name="AR_ImageTarget_C14" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C13" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C12" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_C11" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C10" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C09" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C08" size="1.000000 0.536329" />
@@ -86,6 +67,24 @@
     <ImageTarget name="AR_ImageTarget_C03" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C02" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C01" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_SPACERTZ" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_POSGRADO" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_OLIMPO" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_LR2" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_LR1" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_LE" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_CAPACITACION" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D10" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D09" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D08" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D07" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D06" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D05" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D04" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D03" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D02" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_D01" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_CD" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_B03" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_B02" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_B01" size="1.000000 0.536329" />
@@ -117,6 +116,6 @@
     <ImageTarget name="AR_ImageTarget_A03-A" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_A02" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_A01" size="1.000000 0.536329" />
-    <ImageTarget name="Prueba" size="10.000000 10.000000" />
+    <ImageTarget name="AR_ImageTarget_Croquis" size="1.000000 0.707162" />
   </Tracking>
 </QCARConfig>
