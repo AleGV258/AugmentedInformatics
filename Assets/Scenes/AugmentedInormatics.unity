@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4473322, g: 0.49670774, b: 0.57291526, a: 1}
+  m_IndirectSpecularColor: {r: 0.4473312, g: 0.496706, b: 0.57291245, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5612,7 +5612,7 @@ PrefabInstance:
       objectReference: {fileID: 337561152}
     - target: {fileID: 7275053801344852132, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: cambiarPantallaVerMas
+      value: cambiarPantallaRealidadAumentadaSalon
       objectReference: {fileID: 0}
     - target: {fileID: 7275053801389189660, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5637,6 +5637,10 @@ PrefabInstance:
     - target: {fileID: 7275053801570082791, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: cambiarPanelBusqueda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275053802346091844, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7275053802346091850, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5676,7 +5680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8193764528346646934, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8199522161025671545, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_Name
@@ -7109,14 +7113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a553e9444c24d614b947ded3c2db98ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel1Salon: {fileID: 624133727}
-  panel2Profesor: {fileID: 686090035}
-  panel1SalonUI: {fileID: 1053115648}
-  panel2ProfesorUI: {fileID: 1707193700}
-  panelBusqueda: {fileID: 967708590}
-  arCamera: {fileID: 942172821}
-  interfazAR: {fileID: 1615122588}
-  realidadAumentada: {fileID: 214040054}
   panelCargando: {fileID: 1866371089}
   nombreProfesor: {fileID: 1383924643}
   materiaProfesor: {fileID: 1567393171}
@@ -8556,14 +8552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a602c96b7e3764b488b54a0b3de6ceeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel1Salon: {fileID: 624133727}
-  panel2Profesor: {fileID: 686090035}
-  panel1SalonUI: {fileID: 1053115648}
-  panel2ProfesorUI: {fileID: 1707193700}
-  panelBusqueda: {fileID: 967708590}
-  arCamera: {fileID: 942172821}
-  interfazAR: {fileID: 1615122588}
-  realidadAumentada: {fileID: 214040054}
   especializacionNombreProfesor: {fileID: 1732618418}
   areaConocimiento: {fileID: 1791341827}
   curriculum: {fileID: 634679617}

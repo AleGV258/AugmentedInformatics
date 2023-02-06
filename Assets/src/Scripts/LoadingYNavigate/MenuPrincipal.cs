@@ -184,6 +184,10 @@ public class MenuPrincipal : MonoBehaviour
     // Función que activa la cámara, la interfaz UI de profesores, y desactiva todas las demás
     public void cambiarPantallaVirtualUIProfesor()//Profesor
     {
+        // Permite reiniciar e identificar nuevos targets
+        arCamera.SetActive(false);
+        arCamera.SetActive(true);
+        
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
@@ -202,6 +206,11 @@ public class MenuPrincipal : MonoBehaviour
 
     // Función para cambiar al panel de la interfaz virtual, cuando desaparece el panel de realidad aumentada
     public void cambiarPantallaVirtualUI(){
+
+        // Permite reiniciar e identificar nuevos targets
+        arCamera.SetActive(false);
+        arCamera.SetActive(true);
+        
         // Se verifica que la cámara y la interfaz de la AR estén activadas
         if ((realidadAumentada.activeSelf == true) && (arCamera.activeSelf == true))
         {
