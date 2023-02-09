@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5178315130666575778}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Peticion, Assembly-CSharp
         m_MethodName: ObtenerDatos
         m_Mode: 1
@@ -2045,7 +2045,7 @@ GameObject:
   - component: {fileID: 5178315130666575776}
   - component: {fileID: 5178315130666575777}
   - component: {fileID: 5178315130666575806}
-  - component: {fileID: 5178315130666575778}
+  - component: {fileID: 5602711645820437050}
   m_Layer: 5
   m_Name: PanelBusqueda
   m_TagString: Untagged
@@ -2135,7 +2135,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5178315130666575778
+--- !u!114 &5602711645820437050
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2153,10 +2153,10 @@ MonoBehaviour:
     previous: 
     results: []
   EntradaBuscador: {fileID: 3121289502308297306}
-  ObjProfesor: {fileID: 8327680877258839427, guid: e0cf8734f2c62894da851ee7fbb3cc6b, type: 3}
+  ObjProfesor: {fileID: 7497369119811548433, guid: 7c5846428e1177d43bb1eede8cea5290, type: 3}
   ObjLista: {fileID: 4189922508265561160}
   Selector: {fileID: 6851488368093017756}
-  ObjSalon: {fileID: 8327680877258839427, guid: b941991b084af8142a70416459120e4b, type: 3}
+  ObjSalon: {fileID: 1743495514151580685, guid: edf32e8b4e2e90c408d93df6e3b5e196, type: 3}
   listaRecibidaSalones:
     count: 
     next: 
@@ -2528,7 +2528,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5178315130666575778}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Peticion, Assembly-CSharp
         m_MethodName: ObtenerDatos
         m_Mode: 1
@@ -2681,7 +2681,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5178315130666575778}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Peticion, Assembly-CSharp
         m_MethodName: ObtenerDatos
         m_Mode: 1

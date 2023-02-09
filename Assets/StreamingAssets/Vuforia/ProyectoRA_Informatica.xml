@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="AR_ImageTarget_LaCER" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_DEPORTES" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-INC" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-INF" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-LAT" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-SOF" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_L-TEL" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_INN01" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_INN02" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_INN03" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_INN04" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_INN05" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_INN06" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_INN07" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_INN08" size="1.000000 0.536329" />
+    <ImageTarget name="AR_ImageTarget_INN09" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_PSIC" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_NUTRI" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_MED" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_LaCER" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_INN09" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_INN08" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_INN07" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_INN06" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_INN05" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_INN04" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_INN03" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_INN02" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_INN01" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_FISIO" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_EMPRENDIMIENTO" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-TEL" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-SOF" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-LAT" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-INF" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_L-INC" size="1.000000 0.536329" />
-    <ImageTarget name="AR_ImageTarget_DEPORTES" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C45" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C44" size="1.000000 0.536329" />
     <ImageTarget name="AR_ImageTarget_C43" size="1.000000 0.536329" />

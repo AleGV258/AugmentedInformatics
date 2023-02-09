@@ -207,9 +207,9 @@ public class MenuPrincipal : MonoBehaviour
     // Función para cambiar al panel de la interfaz virtual, cuando desaparece el panel de realidad aumentada
     public void cambiarPantallaVirtualUI(){
 
-        // Permite reiniciar e identificar nuevos targets
-        arCamera.SetActive(false);
-        arCamera.SetActive(true);
+        // Permite reiniciar e identificar nuevos targets (NO DESCOMENTAR - CRASHEA UNITY)
+        // arCamera.SetActive(false);
+        // arCamera.SetActive(true);
         
         // Se verifica que la cámara y la interfaz de la AR estén activadas
         if ((realidadAumentada.activeSelf == true) && (arCamera.activeSelf == true))
