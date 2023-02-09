@@ -243,6 +243,8 @@ public class MenuPrincipal : MonoBehaviour
         // Iniciar obtener Datos
         paneles.transform.parent = targetRecibido.transform; // Cambiar padre al nuevo ImageTarget enfocado 
         // paneles.transform.position = new Vector3(0,0,0);
+        paneles.GetComponent<Canvas> ().enabled = true;
+
         paneles.GetComponent<RectTransform>().localPosition = Vector3.zero; // Se mueve el panel al ImageTarget nuevo
         paneles.GetComponent<RectTransform>().localRotation = Quaternion.Euler(90f, 0f, 0f); // Se voltea el panel a la cámara
     }
