@@ -11,7 +11,7 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject arCamera; // GameObject de la cámara del dispositivo
     public GameObject pantallaPrincipal; // GameObject de la interfaz de la pantalla principal
     public GameObject panelBusqueda; // GameObject de la interfaz del panel de búsqueda
-    //public GameObject pantallaCroquis; // GameObject de la interfaz del croquis con las aulas en imágenes
+    public GameObject pantallaCroquis; // GameObject de la interfaz del croquis con las aulas en imágenes
     public GameObject pantallaCreditos; // GameObject de la interfaz de los créditos de los creadores de la aplicación
     public GameObject realidadAumentada; // GameObject de la interfaz de la cámara para la realidad aumentada, de los paneles de salón y profesor, pantalla que muestra la flecha de regreso a la aplicación principal
     public GameObject virtualUI; // GameObject de la interfaz de usuarios de los paneles sin realidad aumentada, de los paneles de salón y profesor
@@ -32,7 +32,7 @@ public class MenuPrincipal : MonoBehaviour
     void Awake(){
         pantallaPrincipal.SetActive(true); // Se activa la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
-        //pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
+        pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
@@ -78,7 +78,7 @@ public class MenuPrincipal : MonoBehaviour
         arCamera.SetActive(false); // Se desactiva la cámara
         pantallaPrincipal.SetActive(true); // Se activa la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
-        //pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
+        pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
@@ -90,14 +90,14 @@ public class MenuPrincipal : MonoBehaviour
         arCamera.SetActive(false); // Se desactiva la cámara
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(true); // Se activa la pantalla de búsqueda de profesores y salones
-        //pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
+        pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
     }
 
     // Función que activa la interfaz de la pantalla del croquis UI, y desactiva todas las demás
-    /*public void cambiarPantallaCroquis()
+    public void cambiarPantallaCroquis()
     {
         arCamera.SetActive(false); // Se desactiva la cámara
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
@@ -106,7 +106,7 @@ public class MenuPrincipal : MonoBehaviour
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
-    }*/
+    }
 
     // Función que activa la interfaz de los créditos de la aplicación, y desactiva todas las demás
     public void cambiarPantallaCreditos()
@@ -114,7 +114,7 @@ public class MenuPrincipal : MonoBehaviour
         arCamera.SetActive(false); // Se desactiva la cámara
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
-        //pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
+        pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(true); // Se activa la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
@@ -126,7 +126,7 @@ public class MenuPrincipal : MonoBehaviour
         arCamera.SetActive(true); // Se activa la cámara
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
-        //pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
+        pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
@@ -147,7 +147,7 @@ public class MenuPrincipal : MonoBehaviour
         arCamera.SetActive(true); // Se activa la cámara
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
-        //pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
+        pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
@@ -185,8 +185,8 @@ public class MenuPrincipal : MonoBehaviour
     public void cambiarPantallaVirtualUIProfesor()//Profesor
     {
         // Permite reiniciar e identificar nuevos targets
-        arCamera.SetActive(false);
-        arCamera.SetActive(true);
+        // arCamera.SetActive(false);
+        // arCamera.SetActive(true);
         
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
