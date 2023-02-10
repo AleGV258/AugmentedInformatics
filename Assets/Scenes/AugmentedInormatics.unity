@@ -9344,6 +9344,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3288614155682472231, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_Name
+      value: Edificio Biblioteca
+      objectReference: {fileID: 0}
     - target: {fileID: 3288614155698084565, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -9355,6 +9359,10 @@ PrefabInstance:
     - target: {fileID: 3288614155698084565, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288614155758362373, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3288614155815899841, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
       propertyPath: m_Pivot.x
@@ -9478,7 +9486,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3288614155815899853, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288614156016669458, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 11.140301
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288614156016669458, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.455591
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288614156016669458, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -327
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288614156016669459, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3288614156269350286, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
       propertyPath: m_fontAsset
@@ -9492,6 +9516,22 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3288614156761683068, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 12.401996
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288614156761683069, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288614156797751509, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288614157028895759, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_Name
+      value: Edificio Laboratorios
+      objectReference: {fileID: 0}
     - target: {fileID: 3288614157208078895, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -9503,6 +9543,10 @@ PrefabInstance:
     - target: {fileID: 3288614157208078895, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288614157232767095, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
+      propertyPath: m_Name
+      value: Edificio Aulas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1ef01e3a1b3aee4a9fe7ffb8fbfc636, type: 3}
