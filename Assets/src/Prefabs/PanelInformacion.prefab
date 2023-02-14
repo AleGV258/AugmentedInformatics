@@ -1001,7 +1001,7 @@ GameObject:
   - component: {fileID: 614794163887733927}
   - component: {fileID: 8753435319285905128}
   m_Layer: 5
-  m_Name: PanelCreditos
+  m_Name: PanelInformacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
