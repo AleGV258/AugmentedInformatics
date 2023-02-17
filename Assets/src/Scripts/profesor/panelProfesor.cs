@@ -24,7 +24,7 @@ public class panelProfesor : MonoBehaviour
 
     private int idProfesor = 1; // ID del profesor que se muestra en el panel, por default es el primero
     public GameObject cambioPantallas; // GameObject de donde se obtiene el MenuPrincipal
-
+    public GameObject pantallaCarga;
     // Agreaga la estructura a unity Inspector, lo que le permite establecer los valores de estos campos en el editor de Unity
     [System.Serializable]
     public struct InformacionProfesor 
@@ -45,6 +45,8 @@ public class panelProfesor : MonoBehaviour
     {   
         MenuPrincipal scriptcambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>(); // Se obtiene el GameObject de MenuPrincipal, con sus atributos y métodos
         idProfesor = scriptcambioPantallas.idProfesor; // Se obtiene el ID del profesor que el usuario selecciono para mostrar
+        
+        pantallaCarga.SetActive(true);
         
         string url; // Se declara una varible de tipo string para la url
         url = "rickandmortyapi.com/api/character/" + idProfesor.ToString(); // Se estructura la url donde se saca la información según el ID
@@ -77,8 +79,10 @@ public class panelProfesor : MonoBehaviour
             TMP_Text edificioUI = cubiculoUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de cubiculoUI
             edificioUI.text = infoExtraProfesor.species; // Una vez que accede puede cambiar el valor por medio de la propiedad text
             StartCoroutine(cargarImagenProfesor(infoExtraProfesor.image, imagenProfesorUI)); // Se inicia la corrutina para cambiar la imagen del profesor en la interfaz UI
+            pantallaCarga.SetActive(false);
         }else{
             Debug.LogWarning("Error en la peticion"); // En caso de un error imprime un mensaje de error 
+            pantallaCarga.SetActive(false);
             //Recargar.SetActive(true);
         }             
     }

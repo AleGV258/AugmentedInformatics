@@ -4808,7 +4808,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443274785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -5215,7 +5215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8199522161025671545, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b520633378e743542b28aafab396b325, type: 3}
@@ -6512,7 +6512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a553e9444c24d614b947ded3c2db98ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelCargando: {fileID: 1866371089}
+  pantallaCarga: {fileID: 1866371089}
   nombreProfesor: {fileID: 1383924643}
   materiaProfesor: {fileID: 1567393171}
   horarioProfesor: {fileID: 1033712384}
@@ -7053,6 +7053,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5602711645820437050, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
+      propertyPath: pantallaCarga
+      value: 
+      objectReference: {fileID: 1866371089}
     - target: {fileID: 5602711645820437050, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: cambioPantallas
       value: 
@@ -7906,6 +7910,7 @@ MonoBehaviour:
   cubiculoUI: {fileID: 1362238845}
   imagenProfesorUI: {fileID: 1037671184}
   cambioPantallas: {fileID: 337561149}
+  pantallaCarga: {fileID: 1866371089}
   infoExtraProfesor:
     name: 
     id: 
@@ -10389,6 +10394,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 967708590}
     - target: {fileID: 6740161149341663475, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: pantallaCarga
+      value: 
+      objectReference: {fileID: 1866371089}
+    - target: {fileID: 6740161149341663475, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: imagenProfesor
       value: 
       objectReference: {fileID: 1754728428}
@@ -10434,6 +10443,10 @@ PrefabInstance:
       objectReference: {fileID: 967708590}
     - target: {fileID: 8622061982851530735, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
       propertyPath: panelCargando
+      value: 
+      objectReference: {fileID: 1866371089}
+    - target: {fileID: 8622061982851530735, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
+      propertyPath: pantallaCarga
       value: 
       objectReference: {fileID: 1866371089}
     - target: {fileID: 8622061982851530735, guid: ad20f55c3a03557429cde8992a0e8e72, type: 3}
@@ -23568,7 +23581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1866371090
 MonoBehaviour:
   m_ObjectHideFlags: 0
