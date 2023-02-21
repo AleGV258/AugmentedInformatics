@@ -28,6 +28,11 @@ public class MenuPrincipal : MonoBehaviour
     public int idSalon = 0; // ID del salón que se muestra en el panel
     public int idProfesor = 0; // ID del profesor que se muestra en el panel
 
+    public GameObject pantallaCarga;
+    public GameObject pantallaError;
+    public GameObject pantallaRecargar;
+
+
     // Función que se ejecuta al inicio y antes de todo, inclusive si el script está desactivado
     void Awake(){
         pantallaPrincipal.SetActive(true); // Se activa la pantalla del menú principal
@@ -248,4 +253,24 @@ public class MenuPrincipal : MonoBehaviour
         paneles.GetComponent<RectTransform>().localPosition = Vector3.zero; // Se mueve el panel al ImageTarget nuevo
         paneles.GetComponent<RectTransform>().localRotation = Quaternion.Euler(90f, 0f, 0f); // Se voltea el panel a la cámara
     }
+
+    public void activarPantallaCarga(){
+        pantallaCarga.SetActive(true);
+    }
+    public void desactivarPantallaCarga(){
+        pantallaCarga.SetActive(false);
+    }
+    public void activarPantallaError(){
+        pantallaError.SetActive(true);
+    }
+    public void desactivarPantallaError(){
+        pantallaError.SetActive(false);
+    }
+    public void activarPantallaRecargar(){
+        pantallaRecargar.SetActive(true);
+    }
+    public void desactivarPantallaRecargar(){
+        pantallaRecargar.SetActive(false);
+    }
+
 }

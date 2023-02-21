@@ -3943,6 +3943,9 @@ MonoBehaviour:
   paneles: {fileID: 1569095834}
   idSalon: 0
   idProfesor: 0
+  pantallaCarga: {fileID: 1866371089}
+  pantallaError: {fileID: 522121043}
+  pantallaRecargar: {fileID: 720498782}
 --- !u!1 &358867771
 GameObject:
   m_ObjectHideFlags: 0
@@ -5292,6 +5295,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 337561152}
+    - target: {fileID: 7275053801442634740, guid: b520633378e743542b28aafab396b325, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7275053801570082791, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5350,7 +5357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8199522161025671545, guid: b520633378e743542b28aafab396b325, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b520633378e743542b28aafab396b325, type: 3}
