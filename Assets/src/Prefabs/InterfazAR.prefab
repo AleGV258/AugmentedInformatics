@@ -2059,7 +2059,7 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!95 &1053115653
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2076,7 +2076,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &8622061982851530735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2089,15 +2089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a553e9444c24d614b947ded3c2db98ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel1Salon: {fileID: 0}
-  panel2Profesor: {fileID: 0}
-  panel1SalonUI: {fileID: 9157833020407422419}
-  panel2ProfesorUI: {fileID: 9157833020746580307}
-  panelBusqueda: {fileID: 0}
-  arCamera: {fileID: 0}
-  interfazAR: {fileID: 9157833019918585850}
-  realidadAumentada: {fileID: 0}
-  panelCargando: {fileID: 0}
+  pantallaCarga: {fileID: 0}
   nombreProfesor: {fileID: 0}
   materiaProfesor: {fileID: 0}
   horarioProfesor: {fileID: 0}
@@ -2112,8 +2104,7 @@ MonoBehaviour:
   edificioProfesorUI: {fileID: 9157833020762138521}
   salonProfesorUI: {fileID: 9157833021639962912}
   imagenProfesorUI: {fileID: 9157833020948932160}
-  idSalon: 0
-  idProfesorEnSalon: 0
+  cambioPantallas: {fileID: 0}
   infoProfesor:
     name: 
     id: 
@@ -2779,14 +2770,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a602c96b7e3764b488b54a0b3de6ceeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel1Salon: {fileID: 0}
-  panel2Profesor: {fileID: 0}
-  panel1SalonUI: {fileID: 9157833020407422419}
-  panel2ProfesorUI: {fileID: 9157833020746580307}
-  panelBusqueda: {fileID: 0}
-  arCamera: {fileID: 0}
-  interfazAR: {fileID: 9157833019918585850}
-  realidadAumentada: {fileID: 0}
   especializacionNombreProfesor: {fileID: 0}
   areaConocimiento: {fileID: 0}
   curriculum: {fileID: 0}
@@ -2797,7 +2780,8 @@ MonoBehaviour:
   curriculumUI: {fileID: 9157833020892140811}
   cubiculoUI: {fileID: 9157833021020690993}
   imagenProfesorUI: {fileID: 9157833020382430024}
-  idProfesor: 0
+  cambioPantallas: {fileID: 0}
+  pantallaCarga: {fileID: 0}
   infoExtraProfesor:
     name: 
     id: 
@@ -2807,7 +2791,7 @@ MonoBehaviour:
     image: 
 --- !u!95 &1707193704
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2824,7 +2808,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &9157833020762138521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3088,7 +3072,7 @@ PlayableDirector:
     m_References: []
 --- !u!95 &9157833020770713876
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3105,7 +3089,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!222 &8332453203354644504
 CanvasRenderer:
   m_ObjectHideFlags: 0
