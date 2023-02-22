@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -331, y: 699}
+  m_AnchoredPosition: {x: -331, y: 709}
   m_SizeDelta: {x: 105.27, y: 104.305}
   m_Pivot: {x: 0.5, y: 0.5000008}
 --- !u!222 &4680283573788934658
@@ -853,7 +853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7c7eb09243044c245928fb21f7e4c262, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e57af3a8e068cb74c8f68bfddcf1f6c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1900,7 +1900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -77.752, y: 654}
+  m_AnchoredPosition: {x: -68, y: 664}
   m_SizeDelta: {x: 357.94, y: 158.4832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8648980653086804789
@@ -1933,8 +1933,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Croquis
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6ec15fbe7514b334b8f29c93af45df4c, type: 2}
+  m_sharedMaterial: {fileID: 8834497799271381988, guid: 6ec15fbe7514b334b8f29c93af45df4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
