@@ -30,4 +30,12 @@ public class rotar : MonoBehaviour
         
         // transform.Rotate(new Vector3(Time.deltaTime*x, Time.deltaTime*y, Time.deltaTime*z)); // Rotar el GameObject automáticamente
     }
+
+    void LateUpdate()
+    {
+        Quaternion rotation = transform.rotation;
+        rotation.x = 0;
+        rotation.z = 0;
+        transform.rotation = rotation;
+    }
 }
