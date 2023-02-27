@@ -44,26 +44,36 @@ public class Peticion : MonoBehaviour
     public GameObject Selector; // GameObject de un objecto selector
     public GameObject ObjSalon; // GameObject de un objeto de salón
     public ListaSalones listaRecibidaSalones; // Lista donde se almacenan los profesores que se reciben
-    public GameObject ObjInputPlaceholder; // GameObject del input dodne el usuario busca salones o maestros
+    public GameObject ObjInputPlaceholder; // Placeholder del input donde el usuario busca salones o maestros
     public GameObject ObjTitulo; // GameObject del titulo de la interfaz
-    public GameObject Recargar; // GameObject de un objecto para recargar la interfaz
     public GameObject cambioPantallas; // GameObject para el cambio de interfaces o pantallas
+    public GameObject Recargar; // GameObject de un objecto para recargar la interfaz
+    public GameObject Cargando;
+    public GameObject Error;
 
     // Función que se ejecuta al iniciar la aplicación y en su primer frame
     void Start () {
         StartCoroutine(CorrutinaObtenerDatos("")); // Obtener el listado los profesores
+        Recargar.SetActive(false);
+        Cargando.SetActive(false);
+        Error.SetActive(false);
 	}    
 
     // Función que ejecuta la corrutina de obtener datos
     public void ObtenerDatos()
     {
-        StartCoroutine(CorrutinaObtenerDatos(EntradaBuscador.text)); // Obtener profesorpor búsqueda
+        Cargando.SetActive(true);
+        if(EntradaBuscador.text == ""){
+            StartCoroutine(CorrutinaObtenerDatos(""));// Obtener todos los profesores
+        }else{
+            StartCoroutine(CorrutinaObtenerDatos(EntradaBuscador.text)); // Obtener profesor por búsqueda
+        }
     }
     
     // IEnumerator para obtener datos de una url
     private IEnumerator CorrutinaObtenerDatos(string busqueda) // Método para obtener profesor/es por búsqueda
     {
-        Recargar.SetActive(false); // Se deshabilita el objeto de recargar
+        // Recargar.SetActive(false); // Se deshabilita el objeto de recargar
 
         // Ciclo que destruye los objetos creados con anterioridad al obtener nuevos datos
         for (int i = ObjLista.transform.childCount-1; i >= 0; i--) {
@@ -89,7 +99,6 @@ public class Peticion : MonoBehaviour
             
             UnityWebRequest Peticion = UnityWebRequest.Get(url); // Realizar petición
             yield return Peticion.SendWebRequest(); // Devuelve el resultado de la petición realizada
-            
             if(!Peticion.isNetworkError && !Peticion.isHttpError){ // probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
                 listaRecibidaProfesores = JsonUtility.FromJson<ListaProfesores>(Peticion.downloadHandler.text); // Se almacena en listaRecibidaProfesores, la lista que entrega el resultado de la petición
                 //  Debug.Log(JsonUtility.ToJson(listaRecibidaProfesores));
@@ -121,13 +130,19 @@ public class Peticion : MonoBehaviour
                     profeObjeto profesorID = profe.GetComponent<profeObjeto>(); // Se inicializa profesorID para almacenar los id de profesores
                     profesorID.idProfesor = i; // cambiar por el valor real de ID
                     profesorID.cambioPantallas = cambioPantallas;
-                }                        
+                }   
+                Cargando.SetActive(false);                     
             }else{ // Si no se cumple la condicion, es decir, ocurre un error
                 Debug.LogWarning("Error en la peticion"); // Se devuelve un mensaje de error
+                Error.SetActive(true);
                 Recargar.SetActive(true); // Recargar se activa
             }   
         }else{
+            
             // Opcion de salones
+
+            Cargando.SetActive(true);
+
             TMP_Text OIP = ObjInputPlaceholder.GetComponent<TMP_Text>(); // Se define el objeto de busqueda de salón
             OIP.text = "Buscar un salón ... "; // Se coloca un texto en OIP.text para que se muestre el mensaje de "Buscar un salón ... "
 
@@ -178,9 +193,13 @@ public class Peticion : MonoBehaviour
                     salonObjeto scriptSalonObjeto = salon.GetComponent<salonObjeto>(); // Se inicializa scriptSalonObjeto para que almacene un id del salón
                     scriptSalonObjeto.idSalon = i; // cambiar por el valor real de ID
                     scriptSalonObjeto.cambioPantallas = cambioPantallas; // Cambia la pantalla
-                }                        
+                }   
+
+                Cargando.SetActive(false);                     
+                
             }else{ // Si no, ocurrió un error
                 Debug.LogWarning("Error en la peticion"); // Mensaje de de error que dice "Error en la petición"
+                Error.SetActive(true); // Error se activa
                 Recargar.SetActive(true); // Recargar se activa
             }   
         }
@@ -199,5 +218,10 @@ public class Peticion : MonoBehaviour
             RawImage imagenRequestProfesor = imagenProfesor.GetComponent<RawImage>(); // Se inicializa un RawImage que almacene el componente de imagen del profesor
             imagenRequestProfesor.texture = myTexture; // Se coloca en imagenRequestProfesor.texture la textura de myTexture
         }            
+    }
+    public void MetodoRecargar(){
+        Recargar.SetActive(false);
+        Error.SetActive(false);
+        ObtenerDatos();
     }
 }
