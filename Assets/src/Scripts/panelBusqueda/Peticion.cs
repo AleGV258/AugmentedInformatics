@@ -128,7 +128,7 @@ public class Peticion : MonoBehaviour
 
                     // Id del profesor dentro del objeto profe
                     profeObjeto profesorID = profe.GetComponent<profeObjeto>(); // Se inicializa profesorID para almacenar los id de profesores
-                    profesorID.idProfesor = i; // cambiar por el valor real de ID
+                    profesorID.idProfesor = i+1; // cambiar por el valor real de ID
                     profesorID.cambioPantallas = cambioPantallas;
                 }   
                 Cargando.SetActive(false);                     
@@ -191,7 +191,7 @@ public class Peticion : MonoBehaviour
                     
                     // Id del Salon dentro del objeto salon
                     salonObjeto scriptSalonObjeto = salon.GetComponent<salonObjeto>(); // Se inicializa scriptSalonObjeto para que almacene un id del salón
-                    scriptSalonObjeto.idSalon = i; // cambiar por el valor real de ID
+                    scriptSalonObjeto.idSalon = i+1; // cambiar por el valor real de ID
                     scriptSalonObjeto.cambioPantallas = cambioPantallas; // Cambia la pantalla
                 }   
 

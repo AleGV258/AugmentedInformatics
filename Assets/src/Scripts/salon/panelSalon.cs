@@ -9,7 +9,6 @@ using UnityEngine.UI;
 public class panelSalon : MonoBehaviour
 {
     // Los GameObject son los bloques de construcción fundamentales, pueden representar personajes, accesorios, escenarios y más
-    public GameObject pantallaCarga; // GameObject del pantallaCarga
 
     // Datos del Salón en el AR
     public GameObject nombreProfesor; //GameObject NombreProfesor
@@ -33,6 +32,11 @@ public class panelSalon : MonoBehaviour
 
     public GameObject cambioPantallas; // GameObject de donde se obtiene el MenuPrincipal
     
+    public GameObject cargando;
+    public GameObject error;
+    public GameObject recargar;
+
+
     // Agreaga la estructura a unity Inspector lo que le permite establecer los valores de estos campos en el editor de Unity
     [System.Serializable]
     public struct Profesor 
@@ -58,13 +62,19 @@ public class panelSalon : MonoBehaviour
     public Profesor infoProfesor; // Se declara un objeto de tipo Profesor con su información
     public Salon infoSalon; // Se declara un objeto de tipo Salón con su información
 
+
+    public void recargarSalon(){
+        StartCoroutine(CorrutinaObtenerDatos());
+    }
     // IEnumerator para obtener datos de una url
     public IEnumerator CorrutinaObtenerDatos()
     {   
         MenuPrincipal scriptCambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>(); // Se obtiene el GameObject de MenuPrincipal, con sus atributos y métodos
         idSalon = scriptCambioPantallas.idSalon; // Se obtiene el ID del salón que el usuario selecciono para mostrar
 
-        pantallaCarga.SetActive(true);
+        cargando.SetActive(true);
+        error.SetActive(false);
+        recargar.SetActive(false);
 
         string url; // Se declara una varible de tipo string para la url
         url = "rickandmortyapi.com/api/character/" + idSalon.ToString(); // Se forma la url para obtener datos del salón seleccionado por el usuario
@@ -94,12 +104,13 @@ public class panelSalon : MonoBehaviour
             
             Debug.Log("Profesor id " + idProfesorEnSalon); // Debug.Log imprime en la consola id del profesor
             StartCoroutine(ObtenerDatosProfesor()); // Se inicia la CorrutinaObtenerDatos() la cual se ejecuta simultaneamente con el resto del código
-            pantallaCarga.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en false, lo que deshabilitará u ocultará el GameObject
+            cargando.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en false, lo que deshabilitará u ocultará el GameObject
 
         }else{
             Debug.LogWarning("Error en la peticion"); // En caso de haber un error en la petición se imprime un mensaje 
-            pantallaCarga.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en false, lo que deshabilitará u ocultará el GameObject
-            //Recargar.SetActive(true);
+            cargando.SetActive(false);
+            error.SetActive(true);
+            recargar.SetActive(true);
         }             
     }
 
@@ -118,7 +129,10 @@ public class panelSalon : MonoBehaviour
     // IEnumerator para obtener datos de una url
     public IEnumerator ObtenerDatosProfesor()
     {   
-        pantallaCarga.SetActive(true); // Se establece la propiedad Active del panel Cargando objeto del juego en true, lo que abilitara GameObject.
+        cargando.SetActive(true);
+        error.SetActive(false);
+        recargar.SetActive(false);        
+        
         string url; // Se declara una varible de tipo string para la url
         url = "rickandmortyapi.com/api/character/" + idProfesorEnSalon.ToString(); // Se estructura la url donde se saca la información según el ID
         UnityWebRequest Peticion = UnityWebRequest.Get(url); // Realizar petición
@@ -149,11 +163,12 @@ public class panelSalon : MonoBehaviour
             TMP_Text horarioUI = horarioProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text lainterfaz horario profesor   
             horarioUI.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
             StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesorUI)); // Inicia una cortina cargarImagenProfesor, para cargar y asignar una imagen a imagenProfesorUI
-            pantallaCarga.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en true, lo que desahabilirara el GameObject
+            cargando.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en true, lo que desahabilirara el GameObject
         }else{
             Debug.LogWarning("Error en la peticion"); // En caso de un error imprime un mensaje de error
-            pantallaCarga.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en true, lo que desahabilirara el GameObject
-            //Recargar.SetActive(true);
+            cargando.SetActive(false);
+            error.SetActive(true);
+            recargar.SetActive(true);
         }             
     }
 
