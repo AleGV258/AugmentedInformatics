@@ -2104,9 +2104,12 @@ MonoBehaviour:
   salonProfesorUI: {fileID: 9157833021639962912}
   imagenProfesorUI: {fileID: 9157833020948932160}
   cambioPantallas: {fileID: 0}
-  cargando: {fileID: 7018792386011383506}
-  error: {fileID: 2918185793274093047}
-  recargar: {fileID: 6727766761370491028}
+  cargando: {fileID: 0}
+  error: {fileID: 0}
+  recargar: {fileID: 0}
+  cargandoUI: {fileID: 7018792386011383506}
+  errorUI: {fileID: 2918185793274093047}
+  recargarUI: {fileID: 6727766761370491028}
   infoProfesor:
     name: 
     id: 
@@ -2783,9 +2786,12 @@ MonoBehaviour:
   cubiculoUI: {fileID: 9157833021020690993}
   imagenProfesorUI: {fileID: 9157833020382430024}
   cambioPantallas: {fileID: 0}
-  cargando: {fileID: 7018792386011383506}
-  error: {fileID: 2918185793274093047}
-  recargar: {fileID: 6727766761370491028}
+  cargando: {fileID: 0}
+  error: {fileID: 0}
+  recargar: {fileID: 0}
+  cargandoUI: {fileID: 7018792386011383506}
+  errorUI: {fileID: 2918185793274093047}
+  recargarUI: {fileID: 6727766761370491028}
   infoExtraProfesor:
     name: 
     id: 

@@ -28,6 +28,10 @@ public class panelProfesor : MonoBehaviour
     public GameObject cargando;
     public GameObject error;
     public GameObject recargar;
+    public GameObject cargandoUI;
+    public GameObject errorUI;
+    public GameObject recargarUI;
+
 
     // Agreaga la estructura a unity Inspector, lo que le permite establecer los valores de estos campos en el editor de Unity
     [System.Serializable]
@@ -57,6 +61,9 @@ public class panelProfesor : MonoBehaviour
         cargando.SetActive(true);
         error.SetActive(false);
         recargar.SetActive(false);
+        cargandoUI.SetActive(true);
+        errorUI.SetActive(false);
+        recargarUI.SetActive(false);
         
         string url; // Se declara una varible de tipo string para la url
         url = "rickandmortyapi.com/api/character/" + idProfesor.ToString(); // Se estructura la url donde se saca la información según el ID
@@ -90,11 +97,15 @@ public class panelProfesor : MonoBehaviour
             edificioUI.text = infoExtraProfesor.species; // Una vez que accede puede cambiar el valor por medio de la propiedad text
             StartCoroutine(cargarImagenProfesor(infoExtraProfesor.image, imagenProfesorUI)); // Se inicia la corrutina para cambiar la imagen del profesor en la interfaz UI
             cargando.SetActive(false);
+            cargandoUI.SetActive(false);
         }else{
             Debug.LogWarning("Error en la peticion"); // En caso de un error imprime un mensaje de error 
             cargando.SetActive(false);
             error.SetActive(true);
             recargar.SetActive(true);
+            cargandoUI.SetActive(false);
+            errorUI.SetActive(true);
+            recargarUI.SetActive(true);
         }             
     }
 

@@ -35,7 +35,9 @@ public class panelSalon : MonoBehaviour
     public GameObject cargando;
     public GameObject error;
     public GameObject recargar;
-
+    public GameObject cargandoUI;
+    public GameObject errorUI;
+    public GameObject recargarUI;
 
     // Agreaga la estructura a unity Inspector lo que le permite establecer los valores de estos campos en el editor de Unity
     [System.Serializable]
@@ -75,6 +77,9 @@ public class panelSalon : MonoBehaviour
         cargando.SetActive(true);
         error.SetActive(false);
         recargar.SetActive(false);
+        cargandoUI.SetActive(true);
+        errorUI.SetActive(false);
+        recargarUI.SetActive(false);
 
         string url; // Se declara una varible de tipo string para la url
         url = "rickandmortyapi.com/api/character/" + idSalon.ToString(); // Se forma la url para obtener datos del salón seleccionado por el usuario
@@ -105,12 +110,15 @@ public class panelSalon : MonoBehaviour
             Debug.Log("Profesor id " + idProfesorEnSalon); // Debug.Log imprime en la consola id del profesor
             StartCoroutine(ObtenerDatosProfesor()); // Se inicia la CorrutinaObtenerDatos() la cual se ejecuta simultaneamente con el resto del código
             cargando.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en false, lo que deshabilitará u ocultará el GameObject
-
+            cargandoUI.SetActive(false);
         }else{
             Debug.LogWarning("Error en la peticion"); // En caso de haber un error en la petición se imprime un mensaje 
             cargando.SetActive(false);
             error.SetActive(true);
             recargar.SetActive(true);
+            cargandoUI.SetActive(false);
+            errorUI.SetActive(true);
+            recargarUI.SetActive(true);
         }             
     }
 
@@ -131,7 +139,10 @@ public class panelSalon : MonoBehaviour
     {   
         cargando.SetActive(true);
         error.SetActive(false);
-        recargar.SetActive(false);        
+        recargar.SetActive(false);     
+        cargandoUI.SetActive(true);
+        errorUI.SetActive(false);
+        recargarUI.SetActive(false);     
         
         string url; // Se declara una varible de tipo string para la url
         url = "rickandmortyapi.com/api/character/" + idProfesorEnSalon.ToString(); // Se estructura la url donde se saca la información según el ID
@@ -164,11 +175,15 @@ public class panelSalon : MonoBehaviour
             horarioUI.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
             StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesorUI)); // Inicia una cortina cargarImagenProfesor, para cargar y asignar una imagen a imagenProfesorUI
             cargando.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en true, lo que desahabilirara el GameObject
+            cargandoUI.SetActive(false);
         }else{
             Debug.LogWarning("Error en la peticion"); // En caso de un error imprime un mensaje de error
             cargando.SetActive(false);
             error.SetActive(true);
             recargar.SetActive(true);
+            cargandoUI.SetActive(false);
+            errorUI.SetActive(true);
+            recargarUI.SetActive(true);
         }             
     }
 
