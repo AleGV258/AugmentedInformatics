@@ -39,6 +39,11 @@ public class panelSalon : MonoBehaviour
     public GameObject errorUI;
     public GameObject recargarUI;
 
+    public GameObject CargIProfSalon;
+    public GameObject CargIProfSalonUI;
+
+    public GameObject panelSalonAR;
+
     // Agreaga la estructura a unity Inspector lo que le permite establecer los valores de estos campos en el editor de Unity
     [System.Serializable]
     public struct Profesor 
@@ -88,29 +93,32 @@ public class panelSalon : MonoBehaviour
         
         // Si isNetworkError y ishttpError son falsas, la peticion se realiza correctamente
         if(!Peticion.isNetworkError && !Peticion.isHttpError){ //Probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError
+            
             // Peticion.downloadHandler.textpropiedad proporciona la cadena JSON, que contiene el cuerpo de la respuesta como una cadena
             infoSalon = JsonUtility.FromJson<Salon>(Peticion.downloadHandler.text); // El JsonUtility.FromJson método de Unity para analizar los datos de respuesta del Peticion objeto en un Salon objeto
             
-            // Salón AR
-            // Muestra el texto en un elemento de la interfaz de usuario
-            TMP_Text edificio = edificioProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de edificio profesor
-            edificio.text = infoSalon.status; // Una vez que accede puede cambiar el valor por medio de la propiedad text
-            TMP_Text salon = salonProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de salon profesor
-            salon.text = infoSalon.id; // Una vez que accede puede cambiar el valor por medio de la propiedad text
-
-            // Salón UI
-            TMP_Text edificioUI = edificioProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz edificioProfesorUI
-            edificioUI.text = infoSalon.status; // Una vez que accede puede cambiar el valor por medio de la propiedad text
-            TMP_Text salonUI = salonProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz salonUI
-            salonUI.text =  infoSalon.id; // Una vez que accede puede cambiar el valor por medio de la propiedad text
-            
+            // if(panelSalonAR.activeSelf){
+                // Salón AR
+                // Muestra el texto en un elemento de la interfaz de usuario
+                TMP_Text edificio = edificioProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de edificio profesor
+                edificio.text = infoSalon.status; // Una vez que accede puede cambiar el valor por medio de la propiedad text
+                TMP_Text salon = salonProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de salon profesor
+                salon.text = infoSalon.id; // Una vez que accede puede cambiar el valor por medio de la propiedad text
+            // }else{
+                // Salón UI
+                TMP_Text edificioUI = edificioProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz edificioProfesorUI
+                edificioUI.text = infoSalon.status; // Una vez que accede puede cambiar el valor por medio de la propiedad text
+                TMP_Text salonUI = salonProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz salonUI
+                salonUI.text =  infoSalon.id; // Una vez que accede puede cambiar el valor por medio de la propiedad text
+            // }
+                        
             // Obtener informacion del profesor que se encuentra en el salon
-            idProfesorEnSalon = idSalon; //TEMPORALMENTE ES EL MISMO ID, CAMBIARA CUANDO TENGAMOS API AL ID REAL
-            
+            idProfesorEnSalon = idSalon; //TEMPORALMENTE ES EL MISMO ID, CAMBIARA CUANDO TENGAMOS API AL ID REAL            
             Debug.Log("Profesor id " + idProfesorEnSalon); // Debug.Log imprime en la consola id del profesor
             StartCoroutine(ObtenerDatosProfesor()); // Se inicia la CorrutinaObtenerDatos() la cual se ejecuta simultaneamente con el resto del código
             cargando.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en false, lo que deshabilitará u ocultará el GameObject
             cargandoUI.SetActive(false);
+
         }else{
             Debug.LogWarning("Error en la peticion"); // En caso de haber un error en la petición se imprime un mensaje 
             cargando.SetActive(false);
@@ -153,29 +161,37 @@ public class panelSalon : MonoBehaviour
             // Peticion.downloadHandler.textpropiedad proporciona la cadena JSON, que contiene el cuerpo de la respuesta como una cadena
             infoProfesor = JsonUtility.FromJson<Profesor>(Peticion.downloadHandler.text); // JsonUtility.FromJson método de Unity para analizar los datos de respuesta del Peticion objeto en un InformacionProfesor objeto según el ID
             
-            // Salón AR
-            TMP_Text nombre = nombreProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text del nombre profesor
-            nombre.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
-            TMP_Text materia = materiaProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la materia profesor
-            materia.text = infoProfesor.status; // Una vez que accede puede cambiar el valor de la propiedad status por medio de text 
-            TMP_Text grupo = grupoProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text del grupo profesor
-            grupo.text = infoProfesor.gender; // Una vez que accede puede cambiar el valor de la propiedad gender por medio de text
-            TMP_Text horario = horarioProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la materia profesor
-            horario.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
-            StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesor)); // Inicia una corrutina cargarImagenProfesor, para cargar y asignar una imagen a imagenProfesor
+            // if(panelSalonAR.activeSelf){
+                // Salón AR
+                TMP_Text nombre = nombreProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text del nombre profesor
+                nombre.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
+                TMP_Text materia = materiaProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la materia profesor
+                materia.text = infoProfesor.status; // Una vez que accede puede cambiar el valor de la propiedad status por medio de text 
+                TMP_Text grupo = grupoProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text del grupo profesor
+                grupo.text = infoProfesor.gender; // Una vez que accede puede cambiar el valor de la propiedad gender por medio de text
+                TMP_Text horario = horarioProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la materia profesor
+                horario.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
+
+                StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesor, CargIProfSalon)); // Inicia una corrutina cargarImagenProfesor, para cargar y asignar una imagen a imagenProfesor
+                
+            // }else{
+                // Salón UI
+                TMP_Text nombreUI = nombreProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz nombre profesor
+                nombreUI.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
+                TMP_Text materiaUI = materiaProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz materia profesor
+                materiaUI.text = infoProfesor.status; // Una vez que accede puede cambiar el valor de la propiedad status por medio de text
+                TMP_Text grupoUI = grupoProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de lainterfaz grupo profesor
+                grupoUI.text = infoProfesor.gender; // Una vez que accede puede cambiar el valor de la propiedad gender por medio de text
+                TMP_Text horarioUI = horarioProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text lainterfaz horario profesor   
+                horarioUI.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
+                                    
+                StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesorUI, CargIProfSalonUI)); // Inicia una cortina cargarImagenProfesor, para cargar y asignar una imagen a imagenProfesorUI
             
-            // Salón UI
-            TMP_Text nombreUI = nombreProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz nombre profesor
-            nombreUI.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
-            TMP_Text materiaUI = materiaProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz materia profesor
-            materiaUI.text = infoProfesor.status; // Una vez que accede puede cambiar el valor de la propiedad status por medio de text
-            TMP_Text grupoUI = grupoProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de lainterfaz grupo profesor
-            grupoUI.text = infoProfesor.gender; // Una vez que accede puede cambiar el valor de la propiedad gender por medio de text
-            TMP_Text horarioUI = horarioProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text lainterfaz horario profesor   
-            horarioUI.text = infoProfesor.name; // Una vez que accede puede cambiar el valor de la propiedad name por medio de text
-            StartCoroutine(cargarImagenProfesor(infoProfesor.image, imagenProfesorUI)); // Inicia una cortina cargarImagenProfesor, para cargar y asignar una imagen a imagenProfesorUI
+            // }        
+            
             cargando.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en true, lo que desahabilirara el GameObject
             cargandoUI.SetActive(false);
+
         }else{
             Debug.LogWarning("Error en la peticion"); // En caso de un error imprime un mensaje de error
             cargando.SetActive(false);
@@ -188,8 +204,9 @@ public class panelSalon : MonoBehaviour
     }
 
     // Recibe como parametros MediaUrl y el GameObjet imagenProfesor
-    public IEnumerator cargarImagenProfesor(string MediaUrl, GameObject imagenProfesor)
+    public IEnumerator cargarImagenProfesor(string MediaUrl, GameObject imagenProfesor, GameObject iconoCargandoImg)
     {
+        iconoCargandoImg.SetActive(true);
         UnityWebRequest request = UnityWebRequestTexture.GetTexture(MediaUrl); // Se recibe una respuesta como imagen del servidor por medio de MediaUrl a traves de GetTexture
         yield return request.SendWebRequest(); // Pausa la ejecución hasta que se complete la solicitud
 
@@ -197,6 +214,7 @@ public class panelSalon : MonoBehaviour
         if(request.isNetworkError || request.isHttpError){
             Debug.Log(request.error); // Imprime un mensaje de error en la consola
         }else{
+            iconoCargandoImg.SetActive(false);
             // Se desacargan las imagenes desde el servidor por medio de DownloadHandlerTexture
             Texture myTexture = ((DownloadHandlerTexture)request.downloadHandler).texture; // Texture devuelve la textura que se ha descargado
             RawImage imagenRequestProfesor = imagenProfesor.GetComponent<RawImage>(); // RawImage componente se recupera y se almacena en la variable imagenRequestProfesor, que se puede usar para manipular la apariencia
