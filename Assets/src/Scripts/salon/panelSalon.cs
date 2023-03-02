@@ -27,7 +27,7 @@ public class panelSalon : MonoBehaviour
     public GameObject salonProfesorUI; // GameObject de la interfaz salon profesor 
     public GameObject imagenProfesorUI; // GameObject de la interfaz imagen profesor
 
-    private int idSalon = 0; // ID del salón que se muestra en el panel
+    private int idSalonActual; // ID del salón que se muestra en el panel
     private int idProfesorEnSalon = 0; // ID del profesor que se encuentra en el ID del salón
 
     public GameObject cambioPantallas; // GameObject de donde se obtiene el MenuPrincipal
@@ -76,58 +76,64 @@ public class panelSalon : MonoBehaviour
     // IEnumerator para obtener datos de una url
     public IEnumerator CorrutinaObtenerDatos()
     {   
+        int idSalon;
         MenuPrincipal scriptCambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>(); // Se obtiene el GameObject de MenuPrincipal, con sus atributos y métodos
         idSalon = scriptCambioPantallas.idSalon; // Se obtiene el ID del salón que el usuario selecciono para mostrar
-
-        cargando.SetActive(true);
-        error.SetActive(false);
-        recargar.SetActive(false);
-        cargandoUI.SetActive(true);
-        errorUI.SetActive(false);
-        recargarUI.SetActive(false);
-
-        string url; // Se declara una varible de tipo string para la url
-        url = "rickandmortyapi.com/api/character/" + idSalon.ToString(); // Se forma la url para obtener datos del salón seleccionado por el usuario
-        UnityWebRequest Peticion = UnityWebRequest.Get(url); // Realizar petición con la url formada
-        yield return Peticion.SendWebRequest(); // Pausa la ejecución hasta que se complete la solicitud
         
-        // Si isNetworkError y ishttpError son falsas, la peticion se realiza correctamente
-        if(!Peticion.isNetworkError && !Peticion.isHttpError){ //Probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError
+        if(idSalonActual != idSalon){
+            cargando.SetActive(true);
+            error.SetActive(false);
+            recargar.SetActive(false);
+            cargandoUI.SetActive(true);
+            errorUI.SetActive(false);
+            recargarUI.SetActive(false);
+
+            string url; // Se declara una varible de tipo string para la url
+            url = "rickandmortyapi.com/api/character/" + idSalon.ToString(); // Se forma la url para obtener datos del salón seleccionado por el usuario
+            UnityWebRequest Peticion = UnityWebRequest.Get(url); // Realizar petición con la url formada
+            yield return Peticion.SendWebRequest(); // Pausa la ejecución hasta que se complete la solicitud
             
-            // Peticion.downloadHandler.textpropiedad proporciona la cadena JSON, que contiene el cuerpo de la respuesta como una cadena
-            infoSalon = JsonUtility.FromJson<Salon>(Peticion.downloadHandler.text); // El JsonUtility.FromJson método de Unity para analizar los datos de respuesta del Peticion objeto en un Salon objeto
-            
-            // if(panelSalonAR.activeSelf){
+            // Si isNetworkError y ishttpError son falsas, la peticion se realiza correctamente
+            if(!Peticion.isNetworkError && !Peticion.isHttpError){ //Probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError
+                
+                // Peticion.downloadHandler.textpropiedad proporciona la cadena JSON, que contiene el cuerpo de la respuesta como una cadena
+                infoSalon = JsonUtility.FromJson<Salon>(Peticion.downloadHandler.text); // El JsonUtility.FromJson método de Unity para analizar los datos de respuesta del Peticion objeto en un Salon objeto
+                
                 // Salón AR
                 // Muestra el texto en un elemento de la interfaz de usuario
                 TMP_Text edificio = edificioProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de edificio profesor
                 edificio.text = infoSalon.status; // Una vez que accede puede cambiar el valor por medio de la propiedad text
                 TMP_Text salon = salonProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de salon profesor
                 salon.text = infoSalon.id; // Una vez que accede puede cambiar el valor por medio de la propiedad text
-            // }else{
                 // Salón UI
                 TMP_Text edificioUI = edificioProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz edificioProfesorUI
                 edificioUI.text = infoSalon.status; // Una vez que accede puede cambiar el valor por medio de la propiedad text
                 TMP_Text salonUI = salonProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de la interfaz salonUI
                 salonUI.text =  infoSalon.id; // Una vez que accede puede cambiar el valor por medio de la propiedad text
-            // }
-                        
-            // Obtener informacion del profesor que se encuentra en el salon
-            idProfesorEnSalon = idSalon; //TEMPORALMENTE ES EL MISMO ID, CAMBIARA CUANDO TENGAMOS API AL ID REAL            
-            Debug.Log("Profesor id " + idProfesorEnSalon); // Debug.Log imprime en la consola id del profesor
-            StartCoroutine(ObtenerDatosProfesor()); // Se inicia la CorrutinaObtenerDatos() la cual se ejecuta simultaneamente con el resto del código
-            cargando.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en false, lo que deshabilitará u ocultará el GameObject
-            cargandoUI.SetActive(false);
+                            
+                // Obtener informacion del profesor que se encuentra en el salon
+                
+                // AQUI SE CAMBIA EL ID DEL PROFESOR QUE SE ENCUENTRA EN EL SALON
+                idProfesorEnSalon = idSalon; //TEMPORALMENTE ES EL MISMO ID, CAMBIARA CUANDO TENGAMOS API AL ID REAL            
+                Debug.Log("Profesor id " + idProfesorEnSalon); // Debug.Log imprime en la consola id del profesor
 
-        }else{
-            Debug.LogWarning("Error en la peticion"); // En caso de haber un error en la petición se imprime un mensaje 
-            cargando.SetActive(false);
-            error.SetActive(true);
-            recargar.SetActive(true);
-            cargandoUI.SetActive(false);
-            errorUI.SetActive(true);
-            recargarUI.SetActive(true);
-        }             
+                                
+                scriptCambioPantallas.idProfesor= idProfesorEnSalon;
+                
+                StartCoroutine(ObtenerDatosProfesor()); // Se inicia la CorrutinaObtenerDatos() la cual se ejecuta simultaneamente con el resto del código
+                cargando.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en false, lo que deshabilitará u ocultará el GameObject
+                cargandoUI.SetActive(false);
+
+            }else{
+                Debug.LogWarning("Error en la peticion"); // En caso de haber un error en la petición se imprime un mensaje 
+                cargando.SetActive(false);
+                error.SetActive(true);
+                recargar.SetActive(true);
+                cargandoUI.SetActive(false);
+                errorUI.SetActive(true);
+                recargarUI.SetActive(true);
+            }      
+        }               
     }
 
     // Función para pasar al siguiente ID del profesor

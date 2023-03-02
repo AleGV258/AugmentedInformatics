@@ -28,9 +28,8 @@ public class MenuPrincipal : MonoBehaviour
     public int idSalon = 0; // ID del salón que se muestra en el panel
     public int idProfesor = 0; // ID del profesor que se muestra en el panel
 
-    public GameObject pantallaCarga; // GameObject de la pantalla de cargando, cuando se recupera y hace fetch de la información en la API
-    public GameObject pantallaError; // GameObject de la pantalla de error, en caso de un error a la hora de hacer fetch a la información de la API
-    public GameObject pantallaRecargar; // GameObject de la pantalla de recargar, cuando se reintenta el fetch de la API
+    public GameObject ObtenerDatosSalon;
+    public GameObject ObtenerDatosProfesor;
 
     // Función que se ejecuta al inicio y antes de todo, inclusive si el script está desactivado
     void Awake(){
@@ -127,7 +126,7 @@ public class MenuPrincipal : MonoBehaviour
     // Función que activa la cámara, la interfaz de la realidad aumentada para el panel de salon y la flecha de regreso, y desactiva todas las demás
     public void cambiarPantallaRealidadAumentadaSalon()
     {
-        panelSalon scriptPanelSalonUI = panel1SalonUI.GetComponent<panelSalon>(); // Se obtiene el GameObject del script del panel salón UI
+        panelSalon scriptPanelSalonUI = ObtenerDatosSalon.GetComponent<panelSalon>(); // Se obtiene el GameObject del script del panel salón UI
         StartCoroutine(scriptPanelSalonUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
 
         arCamera.SetActive(true); // Se activa la cámara
@@ -148,7 +147,7 @@ public class MenuPrincipal : MonoBehaviour
     // Función que activa la cámara, la interfaz de la realidad aumentada para el panel de profesores y la flecha de regreso, y desactiva todas las demás
     public void cambiarPantallaRealidadAumentadaProfesor()
     {
-        panelProfesor scriptPanelProfesorUI = panel2ProfesorUI.GetComponent<panelProfesor>(); // Se obtiene el GameObject del script del panel profesor UI
+        panelProfesor scriptPanelProfesorUI = ObtenerDatosProfesor.GetComponent<panelProfesor>(); // Se obtiene el GameObject del script del panel profesor UI
         StartCoroutine(scriptPanelProfesorUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
 
         arCamera.SetActive(true); // Se activa la cámara
@@ -170,7 +169,7 @@ public class MenuPrincipal : MonoBehaviour
     public void cambiarPantallaVirtualUISalon()//Salon
     {
         contadorQuitarPanel = 0; // El contador del tiempo de la interfaz UI se restablece para empezar nuevamente
-        panelSalon scriptPanelSalonUI = panel1SalonUI.GetComponent<panelSalon>(); // Se obtiene el GameObject del script del panel salón UI
+        panelSalon scriptPanelSalonUI = ObtenerDatosSalon.GetComponent<panelSalon>(); // Se obtiene el GameObject del script del panel salón UI
         StartCoroutine(scriptPanelSalonUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
 
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
@@ -190,9 +189,9 @@ public class MenuPrincipal : MonoBehaviour
     public void cambiarPantallaVirtualUIProfesor()//Profesor
     {
         contadorQuitarPanel = 0; // El contador del tiempo de la interfaz UI se restablece para empezar nuevamente
-        panelProfesor scriptPanelProfesorUI = panel2ProfesorUI.GetComponent<panelProfesor>(); // Se obtiene el GameObject del script del panel profesor UI
+        panelProfesor scriptPanelProfesorUI = ObtenerDatosProfesor.GetComponent<panelProfesor>(); // Se obtiene el GameObject del script del panel profesor UI
         StartCoroutine(scriptPanelProfesorUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
- 
+
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
@@ -243,35 +242,5 @@ public class MenuPrincipal : MonoBehaviour
 
         paneles.GetComponent<RectTransform>().localPosition = Vector3.zero; // Se mueve el panel al ImageTarget nuevo
         paneles.GetComponent<RectTransform>().localRotation = Quaternion.Euler(90f, 0f, 0f); // Se voltea el panel a la cámara
-    }
-
-    // Función que activa la pantalla de carga
-    public void activarPantallaCarga(){
-        pantallaCarga.SetActive(true); // Se activa el panel de carga
-    }
-
-    // Función que desactiva la pantalla de carga
-    public void desactivarPantallaCarga(){
-        pantallaCarga.SetActive(false); // Se desactiva el panel de carga
-    }
-
-    // Función que activa la pantalla de error
-    public void activarPantallaError(){
-        pantallaError.SetActive(true); // Se activa el panel de error
-    }
-
-    // Función que desactiva la pantalla de error
-    public void desactivarPantallaError(){
-        pantallaError.SetActive(false); // Se desactiva el panel de error
-    }
-
-    // Función que activa la pantalla de recarga
-    public void activarPantallaRecargar(){
-        pantallaRecargar.SetActive(true); // Se activa el panel de recarga
-    }
-
-    // Función que desactiva la pantalla de recarga
-    public void desactivarPantallaRecargar(){
-        pantallaRecargar.SetActive(false); // Se desactiva el panel de recarga
     }
 }

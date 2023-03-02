@@ -1159,7 +1159,7 @@ GameObject:
   - component: {fileID: 9157833020016014695}
   - component: {fileID: 9157833020016014694}
   m_Layer: 0
-  m_Name: AnteriorProfesor
+  m_Name: SiguienteProfesor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1266,19 +1266,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9157833020016014695}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8622061982851530735}
-        m_TargetAssemblyTypeName: panelSalon, Assembly-CSharp
-        m_MethodName: SiguienteProfesor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &9157833020043107842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,6 +2255,7 @@ MonoBehaviour:
   recargarUI: {fileID: 6727766761370491028}
   CargIProfSalon: {fileID: 0}
   CargIProfSalonUI: {fileID: 6046791551554073493}
+  panelSalonAR: {fileID: 0}
   infoProfesor:
     name: 
     id: 
@@ -2951,6 +2940,7 @@ MonoBehaviour:
   recargarUI: {fileID: 6727766761370491028}
   CargIProf: {fileID: 0}
   CargIProfUI: {fileID: 4558261590336394451}
+  panelProfesorAR: {fileID: 0}
   infoExtraProfesor:
     name: 
     id: 
@@ -5105,7 +5095,7 @@ GameObject:
   - component: {fileID: 9157833021753290973}
   - component: {fileID: 9157833021753290972}
   m_Layer: 0
-  m_Name: SiguienteProfesor
+  m_Name: AnteriorProfesor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5212,19 +5202,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9157833021753290973}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8622061982851530735}
-        m_TargetAssemblyTypeName: panelSalon, Assembly-CSharp
-        m_MethodName: AnteriorProfesor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &9157833021938826886
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public class panelProfesor : MonoBehaviour
     public GameObject cubiculoUI; // GameObject de la interfaz del cubiculo
     public GameObject imagenProfesorUI; // GameObject de la interfaz del profesor
 
-    private int idProfesor = 1; // ID del profesor que se muestra en el panel, por default es el primero
+    private int idProfesorActual; // ID del profesor que se muestra en el panel, por default es el primero
     public GameObject cambioPantallas; // GameObject de donde se obtiene el MenuPrincipal
     
     public GameObject cargando;
@@ -37,7 +37,7 @@ public class panelProfesor : MonoBehaviour
 
     public GameObject panelProfesorAR;
     
-    // Agreaga la estructura a Unity Inspector, lo que le permite establecer los valores de estos campos en el editor de Unity
+    // Agreaga la estructura a unity Inspector, lo que le permite establecer los valores de estos campos en el editor de Unity
     [System.Serializable]
     public struct InformacionProfesor 
     {
@@ -59,27 +59,31 @@ public class panelProfesor : MonoBehaviour
     // IEnumerator para obtener datos de una url
     public IEnumerator CorrutinaObtenerDatos()
     {   
+
+        int idProfesor;
         MenuPrincipal scriptcambioPantallas = cambioPantallas.GetComponent<MenuPrincipal>(); // Se obtiene el GameObject de MenuPrincipal, con sus atributos y métodos
         idProfesor = scriptcambioPantallas.idProfesor; // Se obtiene el ID del profesor que el usuario selecciono para mostrar
         
-        cargando.SetActive(true);
-        error.SetActive(false);
-        recargar.SetActive(false);
-        cargandoUI.SetActive(true);
-        errorUI.SetActive(false);
-        recargarUI.SetActive(false);
-        
-        string url; // Se declara una varible de tipo string para la url
-        url = "rickandmortyapi.com/api/character/" + idProfesor.ToString(); // Se estructura la url donde se saca la información según el ID
-        UnityWebRequest Peticion = UnityWebRequest.Get(url); // Realizar petición de la url
-        yield return Peticion.SendWebRequest(); // Declaración que le dice al código que pause la ejecución hasta que se complete la solicitud
-        
-        // Si isNetworkError y ishttpError son falsas, la peticion se realiza correctamente
-        if(!Peticion.isNetworkError && !Peticion.isHttpError){ //probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
-            // Peticion.downloadHandler.textpropiedad proporciona la cadena JSON, que contiene el cuerpo de la respuesta como una cadena
-            infoExtraProfesor = JsonUtility.FromJson<InformacionProfesor>(Peticion.downloadHandler.text); // JsonUtility.FromJson método de Unity para analizar los datos de respuesta del Peticion objeto en un InformacionProfesor objeto
+        if(idProfesorActual != idProfesor){
+            cargando.SetActive(true);
+            error.SetActive(false);
+            recargar.SetActive(false);
+            cargandoUI.SetActive(true);
+            errorUI.SetActive(false);
+            recargarUI.SetActive(false);
             
-            // if(panelProfesorAR.activeSelf){
+            string url; // Se declara una varible de tipo string para la url
+            url = "rickandmortyapi.com/api/character/" + idProfesor.ToString(); // Se estructura la url donde se saca la información según el ID
+            UnityWebRequest Peticion = UnityWebRequest.Get(url); // Realizar petición de la url
+            yield return Peticion.SendWebRequest(); // Declaración que le dice al código que pause la ejecución hasta que se complete la solicitud
+            
+            // Si isNetworkError y ishttpError son falsas, la peticion se realiza correctamente
+            if(!Peticion.isNetworkError && !Peticion.isHttpError){ //probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
+                // Peticion.downloadHandler.textpropiedad proporciona la cadena JSON, que contiene el cuerpo de la respuesta como una cadena
+                infoExtraProfesor = JsonUtility.FromJson<InformacionProfesor>(Peticion.downloadHandler.text); // JsonUtility.FromJson método de Unity para analizar los datos de respuesta del Peticion objeto en un InformacionProfesor objeto
+                
+                scriptcambioPantallas.idSalon = idProfesor; //CAMBIA EL ID DEL SALON DONDE SE ENCUENTRA EL PROFE, TEMPORALMENTE ES EL MISMO ID DEL PROFE
+
                 // Profesor AR
                 TMP_Text especializacion = especializacionNombreProfesor.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de especializacion profesor
                 especializacion.text = infoExtraProfesor.name + " / " + infoExtraProfesor.status; // Una vez que accede puede cambiar el valor por medio de la propiedad text
@@ -90,7 +94,6 @@ public class panelProfesor : MonoBehaviour
                 TMP_Text edificio = cubiculo.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de cubiculo 
                 edificio.text = infoExtraProfesor.species; // Una vez que accede puede cambiar el valor por medio de la propiedad text
                 StartCoroutine(cargarImagenProfesor(infoExtraProfesor.image, imagenProfesor, CargIProf)); // Se inicia la corrutina para cambiar la imagen del profesor en el panel AR
-            // }else{ //panelProfesorUI es el que esta activo
                 // Profesor UI
                 TMP_Text especializacionUI = especializacionNombreProfesorUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de  especializacionNombreProfesorUI
                 especializacionUI.text = infoExtraProfesor.name + " / " + infoExtraProfesor.status; // Una vez que accede puede cambiar el valor por medio de la propiedad text
@@ -101,19 +104,20 @@ public class panelProfesor : MonoBehaviour
                 TMP_Text edificioUI = cubiculoUI.GetComponent<TMP_Text>(); // GetComponent accede al componente del objeto TMP_Text de cubiculoUI
                 edificioUI.text = infoExtraProfesor.species; // Una vez que accede puede cambiar el valor por medio de la propiedad text
                 StartCoroutine(cargarImagenProfesor(infoExtraProfesor.image, imagenProfesorUI, CargIProfUI)); // Se inicia la corrutina para cambiar la imagen del profesor en la interfaz UI
-            // }            
-            cargando.SetActive(false);
-            cargandoUI.SetActive(false);
-            
-        }else{
-            Debug.LogWarning("Error en la peticion"); // En caso de un error imprime un mensaje de error 
-            cargando.SetActive(false);
-            error.SetActive(true);
-            recargar.SetActive(true);
-            cargandoUI.SetActive(false);
-            errorUI.SetActive(true);
-            recargarUI.SetActive(true);
-        }             
+                
+                cargando.SetActive(false);
+                cargandoUI.SetActive(false);
+                
+            }else{
+                Debug.LogWarning("Error en la peticion"); // En caso de un error imprime un mensaje de error 
+                cargando.SetActive(false);
+                error.SetActive(true);
+                recargar.SetActive(true);
+                cargandoUI.SetActive(false);
+                errorUI.SetActive(true);
+                recargarUI.SetActive(true);
+            } 
+        }                    
     }
 
     // Recibe como parametros MediaUrl y el GameObjet imagenProfesor
