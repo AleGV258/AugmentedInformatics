@@ -23,15 +23,14 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject panel1SalonUI; // GameObject del panel Salón UI
     public GameObject panel2ProfesorUI; // GameObject del panel2 Profesor UI
 
-    public GameObject targetRecibido;
-    public GameObject paneles;
+    public GameObject targetRecibido; // GameObject del nuevo target recibido, donde se cambia la interfaz de realidad aumentada
+    public GameObject paneles; // GameObject del target donde se posiciono la interfaz, para modificar sus propiedades
     public int idSalon = 0; // ID del salón que se muestra en el panel
     public int idProfesor = 0; // ID del profesor que se muestra en el panel
 
-    public GameObject pantallaCarga;
-    public GameObject pantallaError;
-    public GameObject pantallaRecargar;
-
+    public GameObject pantallaCarga; // GameObject de la pantalla de cargando, cuando se recupera y hace fetch de la información en la API
+    public GameObject pantallaError; // GameObject de la pantalla de error, en caso de un error a la hora de hacer fetch a la información de la API
+    public GameObject pantallaRecargar; // GameObject de la pantalla de recargar, cuando se reintenta el fetch de la API
 
     // Función que se ejecuta al inicio y antes de todo, inclusive si el script está desactivado
     void Awake(){
@@ -240,29 +239,39 @@ public class MenuPrincipal : MonoBehaviour
         // Iniciar obtener Datos
         paneles.transform.parent = targetRecibido.transform; // Cambiar padre al nuevo ImageTarget enfocado 
         // paneles.transform.position = new Vector3(0,0,0);
-        paneles.GetComponent<Canvas> ().enabled = true;
+        paneles.GetComponent<Canvas>().enabled = true;
 
         paneles.GetComponent<RectTransform>().localPosition = Vector3.zero; // Se mueve el panel al ImageTarget nuevo
         paneles.GetComponent<RectTransform>().localRotation = Quaternion.Euler(90f, 0f, 0f); // Se voltea el panel a la cámara
     }
 
+    // Función que activa la pantalla de carga
     public void activarPantallaCarga(){
-        pantallaCarga.SetActive(true);
-    }
-    public void desactivarPantallaCarga(){
-        pantallaCarga.SetActive(false);
-    }
-    public void activarPantallaError(){
-        pantallaError.SetActive(true);
-    }
-    public void desactivarPantallaError(){
-        pantallaError.SetActive(false);
-    }
-    public void activarPantallaRecargar(){
-        pantallaRecargar.SetActive(true);
-    }
-    public void desactivarPantallaRecargar(){
-        pantallaRecargar.SetActive(false);
+        pantallaCarga.SetActive(true); // Se activa el panel de carga
     }
 
+    // Función que desactiva la pantalla de carga
+    public void desactivarPantallaCarga(){
+        pantallaCarga.SetActive(false); // Se desactiva el panel de carga
+    }
+
+    // Función que activa la pantalla de error
+    public void activarPantallaError(){
+        pantallaError.SetActive(true); // Se activa el panel de error
+    }
+
+    // Función que desactiva la pantalla de error
+    public void desactivarPantallaError(){
+        pantallaError.SetActive(false); // Se desactiva el panel de error
+    }
+
+    // Función que activa la pantalla de recarga
+    public void activarPantallaRecargar(){
+        pantallaRecargar.SetActive(true); // Se activa el panel de recarga
+    }
+
+    // Función que desactiva la pantalla de recarga
+    public void desactivarPantallaRecargar(){
+        pantallaRecargar.SetActive(false); // Se desactiva el panel de recarga
+    }
 }

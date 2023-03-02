@@ -37,7 +37,7 @@ public class panelProfesor : MonoBehaviour
 
     public GameObject panelProfesorAR;
     
-    // Agreaga la estructura a unity Inspector, lo que le permite establecer los valores de estos campos en el editor de Unity
+    // Agreaga la estructura a Unity Inspector, lo que le permite establecer los valores de estos campos en el editor de Unity
     [System.Serializable]
     public struct InformacionProfesor 
     {
