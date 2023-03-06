@@ -15,7 +15,8 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject pantallaCreditos; // GameObject de la interfaz de los créditos de los creadores de la aplicación
     public GameObject realidadAumentada; // GameObject de la interfaz de la cámara para la realidad aumentada, de los paneles de salón y profesor, pantalla que muestra la flecha de regreso a la aplicación principal
     public GameObject virtualUI; // GameObject de la interfaz de usuarios de los paneles sin realidad aumentada, de los paneles de salón y profesor
-    public PlayableDirector timeline; // Animación de los paneles de realidad aumentada al encontrarse el ImageTarget
+    public Animator aparecerAR; // Animación de los paneles de realidad aumentada al encontrarse el ImageTarget
+    public Animator aparecerUI; // Animación de los paneles de interfaz de usuario al encontrarse el ImageTarget
     float contadorQuitarPanel = 0; // Contador que aumenta para detectar el tiempo que la interfaz virtual de los paneles está activa
 
     public GameObject panel1SalonAR; // GameObject del panel1 Salón
@@ -57,15 +58,24 @@ public class MenuPrincipal : MonoBehaviour
         }
         // Se verifica que el contador no supere los 35.0 o 35 segundos, si se pasa, se desactiva el panel y reinicia el contador
         if(contadorQuitarPanel >= 35.0f){
-            virtualUI.SetActive(false); // Se desactivan los paneles de salón y profesor, después de 35 segundos
+            StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada, se desactivan los paneles de salón y profesor, después de 35 segundos
             contadorQuitarPanel = 0; // Se reinicia el contador
         }
     }
 
-    // Función para reproducir la animación del panel de salón al encontrarse el ImageTarget
-    public void reproducirPantalla()
+    // Función IEnumerator para reproducir la animación del panel de salón al encontrarse el ImageTarget
+    IEnumerator quitarPantallaAR()
     {
-        timeline.Play(); // Reproducción de la animación al aparecer el panel de AR
+        aparecerAR.SetTrigger("AparecerAR"); // Reproducción de la animación al aparecer el panel de AR
+        yield return new WaitForSeconds(2); // Esperar 1 Segundo
+    }
+
+    // Función IEnumerator para reproducir la animación del panel de salón al perderse el ImageTarget
+    IEnumerator quitarPantallaUI()
+    {
+        aparecerUI.SetTrigger("AparecerUI"); // Reproducción de la animación al aparecer el panel de UI
+        yield return new WaitForSeconds(2); // Esperar 1 Segundo
+        virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
     }
 
     // Función IEnumerator que se manda llamar al iniciar la aplicación y su corutina, la función desactiva al instante de que empieza el juego la cámara, de esta forma el dispositivo tiene tiempo de dentificar la camara para poder manejarla, de otra forma, el dispositivo no reconoce las cámaras.
@@ -135,13 +145,12 @@ public class MenuPrincipal : MonoBehaviour
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
-        virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
+        StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada
 
         panel1SalonAR.SetActive(true); // Se activa la pantalla de realidad aumentada del salón
         panel2ProfesorAR.SetActive(false); // Se desactiva la pantalla de realidad aumentada del profesor
         panel1SalonUI.SetActive(true); // Se activa la pantalla de interfaz virtual del salón
         panel2ProfesorUI.SetActive(false); // Se desactiva la pantalla de interfaz virtual del profesor
-
     }
 
     // Función que activa la cámara, la interfaz de la realidad aumentada para el panel de profesores y la flecha de regreso, y desactiva todas las demás
@@ -156,13 +165,12 @@ public class MenuPrincipal : MonoBehaviour
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
-        virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
+        StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada
 
         panel1SalonAR.SetActive(false); // Se desactiva la pantalla de realidad aumentada del salón
         panel2ProfesorAR.SetActive(true); // Se activa la pantalla de realidad aumentada del profesor
         panel1SalonUI.SetActive(false); // Se desactiva la pantalla de interfaz virtual del salón
         panel2ProfesorUI.SetActive(true); // Se activa la pantalla de interfaz virtual del profesor
-
     }
 
     // Función que activa la cámara, la interfaz UI de salones, y desactiva todas las demás
@@ -181,8 +189,6 @@ public class MenuPrincipal : MonoBehaviour
         panel2ProfesorAR.SetActive(false); // Se desactiva la pantalla de realidad aumentada del profesor
         panel1SalonUI.SetActive(true); // Se activa la pantalla de interfaz virtual del salón
         panel2ProfesorUI.SetActive(false); // Se desactiva la pantalla de interfaz virtual del profesor
-
-
     }
 
     // Función que activa la cámara, la interfaz UI de profesores, y desactiva todas las demás
@@ -201,7 +207,6 @@ public class MenuPrincipal : MonoBehaviour
         panel2ProfesorAR.SetActive(true); // Se activa la pantalla de realidad aumentada del profesor
         panel1SalonUI.SetActive(false); // Se desactiva la pantalla de interfaz virtual del salón
         panel2ProfesorUI.SetActive(true); // Se activa la pantalla de interfaz virtual del profesor
-
     }
 
     // Función para cambiar al panel de la interfaz virtual, cuando desaparece el panel de realidad aumentada
@@ -209,6 +214,7 @@ public class MenuPrincipal : MonoBehaviour
         // Se verifica que la cámara y la interfaz de la AR estén activadas
         if ((realidadAumentada.activeSelf == true) && (arCamera.activeSelf == true))
         {
+            // StartCoroutine(quitarPantallaAR()); // Se manda llamar al trigger desactivar la animación de panel interfaz de usuario
             // Se verifica que panel estaba activado en la realidad aumentada cuando desaparece
             if(panel2ProfesorAR.activeSelf == true){
                 cambiarPantallaVirtualUIProfesor(); // Cambiar al paner de UI de profesor

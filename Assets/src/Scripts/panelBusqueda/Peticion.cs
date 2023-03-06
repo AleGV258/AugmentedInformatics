@@ -118,7 +118,7 @@ public class Peticion : MonoBehaviour
 
                     TMP_Text np = nombreProfesor.GetComponent<TMP_Text>(); // Se inicializa el nombre del profesor en TMP_text np
                     np.text = listaRecibidaProfesores.results[i].name; // Se almacena el nombre del profesor en np.text
-                    profe.transform.parent = ObjLista.transform; // Indica que el transform del objeto "profe" adquirira las propiedades transform de un objeto nuevo y se volvera hijo de objLista 
+                    profe.transform.SetParent(ObjLista.transform, false); // Indica que el transform del objeto "profe" adquirira las propiedades transform de un objeto nuevo y se volvera hijo de objLista 
                     
                     TMP_Text ep = especializacionProfesor.GetComponent<TMP_Text>(); // Se inicializa en ep el dato de especialización del profesor
                     ep.text = "Especialización del profesor"; // Se almacena en ep.text "Especialización del profesor"
@@ -187,7 +187,7 @@ public class Peticion : MonoBehaviour
                     TMP_Text us = ubicacionSalon.GetComponent<TMP_Text>(); // Se inicializa us para que almacene la ubicación de salón
                     us.text = "Ubicacion Cambiada"; // Se le coloca el texto de "Ubicación Cambiada"
                     
-                    salon.transform.parent = ObjLista.transform; // Indica que el transform del objeto "salon" adquirira las propiedades transform de un objeto nuevo y se volvera hijo de objLista
+                    salon.transform.SetParent(ObjLista.transform); // Indica que el transform del objeto "salon" adquirira las propiedades transform de un objeto nuevo y se volvera hijo de objLista
                     
                     // Id del Salon dentro del objeto salon
                     salonObjeto scriptSalonObjeto = salon.GetComponent<salonObjeto>(); // Se inicializa scriptSalonObjeto para que almacene un id del salón
