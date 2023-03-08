@@ -61,6 +61,10 @@ public class MenuPrincipal : MonoBehaviour
             StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada, se desactivan los paneles de salón y profesor, después de 35 segundos
             contadorQuitarPanel = 0; // Se reinicia el contador
         }
+        // Se verifica que no este prendida la cámara al bloquear el dispositivo
+        if((arCamera.activeSelf == true && pantallaPrincipal.activeSelf == true) || (arCamera.activeSelf == true && pantallaCroquis.activeSelf == true) || (arCamera.activeSelf == true && pantallaCreditos.activeSelf == true) || (arCamera.activeSelf == true && panelBusqueda.activeSelf == true)){
+            StartCoroutine(desactivarCamara()); // Se inicia la corrutina de detectar y desactivar la cámara
+        }
     }
 
     // Función IEnumerator para reproducir la animación del panel de salón al encontrarse el ImageTarget

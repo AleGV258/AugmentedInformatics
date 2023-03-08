@@ -1673,7 +1673,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4898789408459157255}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: panelSalon, Assembly-CSharp
+        m_MethodName: SiguienteProfesor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4898789408502168778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,7 +3924,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4898789409978100413}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: panelSalon, Assembly-CSharp
+        m_MethodName: AnteriorProfesor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4898789410057116974
 GameObject:
   m_ObjectHideFlags: 0
