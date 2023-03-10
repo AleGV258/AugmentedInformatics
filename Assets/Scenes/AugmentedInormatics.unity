@@ -8655,6 +8655,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1358567162}
     m_Modifications:
+    - target: {fileID: 4898789408103778227, guid: e5badf356f934c94491cae30fedd8aeb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4898789408459157254, guid: e5badf356f934c94491cae30fedd8aeb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8757,7 +8761,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 6cf9a55b5815883479b889966a65a05b, type: 2}
     - target: {fileID: 4898789408837442355, guid: e5badf356f934c94491cae30fedd8aeb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4898789408972368169, guid: e5badf356f934c94491cae30fedd8aeb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

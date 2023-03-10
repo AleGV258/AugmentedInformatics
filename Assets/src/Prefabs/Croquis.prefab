@@ -2091,6 +2091,10 @@ MonoBehaviour:
   B: {fileID: 3288614155758362373}
   A: {fileID: 3288614156797751509}
   Mapa: {fileID: 5270652820277511120}
+  banderaI: {fileID: 854981683752320416}
+  banderaD: {fileID: 6158859183762533375}
+  banderaB: {fileID: 234821256931118138}
+  banderaA: {fileID: 7563063133172126253}
 --- !u!1001 &853073549991139810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2164,9 +2168,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90404ff98352a664ea380eb569332b66, type: 3}
+--- !u!1 &234821256931118138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 618393307744556504, guid: 90404ff98352a664ea380eb569332b66, type: 3}
+  m_PrefabInstance: {fileID: 853073549991139810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &836578321735296388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 21012022201416806, guid: 90404ff98352a664ea380eb569332b66, type: 3}
+  m_PrefabInstance: {fileID: 853073549991139810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &854981683752320416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3158415988057154, guid: 90404ff98352a664ea380eb569332b66, type: 3}
+  m_PrefabInstance: {fileID: 853073549991139810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6158859183762533375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6822408165063242269, guid: 90404ff98352a664ea380eb569332b66, type: 3}
+  m_PrefabInstance: {fileID: 853073549991139810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7563063133172126253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7143795356295433167, guid: 90404ff98352a664ea380eb569332b66, type: 3}
   m_PrefabInstance: {fileID: 853073549991139810}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1490059579056014742
