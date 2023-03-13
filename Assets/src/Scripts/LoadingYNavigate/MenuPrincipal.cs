@@ -63,7 +63,7 @@ public class MenuPrincipal : MonoBehaviour
         }
         // Se verifica que no este prendida la cámara al bloquear el dispositivo
         if((arCamera.activeSelf == true && pantallaPrincipal.activeSelf == true) || (arCamera.activeSelf == true && pantallaCroquis.activeSelf == true) || (arCamera.activeSelf == true && pantallaCreditos.activeSelf == true) || (arCamera.activeSelf == true && panelBusqueda.activeSelf == true)){
-            StartCoroutine(desactivarCamara()); // Se inicia la corrutina de detectar y desactivar la cámara
+            arCamera.SetActive(false); // Desactiva la cámara, esto se hace para consumir menos recursos en la aplicación
         }
     }
 
