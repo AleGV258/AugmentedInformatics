@@ -4086,6 +4086,7 @@ MonoBehaviour:
   idProfesor: 0
   ObtenerDatosSalon: {fileID: 1163711417}
   ObtenerDatosProfesor: {fileID: 1139912831}
+  API: http://148.220.52.101/api/datos
 --- !u!1 &358867771
 GameObject:
   m_ObjectHideFlags: 0
@@ -7485,7 +7486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7224613128554936690, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00024414062
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20eb18e3f9638624fa67c2ce66cac381, type: 3}
@@ -11293,7 +11294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &942172822
 MonoBehaviour:
   m_ObjectHideFlags: 0
