@@ -32,7 +32,7 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject ObtenerDatosSalon;
     public GameObject ObtenerDatosProfesor;
 
-    public string API = "http://148.220.52.101/api/datos";
+    public string API = "http://148.220.52.101/api/datos"; // API
     // Función que se ejecuta al inicio y antes de todo, inclusive si el script está desactivado
     void Awake(){
         pantallaPrincipal.SetActive(true); // Se activa la pantalla del menú principal

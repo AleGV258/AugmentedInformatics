@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4473312, g: 0.496706, b: 0.57291245, a: 1}
+  m_IndirectSpecularColor: {r: 0.4473322, g: 0.49670774, b: 0.57291526, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -240,7 +240,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A12
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -414,7 +413,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_INN02
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -578,7 +576,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A02
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -742,7 +739,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A15
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -921,7 +917,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D07
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -1085,7 +1080,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C04
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -1249,7 +1243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C30
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -1413,7 +1406,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_INN04
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -1654,7 +1646,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C24
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -1818,7 +1809,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A03-B
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -2362,7 +2352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C43
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -2639,7 +2628,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C35
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -2803,7 +2791,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D09
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -2967,7 +2954,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C05
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -3131,7 +3117,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C17
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -3305,7 +3290,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C45
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -3469,7 +3453,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A14
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -3633,7 +3616,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C28
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -3797,7 +3779,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A24
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -3961,7 +3942,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C19
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -4204,7 +4184,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D01
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -4835,7 +4814,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A07
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -4999,7 +4977,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_B03
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -5163,7 +5140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C32
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -5315,7 +5291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8372820349306755337, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372820349395982561, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5333,6 +5309,38 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 337561152}
+    - target: {fileID: 8372820350640270685, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
+      propertyPath: m_text
+      value: Augmented\nInformatics
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372820350640270685, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372820350640270685, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
+      propertyPath: m_margin.x
+      value: -144.79893
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372820350640270685, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
+      propertyPath: m_margin.z
+      value: -152.99194
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372820350640270685, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372820350640270685, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372820350640270685, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372820350640270686, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8414242781572358845, guid: 2aabe7e450b1e9041a5a5f07dd6c33e7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5456,7 +5464,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C18
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -5713,7 +5720,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A17
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -6012,7 +6018,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_INN07
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -6176,7 +6181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A04-B
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -6340,7 +6344,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C12
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -6504,7 +6507,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_POSGRADO
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -6760,7 +6762,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C39
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -6896,7 +6897,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &624133732
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6913,7 +6914,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &625932021
 GameObject:
   m_ObjectHideFlags: 0
@@ -7031,7 +7033,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C44
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -7612,7 +7613,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D10
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -7834,7 +7834,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_B01
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -8133,7 +8132,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C09
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -8263,7 +8261,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &686090040
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8280,7 +8278,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &698719680
 GameObject:
   m_ObjectHideFlags: 0
@@ -8475,7 +8474,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_B02
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -8639,7 +8637,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C25
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -9056,7 +9053,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_SPACERTZ
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -9220,7 +9216,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A03-A
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -9394,7 +9389,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D08
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -9558,7 +9552,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A09
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -9963,7 +9956,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_INN06
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -10127,7 +10119,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C22
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -10648,7 +10639,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A10
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -10812,7 +10802,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_OLIMPO
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -10981,7 +10970,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A25
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -11223,7 +11211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C26
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -11633,7 +11620,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A04-A
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -11797,7 +11783,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_LE
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -11961,7 +11946,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A21
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -12207,7 +12191,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C07
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -12521,7 +12504,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C16
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -12685,7 +12667,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A05
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -12849,7 +12830,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A20
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -13146,7 +13126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_LR1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -13310,7 +13289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_FISIO
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -13474,7 +13452,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C13
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -13638,7 +13615,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_INN05
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -14008,7 +13984,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C23
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -14172,7 +14147,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C41
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -14762,7 +14736,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_CD
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -15069,7 +15042,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_L-TEL
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -15238,7 +15210,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_INN08
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -15539,7 +15510,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A23
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -15780,7 +15750,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C03
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -15959,7 +15928,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_LR2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -16163,7 +16131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_L-INC
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -16327,7 +16294,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C38
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -16491,7 +16457,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A22
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -16655,7 +16620,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_NUTRI
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -17068,7 +17032,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C31
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -17232,7 +17195,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C10
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -17588,7 +17550,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A13
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -17752,7 +17713,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D02
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -17916,7 +17876,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_PSIC
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -18215,7 +18174,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D04
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -18528,7 +18486,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C06
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -18827,7 +18784,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_L-LAT
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -18991,7 +18947,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C34
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -19155,7 +19110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_L-SOF
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -19445,7 +19399,7 @@ Canvas:
   m_TargetDisplay: 0
 --- !u!95 &1569095840
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19462,7 +19416,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!320 &1569095841
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -19599,7 +19554,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C27
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -19763,7 +19717,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_L-INF
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -20005,7 +19958,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A19
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -20169,7 +20121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C11
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -20333,7 +20284,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D05
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -20632,7 +20582,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A16
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -20801,7 +20750,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_DEPORTES
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -20965,7 +20913,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_EMPRENDIMIENTO
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -21067,7 +21014,7 @@ PlayableDirector:
     m_References: []
 --- !u!95 &1668565461
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21084,7 +21031,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1668565462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21331,7 +21279,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C02
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -21495,7 +21442,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D06
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -21659,7 +21605,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C33
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -21823,7 +21768,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C14
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -21987,7 +21931,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_D03
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -22219,7 +22162,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A11
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -22383,7 +22325,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C42
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -22682,7 +22623,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C36
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -22846,7 +22786,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_MED
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -23415,7 +23354,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_LaCER
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -23714,7 +23652,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_INN09
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -23878,7 +23815,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A18
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -24160,7 +24096,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C29
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -24413,7 +24348,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A06
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -24592,7 +24526,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C21
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -24805,7 +24738,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_Croquis
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -24971,7 +24903,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_CAPACITACION
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -25346,7 +25277,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C01
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -25515,7 +25445,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C40
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -25849,7 +25778,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C08
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -26013,7 +25941,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A01
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -26254,7 +26181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A08
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -26519,7 +26445,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_INN01
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -26683,7 +26608,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_INN03
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -26924,7 +26848,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C15
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -27242,7 +27165,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C37
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -27406,7 +27328,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_A26
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml
@@ -27647,7 +27568,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  RuntimeCollider: 0
   mTrackableName: AR_ImageTarget_C20
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ProyectoRA_Informatica.xml

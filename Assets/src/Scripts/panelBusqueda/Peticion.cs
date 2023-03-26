@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
@@ -10,19 +11,19 @@ using TMPro;
 public class Peticion : MonoBehaviour
 {
     [System.Serializable]
-    public struct ListaProfesores // Estructura de la lista de profesores    
+    public class ListaProfesores // Estructura de la lista de profesores    
     {
         // Aquí se definen los elementos de la estructura de la lista de profesores
-        [System.Serializable]
-        public struct resultado{ // Se crea una estructura de resultado la cual almacenara los datos a mostrar de los profesores
-            public string name; // Variable para almacenar el dato de nombre de la estructura de resultado
-            public string url; // Variable para almacenar el dato de URL de la estructura de resultado
-        }
-        public string count; // Variable de la estructura de profesores para mantener un conteo !A REVISAR!
-        public string next; // Variable de profesores para almacenar el siguiente profesor
-        public string previous; // Variable de profesores para almacenar eL profesor anterior
-        public resultado[] results; // Arreglo de la lista de profesores que almacena los resultados o profesores.
+        public string first_name; // Nombre/s del profesor
+        public string last_name; // Apellidos del profesor
+        public string email; // Cooreo electrónico del profesor
     }
+    [System.Serializable]
+    public class ProfesoresAPI
+    {
+        public List<ListaProfesores> dataProfesor;
+    }
+
     [System.Serializable]
     public struct ListaSalones // Estructura de lista de salones
     {
@@ -37,7 +38,7 @@ public class Peticion : MonoBehaviour
         public resultado[] results; // Arreglo de la lista de salones que almacena los resultados o salones.
     }
 
-    public ListaProfesores listaRecibidaProfesores; // Lista donde se almacenan los profesores que se reciben
+    public ProfesoresAPI listaRecibidaProfesores; // Lista donde se almacenan los profesores que se reciben
     public TMP_InputField EntradaBuscador; // Variable para el ingreso del profesor o salón a buscar
     public GameObject ObjProfesor; // GameObject de un objeto profesor
     public GameObject ObjLista; // GameObject de un objeto de lista
@@ -81,6 +82,7 @@ public class Peticion : MonoBehaviour
         }
         int opcionSelector = Selector.GetComponent<TMP_Dropdown>().value; // Se pasa el valor del objecto seleccionado por el usuario, en este caso el ID del salón o profesor
         
+        CultureInfo cultura = new CultureInfo("es-ES"); // Instancia de idioma español para la capitalización de strings
         string url; // Variable que almacena la url
         
          // Opción de profesores
@@ -91,21 +93,21 @@ public class Peticion : MonoBehaviour
             TMP_Text titulo = ObjTitulo.GetComponent<TMP_Text>(); // Gameobject del titulo de la interfaz
             titulo.text = "Profesores "; // Se define el texto del titulo de la interfaz como 'Profesores'
             
-            if(busqueda == ""){ // Condición que verifica si busqueda no contiene datos
-                url = "https://pokeapi.co/api/v2/pokemon?limit=" + "30"; // Si no, regresa todos los profesores
-            }else{
-                url = "https://pokeapi.co/api/v2/pokemon?limit=" + busqueda; // Si contiene un dato realiza la busqueda filtrada del profesor
-            }
+            // if(busqueda == ""){ // Condición que verifica si busqueda no contiene datos
+                // url = "https://pokeapi.co/api/v2/pokemon?limit=" + "30"; // Si no, regresa todos los profesores
+            // }else{
+            //     url = "https://pokeapi.co/api/v2/pokemon?limit=" + busqueda; // Si contiene un dato realiza la busqueda filtrada del profesor
+            // }
+
+            url = "http://148.220.52.101/api/datos/maestros"; // Endpoint de donde se recaban los datos de la API de profesores
             
             UnityWebRequest Peticion = UnityWebRequest.Get(url); // Realizar petición
             yield return Peticion.SendWebRequest(); // Devuelve el resultado de la petición realizada
-            if(!Peticion.isNetworkError && !Peticion.isHttpError){ // probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError        
-                listaRecibidaProfesores = JsonUtility.FromJson<ListaProfesores>(Peticion.downloadHandler.text); // Se almacena en listaRecibidaProfesores, la lista que entrega el resultado de la petición
-                //  Debug.Log(JsonUtility.ToJson(listaRecibidaProfesores));
-                //  Debug.Log(listaRecibidaProfesores.results.Length);
+            if(!Peticion.isNetworkError && !Peticion.isHttpError){ // probar UnityWebRequest.result == UnityWebRequest.Result.ProtocolError
+                listaRecibidaProfesores = JsonUtility.FromJson<ProfesoresAPI>("{\"dataProfesor\":" + Peticion.downloadHandler.text + "}"); // Se almacena en listaRecibidaProfesores, la lista que entrega el resultado de la petición
                 
-                for(int i=0; i<listaRecibidaProfesores.results.Length; i++){ // Ciclo que recorre la lista recibida de profesores  de la petición
-                    // Debug.Log(listaRecibidaProfesores.results[i].name);
+                for(int i = 1; i < listaRecibidaProfesores.dataProfesor.Count; i++){ // Ciclo que recorre la lista recibida de profesores de la petición
+                    // Debug.Log(listaRecibidaProfesores.dataProfesor[i].first_name);
                     GameObject profe = Instantiate(ObjProfesor, new Vector3(150, 350,0), Quaternion.identity, ObjLista.transform); // Se inicia el Gameobject de profesor con sus respectivos campos
                     
                     GameObject imagenProfesor = profe.transform.GetChild(0).gameObject; // Imagen profesor
@@ -117,7 +119,7 @@ public class Peticion : MonoBehaviour
                     StartCoroutine(cargarImagenProfesor("https://thumbs.dreamstime.com/b/icono-del-usuario-106603539.jpg", imagenProfesor)); // Realiza la carga de la imagen del profesor
 
                     TMP_Text np = nombreProfesor.GetComponent<TMP_Text>(); // Se inicializa el nombre del profesor en TMP_text np
-                    np.text = listaRecibidaProfesores.results[i].name; // Se almacena el nombre del profesor en np.text
+                    np.text = cultura.TextInfo.ToTitleCase(listaRecibidaProfesores.dataProfesor[i].first_name.ToLower() + " " + listaRecibidaProfesores.dataProfesor[i].last_name.ToLower()); // Se almacena el nombre del profesor en np.text
                     profe.transform.SetParent(ObjLista.transform, false); // Indica que el transform del objeto "profe" adquirira las propiedades transform de un objeto nuevo y se volvera hijo de objLista 
                     
                     TMP_Text ep = especializacionProfesor.GetComponent<TMP_Text>(); // Se inicializa en ep el dato de especialización del profesor
@@ -128,19 +130,19 @@ public class Peticion : MonoBehaviour
 
                     // Id del profesor dentro del objeto profe
                     profeObjeto profesorID = profe.GetComponent<profeObjeto>(); // Se inicializa profesorID para almacenar los id de profesores
-                    profesorID.idProfesor = i+1; // cambiar por el valor real de ID
+                    profesorID.idProfesor = i + 1; // cambiar por el valor real de ID
                     profesorID.cambioPantallas = cambioPantallas;
                 }   
-                Cargando.SetActive(false);                     
+
+                Cargando.SetActive(false);
+
             }else{ // Si no se cumple la condicion, es decir, ocurre un error
                 Debug.LogWarning("Error en la peticion"); // Se devuelve un mensaje de error
                 Error.SetActive(true);
                 Recargar.SetActive(true); // Recargar se activa
             }   
         }else{
-            
             // Opcion de salones
-
             Cargando.SetActive(true);
 
             TMP_Text OIP = ObjInputPlaceholder.GetComponent<TMP_Text>(); // Se define el objeto de busqueda de salón
