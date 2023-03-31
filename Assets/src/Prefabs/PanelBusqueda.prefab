@@ -1894,20 +1894,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listaRecibidaProfesores:
-    count: 
-    next: 
-    previous: 
-    results: []
+    dataProfesor: []
+  listaRecibidaSalones:
+    dataSalon: []
   EntradaBuscador: {fileID: 3121289502308297306}
   ObjProfesor: {fileID: 7497369119811548433, guid: 7c5846428e1177d43bb1eede8cea5290, type: 3}
   ObjLista: {fileID: 4189922508265561160}
   Selector: {fileID: 6851488368093017756}
   ObjSalon: {fileID: 1743495514151580685, guid: edf32e8b4e2e90c408d93df6e3b5e196, type: 3}
-  listaRecibidaSalones:
-    count: 
-    next: 
-    previous: 
-    results: []
   ObjInputPlaceholder: {fileID: 518119106282692652}
   ObjTitulo: {fileID: 2395562933700584182}
   cambioPantallas: {fileID: 0}
@@ -2472,10 +2466,10 @@ MonoBehaviour:
       m_Calls: []
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_SelectionColor: {r: 0.03529412, g: 0.09411765, b: 0.30980393, a: 1}
   m_Text: 
-  m_CaretBlinkRate: 0.85
-  m_CaretWidth: 1
+  m_CaretBlinkRate: 0.6
+  m_CaretWidth: 2
   m_ReadOnly: 0
   m_RichText: 1
   m_GlobalFontAsset: {fileID: 11400000, guid: 6ec15fbe7514b334b8f29c93af45df4c, type: 2}
@@ -2921,7 +2915,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5412874956876728830}
   - component: {fileID: 5412874956876728831}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: CroquisCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +53,7 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 0.03
     width: 1
     height: 1
   near clip plane: 0.3
@@ -71,7 +71,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
