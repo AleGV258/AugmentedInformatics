@@ -15,6 +15,7 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject pantallaCreditos; // GameObject de la interfaz de los créditos de los creadores de la aplicación
     public GameObject realidadAumentada; // GameObject de la interfaz de la cámara para la realidad aumentada, de los paneles de salón y profesor, pantalla que muestra la flecha de regreso a la aplicación principal
     public GameObject virtualUI; // GameObject de la interfaz de usuarios de los paneles sin realidad aumentada, de los paneles de salón y profesor
+    public GameObject Targets;
     public Animator aparecerAR; // Animación de los paneles de realidad aumentada al encontrarse el ImageTarget
     public Animator aparecerUI; // Animación de los paneles de interfaz de usuario al encontrarse el ImageTarget
     float contadorQuitarPanel = 0; // Contador que aumenta para detectar el tiempo que la interfaz virtual de los paneles está activa
@@ -28,6 +29,7 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject paneles; // GameObject del target donde se posiciono la interfaz, para modificar sus propiedades
     public int idSalon = 0; // ID del salón que se muestra en el panel
     public int idProfesor = 0; // ID del profesor que se muestra en el panel
+    public int opcionCamara = 1; // Número que define donde se encuentra el usuario para la navegación
 
     public GameObject ObtenerDatosSalon;
     public GameObject ObtenerDatosProfesor;
@@ -41,6 +43,7 @@ public class MenuPrincipal : MonoBehaviour
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
+        Targets.SetActive(false); // Se desactivan los ImageTargets
     }
 
     // Función que se ejecuta al iniciar la aplicación y en su primer frame
@@ -90,6 +93,11 @@ public class MenuPrincipal : MonoBehaviour
         arCamera.SetActive(false); // Desactiva la cámara, esto se hace para consumir menos recursos en la aplicación
     }
 
+    // Función que manda llamar a eliminar el panel virtual UI para desaparecer el panel
+    public void cerrarPanelUI(){
+        StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada
+    }
+
     // Función que activa la interfaz del menú principal, y desactiva todas las demás
     public void regresarMenuPrincipal()
     {
@@ -100,6 +108,29 @@ public class MenuPrincipal : MonoBehaviour
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
+        Targets.SetActive(false); // Se desactivan los ImageTargets
+    }
+
+    // Función que activa la interfaz del panel búsqueda, y desactiva todas las demás
+    public void regresarPanelBusqueda()
+    {
+        arCamera.SetActive(false); // Se desactiva la cámara
+        pantallaPrincipal.SetActive(false); // Se activa la pantalla del menú principal
+        panelBusqueda.SetActive(true); // Se desactiva la pantalla de búsqueda de profesores y salones
+        pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
+        pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
+        realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
+        virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
+        Targets.SetActive(false); // Se desactivan los ImageTargets
+    }
+
+    // Función que revisa por donde navego el usuario para que la historia de navegación corresponda
+    public void revisarNavegacion(){
+        if(opcionCamara == 1){
+            regresarMenuPrincipal(); // Si es 1 es navegación de la cámara
+        }else if(opcionCamara == 2){
+            regresarPanelBusqueda(); // Si es 2 es navegación de la búsqueda
+        }
     }
 
     // Función que activa la interfaz de la búsqueda de profesores y salones, y desactiva todas las demás
@@ -112,6 +143,7 @@ public class MenuPrincipal : MonoBehaviour
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
+        Targets.SetActive(false); // Se desactivan los ImageTargets
     }
 
     // Función que activa la interfaz de la pantalla del croquis UI, y desactiva todas las demás
@@ -124,6 +156,7 @@ public class MenuPrincipal : MonoBehaviour
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
+        Targets.SetActive(false); // Se desactivan los ImageTargets
     }
 
     // Función que activa la interfaz de los créditos de la aplicación, y desactiva todas las demás
@@ -136,21 +169,24 @@ public class MenuPrincipal : MonoBehaviour
         pantallaCreditos.SetActive(true); // Se activa la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
+        Targets.SetActive(false); // Se desactivan los ImageTargets
     }
 
     // Función que activa la cámara, la interfaz de la realidad aumentada para el panel de salon y la flecha de regreso, y desactiva todas las demás
     public void cambiarPantallaRealidadAumentadaSalon()
     {
+        opcionCamara = 1; // Se establece la navegación a que entro por la cámara
         panelSalon scriptPanelSalonUI = ObtenerDatosSalon.GetComponent<panelSalon>(); // Se obtiene el GameObject del script del panel salón UI
         StartCoroutine(scriptPanelSalonUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
 
         arCamera.SetActive(true); // Se activa la cámara
+        Targets.SetActive(true); // Se activan los ImageTargets
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
-        StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada
+        // StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada
 
         panel1SalonAR.SetActive(true); // Se activa la pantalla de realidad aumentada del salón
         panel2ProfesorAR.SetActive(false); // Se desactiva la pantalla de realidad aumentada del profesor
@@ -161,16 +197,18 @@ public class MenuPrincipal : MonoBehaviour
     // Función que activa la cámara, la interfaz de la realidad aumentada para el panel de profesores y la flecha de regreso, y desactiva todas las demás
     public void cambiarPantallaRealidadAumentadaProfesor()
     {
+        opcionCamara = 1; // Se establece la navegación a que entro por la cámara
         panelProfesor scriptPanelProfesorUI = ObtenerDatosProfesor.GetComponent<panelProfesor>(); // Se obtiene el GameObject del script del panel profesor UI
         StartCoroutine(scriptPanelProfesorUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
 
         arCamera.SetActive(true); // Se activa la cámara
+        Targets.SetActive(true); // Se activan los ImageTargets
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
-        StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada
+        // StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada
 
         panel1SalonAR.SetActive(false); // Se desactiva la pantalla de realidad aumentada del salón
         panel2ProfesorAR.SetActive(true); // Se activa la pantalla de realidad aumentada del profesor
@@ -179,14 +217,16 @@ public class MenuPrincipal : MonoBehaviour
     }
 
     // Función que activa la cámara, la interfaz UI de salones, y desactiva todas las demás
-    public void cambiarPantallaVirtualUISalon()//Salon
+    public void cambiarPantallaVirtualUISalon()
     {
+        opcionCamara = 2; // Se establece la navegación a que entro por la búsqueda
         contadorQuitarPanel = 0; // El contador del tiempo de la interfaz UI se restablece para empezar nuevamente
         panelSalon scriptPanelSalonUI = ObtenerDatosSalon.GetComponent<panelSalon>(); // Se obtiene el GameObject del script del panel salón UI
         StartCoroutine(scriptPanelSalonUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
 
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
+        Targets.SetActive(true); // Se activan los ImageTargets
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
@@ -197,14 +237,16 @@ public class MenuPrincipal : MonoBehaviour
     }
 
     // Función que activa la cámara, la interfaz UI de profesores, y desactiva todas las demás
-    public void cambiarPantallaVirtualUIProfesor()//Profesor
+    public void cambiarPantallaVirtualUIProfesor()
     {
+        opcionCamara = 2; // Se establece la navegación a que entro por la búsqueda
         contadorQuitarPanel = 0; // El contador del tiempo de la interfaz UI se restablece para empezar nuevamente
         panelProfesor scriptPanelProfesorUI = ObtenerDatosProfesor.GetComponent<panelProfesor>(); // Se obtiene el GameObject del script del panel profesor UI
         StartCoroutine(scriptPanelProfesorUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
 
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
+        Targets.SetActive(true); // Se activan los ImageTargets
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
@@ -223,7 +265,7 @@ public class MenuPrincipal : MonoBehaviour
             // Se verifica que panel estaba activado en la realidad aumentada cuando desaparece
             if(panel2ProfesorAR.activeSelf == true){
                 cambiarPantallaVirtualUIProfesor(); // Cambiar al paner de UI de profesor
-            }else{
+            }else if(panel1SalonAR.activeSelf == true){
                 cambiarPantallaVirtualUISalon(); // Cambiar al panel de UI de salón
             }
         }

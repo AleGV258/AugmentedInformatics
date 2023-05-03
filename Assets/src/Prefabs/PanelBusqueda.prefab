@@ -1792,6 +1792,7 @@ GameObject:
   - component: {fileID: 5178315130666575806}
   - component: {fileID: 5602711645820437050}
   - component: {fileID: 8594912354085887511}
+  - component: {fileID: 6135671594696757934}
   m_Layer: 5
   m_Name: PanelBusqueda
   m_TagString: Untagged
@@ -1916,6 +1917,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5178315130666575807}
   m_CullTransparentMesh: 1
+--- !u!114 &6135671594696757934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5178315130666575807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d0bae42e4230143a2d4cc8de21e3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottonRegresar: {fileID: 3121742305203389512}
 --- !u!1 &5445894745683901941
 GameObject:
   m_ObjectHideFlags: 0

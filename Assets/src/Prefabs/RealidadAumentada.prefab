@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 4499021377735532876}
   - component: {fileID: 2986153020383761135}
   - component: {fileID: 2930344498048948146}
+  - component: {fileID: 3706093587453367733}
   m_Layer: 5
   m_Name: RealidadAumentada
   m_TagString: Untagged
@@ -274,3 +275,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3706093587453367733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6582796284532940564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d0bae42e4230143a2d4cc8de21e3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottonRegresar: {fileID: 1735506090103647940}

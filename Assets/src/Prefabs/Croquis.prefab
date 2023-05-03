@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7610ce0e41467147a0e1b0af717df42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.2
+  speed: -0.2
 --- !u!1 &3288614155522070889
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +722,7 @@ GameObject:
   - component: {fileID: 3288614155815899842}
   - component: {fileID: 3288614155815899843}
   - component: {fileID: 3288614155815899852}
+  - component: {fileID: 7788853673318342862}
   m_Layer: 5
   m_Name: Croquis
   m_TagString: Untagged
@@ -812,6 +813,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7788853673318342862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3288614155815899853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d0bae42e4230143a2d4cc8de21e3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottonRegresar: {fileID: 912369537654958535}
 --- !u!1 &3288614155946933787
 GameObject:
   m_ObjectHideFlags: 0
