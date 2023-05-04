@@ -123,7 +123,6 @@ public class panelSalon : MonoBehaviour
                 StartCoroutine(ObtenerDatosProfesor()); // Se inicia la CorrutinaObtenerDatos() la cual se ejecuta simultaneamente con el resto del código
                 cargando.SetActive(false); // Se establece la propiedad Active del panel Cargando objeto del juego en false, lo que deshabilitará u ocultará el GameObject
                 cargandoUI.SetActive(false);
-
             }else{
                 Debug.LogWarning("Error en la peticion"); // En caso de haber un error en la petición se imprime un mensaje 
                 cargando.SetActive(false);
