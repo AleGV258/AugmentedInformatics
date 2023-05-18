@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="PruebasPostales_ImageTarget_A10" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A09" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A08" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A07" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A06" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A05" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A04-B" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A04-A" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A03-B" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A03-A" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A02" size="1.000000 0.536329" />
+    <ImageTarget name="PruebasPostales_ImageTarget_A01" size="1.000000 0.536329" />
+  </Tracking>
+</QCARConfig>
