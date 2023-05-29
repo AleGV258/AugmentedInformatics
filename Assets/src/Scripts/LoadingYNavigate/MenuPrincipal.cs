@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Playables;
+using TMPro;
 using Vuforia;
 
 /* Script del menú principal, permite la navegación entre las pantallas de la interfaz UI y la interfaz AR, donde la interfaz AR, son los objetos que se colocan y se instancian sobre y al mostrar los ImageTargets de Vuforia, y en donde la interfaz UI, son los elementos instanciados y creados sobre la pantalla del usuario */
@@ -15,6 +18,7 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject pantallaCreditos; // GameObject de la interfaz de los créditos de los creadores de la aplicación
     public GameObject realidadAumentada; // GameObject de la interfaz de la cámara para la realidad aumentada, de los paneles de salón y profesor, pantalla que muestra la flecha de regreso a la aplicación principal
     public GameObject virtualUI; // GameObject de la interfaz de usuarios de los paneles sin realidad aumentada, de los paneles de salón y profesor
+    public GameObject pantallLogin; // GameObject de la interfaz del login de la aplicación 
     public GameObject Targets; // GameObject de los ImageTargets de la aplicación
     public Animator aparecerAR; // Animación de los paneles de realidad aumentada al encontrarse el ImageTarget
     public Animator aparecerUI; // Animación de los paneles de interfaz de usuario al encontrarse el ImageTarget
@@ -34,11 +38,15 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject ObtenerDatosSalon;
     public GameObject ObtenerDatosProfesor;
 
+    public TMP_InputField EntradaExpediente; // Variable para el ingreso del expediente
+    public TMP_InputField EntradaContrasena; // Variable para el ingreso de la contaseña
+
     public string API = "http://148.220.52.101/api/datos"; // API
 
     // Función que se ejecuta al inicio y antes de todo, inclusive si el script está desactivado
     void Awake(){
-        pantallaPrincipal.SetActive(true); // Se activa la pantalla del menú principal
+        pantallLogin.SetActive(true); // Se activa la pantalla de login
+        pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
         pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
@@ -50,9 +58,14 @@ public class MenuPrincipal : MonoBehaviour
     // Función que se ejecuta al iniciar la aplicación y en su primer frame
     void Start()
     {
+        // BORRAR PRUEBA -------------------------------------------
+        Debug.Log(EntradaExpediente.text);
+        Debug.Log(EntradaContrasena.text);
+        // BORRAR PRUEBA -------------------------------------------
+
         // La corrutina se coloca aquí y no en awake, para dar tiempo a la aplicación a detectar la cámara
         StartCoroutine(desactivarCamara()); // Se inicia la corrutina de detectar y desactivar la cámara
-        Targets.SetActive(true); // Se activan los ImageTargets
+        // Targets.SetActive(true); // Se activan los ImageTargets
     }
 
     // Función que se ejecuta y actualiza cada frame que la aplicación se ejecute
@@ -104,6 +117,7 @@ public class MenuPrincipal : MonoBehaviour
     public void regresarMenuPrincipal()
     {
         arCamera.SetActive(false); // Se desactiva la cámara
+        pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(true); // Se activa la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
@@ -117,6 +131,7 @@ public class MenuPrincipal : MonoBehaviour
     public void regresarPanelBusqueda()
     {
         arCamera.SetActive(false); // Se desactiva la cámara
+        pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se activa la pantalla del menú principal
         panelBusqueda.SetActive(true); // Se desactiva la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
@@ -139,6 +154,7 @@ public class MenuPrincipal : MonoBehaviour
     public void cambiarPanelBusqueda()
     {
         arCamera.SetActive(false); // Se desactiva la cámara
+        pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(true); // Se activa la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
@@ -152,6 +168,7 @@ public class MenuPrincipal : MonoBehaviour
     public void cambiarPantallaCroquis()
     {
         arCamera.SetActive(false); // Se desactiva la cámara
+        pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(true); // Se activa a pantalla del croquis de la facultad
@@ -165,6 +182,7 @@ public class MenuPrincipal : MonoBehaviour
     public void cambiarPantallaCreditos()
     {
         arCamera.SetActive(false); // Se desactiva la cámara
+        pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
@@ -182,6 +200,8 @@ public class MenuPrincipal : MonoBehaviour
         // opcionCamara = 1; // Se establece la navegación a que entro por la cámara
 
         arCamera.SetActive(true); // Se activa la cámara
+        RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
+        pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
@@ -203,6 +223,8 @@ public class MenuPrincipal : MonoBehaviour
         // opcionCamara = 1; // Se establece la navegación a que entro por la cámara
 
         arCamera.SetActive(true); // Se activa la cámara
+        RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
+        pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
@@ -227,6 +249,7 @@ public class MenuPrincipal : MonoBehaviour
 
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
+        RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
@@ -246,6 +269,7 @@ public class MenuPrincipal : MonoBehaviour
 
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
+        RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
@@ -270,6 +294,24 @@ public class MenuPrincipal : MonoBehaviour
         }
     }
 
+    // Función que retrae la información de la API de inicio de sesión y la valida para redirigir al usuario a la aplicación
+    public void IngresarAplicacion(){
+        if(EntradaExpediente.text == "" && EntradaContrasena.text == ""){
+            pantallLogin.SetActive(false); // Se desactiva la pantalla de login
+            pantallaPrincipal.SetActive(true); // Se activa la pantalla principal de la aplicación
+            panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
+            pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
+            pantallaCreditos.SetActive(false); // Se desactiva la pantalla de los créditos de la aplicación
+            realidadAumentada.SetActive(false); // Se desactiva la pantalla de AR para los paneles de salones y profesores
+            virtualUI.SetActive(false); // Se desactiva los paneles UI de salones y profesores
+        }
+    }
+
+    // Función que redirige al usuario al usuario al portal de la facultad de informática
+    public void IrPortalFacultad(){
+        Application.OpenURL("http://portalinformatica.uaq.mx/portalInformatica/"); // Redirige a una URL
+    }
+
     // Función que redirige al usuario al repositorio de toda la información desplegada en la aplicación
     public void cambiarPantallaVerMas()
     {
@@ -280,6 +322,19 @@ public class MenuPrincipal : MonoBehaviour
     public void UnirseCD()
     {
         Application.OpenURL("https://www.uaq.mx/informatica/cede.html"); // Redirige a una URL
+    }
+
+    // Función que solicita permiso al usuario para acceder a la funcionalidad de la cámara
+    private void RequestCameraPermission()
+    {
+        if (Permission.HasUserAuthorizedPermission(Permission.Camera))
+        {
+            // La aplicación ya tiene permisos de cámara, no se necesita solicitar permisos
+            return;
+        }
+
+        // La aplicación no tiene permisos de cámara, solicita permisos
+        Permission.RequestUserPermission(Permission.Camera);
     }
 
     // Función que cambia el objeto del panel de realidad aumentada al nuevo target identificado

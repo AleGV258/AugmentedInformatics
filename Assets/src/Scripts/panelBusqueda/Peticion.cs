@@ -53,8 +53,8 @@ public class Peticion : MonoBehaviour
     public GameObject ObjTitulo; // GameObject del titulo de la interfaz
     public GameObject cambioPantallas; // GameObject para el cambio de interfaces o pantallas
     public GameObject Recargar; // GameObject de un objecto para recargar la interfaz
-    public GameObject Cargando;
-    public GameObject Error;
+    public GameObject Cargando; // GameObject de un objecto para mostrar retroalimentación de carga mientras se espera
+    public GameObject Error; // GameObject de un objeto para mostrar error en caso de una carga fallida
 
     // Función que se ejecuta al iniciar la aplicación y en su primer frame
     void Start () {
