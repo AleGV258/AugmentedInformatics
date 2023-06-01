@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Playables;
 using TMPro;
 using Vuforia;
+using UnityEngine.Networking;
 
 /* Script del menú principal, permite la navegación entre las pantallas de la interfaz UI y la interfaz AR, donde la interfaz AR, son los objetos que se colocan y se instancian sobre y al mostrar los ImageTargets de Vuforia, y en donde la interfaz UI, son los elementos instanciados y creados sobre la pantalla del usuario */
 public class MenuPrincipal : MonoBehaviour
@@ -296,7 +297,30 @@ public class MenuPrincipal : MonoBehaviour
 
     // Función que retrae la información de la API de inicio de sesión y la valida para redirigir al usuario a la aplicación
     public void IngresarAplicacion(){
-        if(EntradaExpediente.text == "" && EntradaContrasena.text == ""){
+
+        
+        StartCoroutine(LoginPeticion(EntradaExpediente.text, EntradaContrasena.text));
+    }
+
+    // Función que manda llamar al coroutine de inicio de sesión    
+    public IEnumerator LoginPeticion(string expediente, string password)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("expediente", expediente);
+        form.AddField("password", password);
+       
+        UnityWebRequest Peticion = UnityWebRequest.Post("http://148.220.52.101/api/portal/login/", form);
+        yield return Peticion.SendWebRequest();
+
+        // Debug.Log(Peticion.responseCode);
+        if (Peticion.result != UnityWebRequest.Result.Success)
+        {
+            Debug.Log("Expediente o contraseña incorrectos");
+
+        }
+        else
+        {
+            // Debug.Log("FUNCIONA");
             pantallLogin.SetActive(false); // Se desactiva la pantalla de login
             pantallaPrincipal.SetActive(true); // Se activa la pantalla principal de la aplicación
             panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
