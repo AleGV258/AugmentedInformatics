@@ -200,7 +200,7 @@ public class MenuPrincipal : MonoBehaviour
         // opcionCamara = 1; // Se establece la navegación a que entro por la cámara
 
         arCamera.SetActive(true); // Se activa la cámara
-        RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
+        // RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
@@ -223,7 +223,7 @@ public class MenuPrincipal : MonoBehaviour
         // opcionCamara = 1; // Se establece la navegación a que entro por la cámara
 
         arCamera.SetActive(true); // Se activa la cámara
-        RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
+        // RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
@@ -249,7 +249,7 @@ public class MenuPrincipal : MonoBehaviour
 
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
-        RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
+        // RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
@@ -269,7 +269,7 @@ public class MenuPrincipal : MonoBehaviour
 
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
-        RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
+        // RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
@@ -324,18 +324,18 @@ public class MenuPrincipal : MonoBehaviour
         Application.OpenURL("https://www.uaq.mx/informatica/cede.html"); // Redirige a una URL
     }
 
-    // Función que solicita permiso al usuario para acceder a la funcionalidad de la cámara
-    private void RequestCameraPermission()
-    {
-        if (Permission.HasUserAuthorizedPermission(Permission.Camera))
-        {
-            // La aplicación ya tiene permisos de cámara, no se necesita solicitar permisos
-            return;
-        }
+    // // Función que solicita permiso al usuario para acceder a la funcionalidad de la cámara
+    // private void RequestCameraPermission()
+    // {
+    //     if (Permission.HasUserAuthorizedPermission(Permission.Camera))
+    //     {
+    //         // La aplicación ya tiene permisos de cámara, no se necesita solicitar permisos
+    //         return;
+    //     }
 
-        // La aplicación no tiene permisos de cámara, solicita permisos
-        Permission.RequestUserPermission(Permission.Camera);
-    }
+    //     // La aplicación no tiene permisos de cámara, solicita permisos
+    //     Permission.RequestUserPermission(Permission.Camera);
+    // }
 
     // Función que cambia el objeto del panel de realidad aumentada al nuevo target identificado
     public void cambiarPadrePanelesTarget()
