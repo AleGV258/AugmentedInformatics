@@ -42,6 +42,8 @@ public class MenuPrincipal : MonoBehaviour
     public TMP_InputField EntradaExpediente; // Variable para el ingreso del expediente
     public TMP_InputField EntradaContrasena; // Variable para el ingreso de la contaseña
 
+    public GameObject ErrorLogin;
+
     public string API = "http://148.220.52.101/api/datos"; // API
 
     // Función que se ejecuta al inicio y antes de todo, inclusive si el script está desactivado
@@ -302,6 +304,10 @@ public class MenuPrincipal : MonoBehaviour
         StartCoroutine(LoginPeticion(EntradaExpediente.text, EntradaContrasena.text));
     }
 
+    public void EntendidoLoginError(){        
+        ErrorLogin.SetActive(false);
+    }
+
     // Función que manda llamar al coroutine de inicio de sesión    
     public IEnumerator LoginPeticion(string expediente, string password)
     {
@@ -316,7 +322,7 @@ public class MenuPrincipal : MonoBehaviour
         if (Peticion.result != UnityWebRequest.Result.Success)
         {
             Debug.Log("Expediente o contraseña incorrectos");
-
+            ErrorLogin.SetActive(true);
         }
         else
         {
