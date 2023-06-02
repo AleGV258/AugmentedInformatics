@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4473312, g: 0.496706, b: 0.57291245, a: 1}
+  m_IndirectSpecularColor: {r: 0.44733083, g: 0.4967054, b: 0.5729115, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8084,7 +8084,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &624133732
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8101,7 +8101,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &625932021
 GameObject:
   m_ObjectHideFlags: 0
@@ -9459,7 +9460,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &686090040
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9476,7 +9477,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &698719680
 GameObject:
   m_ObjectHideFlags: 0
@@ -10939,9 +10941,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1358567162}
     m_Modifications:
+    - target: {fileID: 2200466536759549952, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200466536759549952, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3328326171655796389, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3447604494775056789, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
       propertyPath: m_Color.a
@@ -10954,6 +10964,18 @@ PrefabInstance:
     - target: {fileID: 4049325918841377710, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422267094180905452, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422267094180905452, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422267094180905452, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5742721238401510476, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -11072,13 +11094,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6081123840344553367, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840344553367, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840344553367, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840344553367, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 7600
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840344553367, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840344553367, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0012207031
+      value: -3800
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081123840344553368, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_margin.w
+      value: 7455.808
       objectReference: {fileID: 0}
     - target: {fileID: 6081123840817338600, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 337561152}
+    - target: {fileID: 8917720813215614853, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917720813215614853, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8663e473dc2e46e49b2d7313e83990c4, type: 3}
 --- !u!224 &760942521 stripped
@@ -21616,7 +21670,7 @@ Canvas:
   m_TargetDisplay: 0
 --- !u!95 &1569095840
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21633,7 +21687,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!320 &1569095841
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -23509,7 +23564,7 @@ PlayableDirector:
     m_References: []
 --- !u!95 &1668565461
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23526,7 +23581,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1668565462
 MonoBehaviour:
   m_ObjectHideFlags: 0

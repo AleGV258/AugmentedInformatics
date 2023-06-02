@@ -42,8 +42,7 @@ public class MenuPrincipal : MonoBehaviour
     public TMP_InputField EntradaExpediente; // Variable para el ingreso del expediente
     public TMP_InputField EntradaContrasena; // Variable para el ingreso de la contaseña
 
-    public GameObject ErrorLogin;
-
+    public GameObject ErrorLogin; // GameObject del objeto de error cuando no se inicia sesión correctamente
     public string API = "http://148.220.52.101/api/datos"; // API
 
     // Función que se ejecuta al inicio y antes de todo, inclusive si el script está desactivado
@@ -61,11 +60,6 @@ public class MenuPrincipal : MonoBehaviour
     // Función que se ejecuta al iniciar la aplicación y en su primer frame
     void Start()
     {
-        // BORRAR PRUEBA -------------------------------------------
-        Debug.Log(EntradaExpediente.text);
-        Debug.Log(EntradaContrasena.text);
-        // BORRAR PRUEBA -------------------------------------------
-
         // La corrutina se coloca aquí y no en awake, para dar tiempo a la aplicación a detectar la cámara
         StartCoroutine(desactivarCamara()); // Se inicia la corrutina de detectar y desactivar la cámara
         // Targets.SetActive(true); // Se activan los ImageTargets
@@ -110,11 +104,6 @@ public class MenuPrincipal : MonoBehaviour
         yield return new WaitForEndOfFrame(); // Espera al primer frame de carga de la aplicación
         arCamera.SetActive(false); // Desactiva la cámara, esto se hace para consumir menos recursos en la aplicación
     }
-
-    // Función que manda llamar a eliminar el panel virtual UI para desaparecer el panel
-    // public void cerrarPanelUI(){
-    //     StartCoroutine(quitarPantallaUI()); // Se manda llamar al trigger desactivar la animación de panel realidad aumentada
-    // }
 
     // Función que activa la interfaz del menú principal, y desactiva todas las demás
     public void regresarMenuPrincipal()
@@ -203,7 +192,6 @@ public class MenuPrincipal : MonoBehaviour
         // opcionCamara = 1; // Se establece la navegación a que entro por la cámara
 
         arCamera.SetActive(true); // Se activa la cámara
-        // RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
@@ -226,7 +214,6 @@ public class MenuPrincipal : MonoBehaviour
         // opcionCamara = 1; // Se establece la navegación a que entro por la cámara
 
         arCamera.SetActive(true); // Se activa la cámara
-        // RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         pantallLogin.SetActive(false); // Se desactiva la pantalla de login
         pantallaPrincipal.SetActive(false); // Se desactiva la pantalla del menú principal
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
@@ -244,7 +231,6 @@ public class MenuPrincipal : MonoBehaviour
     // Función que activa la cámara, la interfaz UI de salones, y desactiva todas las demás
     public void cambiarPantallaVirtualUISalon()
     {
-        Debug.Log(gameObject.name);
         contadorQuitarPanel = 0; // El contador del tiempo de la interfaz UI se restablece para empezar nuevamente
         panelSalon scriptPanelSalonUI = ObtenerDatosSalon.GetComponent<panelSalon>(); // Se obtiene el GameObject del script del panel salón UI
         StartCoroutine(scriptPanelSalonUI.CorrutinaObtenerDatos()); // Se activa la corrutina de obtener datos de la url
@@ -252,7 +238,6 @@ public class MenuPrincipal : MonoBehaviour
 
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
-        // RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
@@ -272,7 +257,6 @@ public class MenuPrincipal : MonoBehaviour
 
         panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
         arCamera.SetActive(true); // Se activa la cámara
-        // RequestCameraPermission(); // Solicitar permisos de la cámara al usuario
         realidadAumentada.SetActive(true); // Se activa la pantalla de AR para los paneles de salones y profesores
         virtualUI.SetActive(true); // Se activa los paneles UI de salones y profesores
 
@@ -319,15 +303,11 @@ public class MenuPrincipal : MonoBehaviour
         yield return Peticion.SendWebRequest();
 
         // Debug.Log(Peticion.responseCode);
-        if (Peticion.result != UnityWebRequest.Result.Success)
-        {
+        if (Peticion.result != UnityWebRequest.Result.Success){
             Debug.Log("Expediente o contraseña incorrectos");
             ErrorLogin.SetActive(true);
-        }
-        else
-        {
-            // Debug.Log("FUNCIONA");
-            pantallLogin.SetActive(false); // Se desactiva la pantalla de login
+        }else{
+             pantallLogin.SetActive(false); // Se desactiva la pantalla de login
             pantallaPrincipal.SetActive(true); // Se activa la pantalla principal de la aplicación
             panelBusqueda.SetActive(false); // Se desactiva la pantalla de búsqueda de profesores y salones
             pantallaCroquis.SetActive(false); // Se desactiva a pantalla del croquis de la facultad
@@ -353,19 +333,6 @@ public class MenuPrincipal : MonoBehaviour
     {
         Application.OpenURL("https://www.uaq.mx/informatica/cede.html"); // Redirige a una URL
     }
-
-    // // Función que solicita permiso al usuario para acceder a la funcionalidad de la cámara
-    // private void RequestCameraPermission()
-    // {
-    //     if (Permission.HasUserAuthorizedPermission(Permission.Camera))
-    //     {
-    //         // La aplicación ya tiene permisos de cámara, no se necesita solicitar permisos
-    //         return;
-    //     }
-
-    //     // La aplicación no tiene permisos de cámara, solicita permisos
-    //     Permission.RequestUserPermission(Permission.Camera);
-    // }
 
     // Función que cambia el objeto del panel de realidad aumentada al nuevo target identificado
     public void cambiarPadrePanelesTarget()
